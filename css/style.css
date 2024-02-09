@@ -1,0 +1,252 @@
+/* --------  Google Font  -------- */
+@import url('href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700&display=swap" rel="stylesheet"');
+
+/* --------  Font Awesome  -------- */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css');
+
+
+/* ================  Variable Start Here  ================= */
+:root{
+    /* --------  color variable -------- */
+    --black-color:#001e2b;
+    --heading-color:#21313c;
+    --gray-color:#5c6c75;
+    --white-color:#fff;
+    --white-medium:#F0F3F2;
+    --green-color:#198754;
+    --link-color:#0aad0a;
+    --link-hover-color:#088a08;
+    --yellow-color:#FFC107;
+    --border-color:#dfe2e1;
+    --shadow-color: rgba(132,139,200,0.18);
+    
+    /* --------  font size variable -------- */
+    --low-font:12px;
+    --xs-font:13px;
+    --sm-font:14px;
+    --md-font:16px;
+    --lg-font:18px;
+    --xl-font:20px;
+    --xxl-font:24px;
+    --3xl-font:28px;
+    --4xl-font:34px;
+    --5xl-font:40px;
+    
+    
+    --border-1:1px solid var(--border-color);
+    --border-2:1px solid var(--link-hover-color);
+    
+    --radius-sm:4px;
+    --radius-md:6px;
+    --radius-lg:10px;
+    
+    --box-shadow: 0 2rem 3rem var(--shadow-color);
+    
+    --primary-font: 'Inter', sans-serif;
+}
+
+
+
+*{
+    margin : 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+
+
+/* ================  Tag Style  ================= */
+body{
+    font-size: var(--sm-font);
+    color: var(--heading-color);
+    font-family:var(--primary-font);
+    font-size: var(--sm-font);
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+    color: var(--link-color);
+    font-size: var(--xs-font);
+}
+a:hover{
+    color: var(--link-hover-color);
+}
+p{
+    color: var(--gray-color);
+}
+ul{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+button{
+    padding:11px 15px;
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    font-size: var(--sm-font);
+}
+button:focus{
+    outline:3px solid var(--shadow-color);  
+    transition:outline .1s ease;
+}
+input{
+    padding: 11px 15px;
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border-color);
+    /* width: 100%; */
+    font-size: var(--sm-font);
+    margin-top: 33px;
+    transition:outline .1s ease;
+}
+input:focus{
+    outline:3px solid var(--shadow-color);
+    transition:outline .1s ease;
+}
+
+
+
+
+
+/* ==============  Global Class  ============== */
+.container{
+    max-width: 1240px;
+    width: 100%;
+    padding: 0 20px;
+}
+.text-center{
+    text-align: center;
+    margin: 0 auto;
+}
+.text-right{
+    text-align: right;
+    margin-left: auto;
+}
+
+
+/* ================  Button Class Style  ================= */
+.btn-fill-dark,.btn-fill-orange,.btn-outline{
+    padding: 9px 15px;
+    cursor: pointer;
+    border-radius: var(--radius-md);
+    color:var(--white-color);
+    font-weight: 600;
+    font-size: var(--sm-font);
+    transition: background-color .2s ease-in-out;
+}
+.btn-fill-dark{
+    background-color: var(--black-color);
+}
+.btn-fill-dark:hover{
+    background-color: var(--heading-color);
+}
+
+.btn-fill-orange{
+    background-color: var(--link-color);
+}
+.btn-fill-orange:hover{
+    background-color: var(--link-hover-color);
+}
+
+.btn-outline{
+    border: 2px solid var(--heading-color);
+    color: var(--heading-color);
+    transition: border .2s ease-in-out;
+}
+.btn-outline:hover{
+    border: 2px solid var(--black-color);
+}
+
+
+
+/* ------ other class ------ */
+.w-50{
+    width: 50%;
+}
+.w-100{
+    width: 100%;
+}
+
+.p-5{
+    padding: 5px;
+}
+.p-10{
+    padding: 10px;
+}
+.p-15{
+    padding: 15px;
+}
+
+.m-4{
+    margin: 4px;
+}
+.m-6{
+    margin: 6px;
+}
+
+
+
+/* ================  Flex Class Start Here  ================= */
+.d-flex-10,.d-flex-15,.d-flex-20,.d-flex-25{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.d-flex-10{
+    gap: 10px;
+}
+.d-flex-15{
+    gap: 15px;
+}
+.d-flex-20{
+    gap: 20px;
+}
+.d-flex-25{
+    gap: 25px;
+}
+
+.flex-colum-5,.flex-column-15,.flex-column-20,.flex-colum-25{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.flex-colum-5{
+    gap: 5px;
+}
+.flex-column-15{
+    gap: 15px;
+}
+.flex-column-20{
+    gap: 20px;
+}
+.flex-colum-25{
+    gap: 25px;
+}
+
+.flex-start{
+    display: flex;
+    align-items: flex-start;
+    /* justify-content: flex-start; */
+    justify-items: flex-start;
+    gap: 15px;
+}
+
+
+
+/* ================  Grid Class Start Here  ================= */
+.col-3,.col-4,.col-5{
+    display: grid;
+    gap: 15px;
+}
+.col-5{
+    grid-template-columns: repeat(5,1fr);
+    gap: 15px;
+}
+.col-4{
+    gap: 20px;
+    grid-template-columns: repeat(4,1fr);
+}
+.col-3{
+    grid-template-columns: repeat(3,1fr);
+}
