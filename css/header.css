@@ -1,0 +1,86 @@
+
+
+/* ===============   Header Top Start Here   ================ */
+
+.header-top-area{
+    background-color: var(--white-medium);
+    padding: 8px 0;
+    font-weight: 500;
+}
+
+.header-top-right{
+    cursor: pointer;
+    padding: 0 10px;
+    position: relative;
+}
+.header-top-right i{
+    display: inline-block;
+    margin-top:8-px ;
+    
+    font-size: var(--low-font);
+}
+.header-top-right.d-flex-5{
+    align-items: center;
+    justify-content: center;
+}
+.header-top img{
+    width:20px;
+    height: 20px;
+}
+
+
+
+
+/*============  header-language-drop  ============ */
+.header-language-drop{
+    position: absolute;
+    top: 30px;
+    right: 0px;
+    box-shadow: var(--box-shadow);
+    background-color: var(--white-color);
+    width: 100%;
+    padding: 10px 15px;
+    border-radius: var(--radius-sm);
+    z-index: 2;
+    border:1px solid var(--white-medium);
+    display: none;
+    animation: toBottom .25s ease-in-out;
+}
+.header-language-drop.active{
+    display: flex;
+    
+}
+#language-dropdown-btn{
+    
+}
+
+.header-language-drop :first-child.d-flex-10::after{
+    content: ' ';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: var(--white-medium);
+    top:34px;
+    left: 0;
+}
+.language-item:hover{
+    background-color: var(--white-medium);
+}
+
+
+
+
+/* ==============  header medial  start here ================= */
+/* -------  header medial left  ------- */
+.header-medial-left{
+    letter-spacing: -1px;
+}
+.header-medial-left a{
+    color: var(--black-color);
+    font-size: var(--lg-font);
+}
+.header-medial-left a span i {
+    color: var(--link-color);
+    font-size: var(--lg-font);
+    transform: rotate3d(280deg); 
+}
