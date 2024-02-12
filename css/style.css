@@ -1,9 +1,11 @@
-/* --------  Google Font  -------- *
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap');
+/* --------  Google Font  -------- */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
 
 
 /* --------  Font Awesome  -------- */
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css');
+/* remix icon */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.1.0/remixicon.min.css');
 
 
 /* ================  Variable Start Here  ================= */
@@ -12,6 +14,7 @@
     --black-color:#001e2b;
     --heading-color:#21313c;
     --gray-color:#5c6c75;
+    --gray-medium:#7a8891e8;
     --white-color:#fff;
     --white-medium:#F0F3F2;
     --green-color:#198754;
@@ -19,7 +22,7 @@
     --link-hover-color:#088a08;
     --yellow-color:#FFC107;
     --border-color:#dfe2e1;
-    --shadow-color: rgba(132, 139, 200, 0.096);
+    --shadow-color: rgba(131, 148, 201, 0.459);
     
     /* --------  font size variable -------- */
     --low-font:12px;
@@ -38,12 +41,12 @@
     --border-2:1px solid var(--link-hover-color);
     
     --radius-sm:4px;
-    --radius-md:6px;
-    --radius-lg:10px;
+    --radius-md:8px;
+    --radius-lg:12px;
     
-    --box-shadow: 0 2rem 3rem var(--shadow-color);
+    --box-shadow: 0 1px 3px 2px var(--shadow-color);
     
-    --primary-font: 'Inter', sans-serif;
+    --primary-font:  'Roboto', sans-serif;
 }
 
 
@@ -65,6 +68,9 @@ body{
     font-family:var(--primary-font);
     font-size: var(--sm-font);
     user-select: none;
+}
+h1,h2,h3,h4,h5,h6{
+    letter-spacing: .25px;
 }
 a{
     text-decoration: none;
@@ -89,7 +95,7 @@ button{
     cursor: pointer;
     font-size: var(--sm-font);
 }
-button:focus{
+button:focus,.btn-fill-dark:focus,.btn-fill-orange:focus{
     outline:3px solid var(--shadow-color);  
     transition:outline .1s ease;
 }
@@ -105,6 +111,10 @@ input:focus{
     outline:3px solid var(--shadow-color);
     transition:outline .1s ease;
 }
+input::placeholder{
+    font-family: var(--primary-font);
+    letter-spacing: .2px;
+}
 
 
 
@@ -112,7 +122,7 @@ input:focus{
 
 /* ==============  Global Class  ============== */
 .container{
-    max-width: 1240px;
+    max-width: 1200px;
     width: 100%;
     padding: 0 20px;
     margin: 0 auto;
@@ -129,13 +139,13 @@ input:focus{
 
 /* ================  Button Class Style  ================= */
 .btn-fill-dark,.btn-fill-orange,.btn-outline{
-    padding: 9px 15px;
+    padding: 11px 15px;
     cursor: pointer;
     border-radius: var(--radius-md);
     color:var(--white-color);
     font-weight: 600;
     font-size: var(--sm-font);
-    transition: background-color .2s ease-in-out;
+    transition: background-color .15s ease-in-out;
 }
 .btn-fill-dark{
     background-color: var(--black-color);
@@ -154,7 +164,7 @@ input:focus{
 .btn-outline{
     border: 2px solid var(--heading-color);
     color: var(--heading-color);
-    transition: border .2s ease-in-out;
+    transition: border .15s ease-in-out;
 }
 .btn-outline:hover{
     border: 2px solid var(--black-color);
@@ -274,12 +284,22 @@ input:focus{
 
 
 
-
 /* ============  animatiion ============ */
 @keyframes toBottom{
     0%{
         opacity: 0;
         transform: translateY(-15px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes toTop{
+    0%{
+        opacity: 0;
+        transform: translateY(-45px);
     }
     100%{
         opacity: 1;
