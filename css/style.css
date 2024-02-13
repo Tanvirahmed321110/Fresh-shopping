@@ -116,6 +116,11 @@ input::placeholder{
     letter-spacing: .2px;
 }
 
+img{
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
 
 
 
@@ -171,6 +176,28 @@ input::placeholder{
 }
 
 
+.sm-title,.md-title,.lg-title,.xl-title,.xxl-title{
+    font-weight: 600;
+    letter-spacing: .2px;
+    color: var(--heading-color);
+}
+.sm-title{
+    font-weight: 600;
+    font-size: var(--sm-font);
+}
+.md-title{
+    font-size: var(--md-font);
+}
+.lg-title{
+    font-size: var(--lg-font);
+}
+.xl-title{
+    font-size: var(--xl-font);
+}
+.xxl-title{
+    font-size: var(--xxl-font);
+    letter-spacing: .3px;
+}
 
 /* ------ other class ------ */
 .w-50{
