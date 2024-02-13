@@ -78,9 +78,7 @@ a{
     color: var(--link-color);
     font-size: var(--xs-font);
 }
-a:hover{
-    color: var(--link-hover-color);
-}
+
 p{
     color: var(--gray-color);
 }
@@ -197,6 +195,11 @@ img{
 .xxl-title{
     font-size: var(--xxl-font);
     letter-spacing: .3px;
+}
+.xxxl-title{
+    font-size: var(--5xl-font);
+    letter-spacing: .4px;
+    font-weight: bolder;
 }
 
 /* ------ other class ------ */
