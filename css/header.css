@@ -320,3 +320,58 @@
 .border{
     border-bottom: 1px solid var(--border-color);
 }
+
+
+
+
+
+
+/* ==============  Catagory and Features  ============== */
+.catagoris-items.col-4{
+    gap:20px;
+}
+
+.catagoris-item{
+    padding: 25px 0;
+    border-radius: var(--radius-md);
+    border: var(--border-1);
+    cursor: pointer;
+}
+.catagoris-item:hover{
+    border: 1px solid var(--link-color);
+}
+.catagoris-item.flex-column-10{
+    align-items: center;
+    gap: 20px;
+}
+.catagoris-item img{
+    width: 120px;
+    height: 120px;
+}
+
+
+
+
+/* ============ Small Banner ============ */
+.small-banner-items.flex-between{
+    gap:40px;
+}
+.small-banner-item{
+    background-image: url("../image/small-banner1.jpg");
+    height:260px;
+    width: 50%;
+    border-radius: var(--radius-md);
+}
+.small-banner-item:last-child{
+    background-image: url("../image/small-banner2.jpg");
+    height:260px ;
+    width: 50%;
+    background-repeat: no-repeat;
+}
+.small-banner-content{
+    padding: 25px;
+}
+.small-banner-content.flex-column-20{
+    justify-content: center;
+    height: 100%;
+}
