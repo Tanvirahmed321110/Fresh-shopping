@@ -1,0 +1,146 @@
+.daily-best-seller-area{}
+/* ===========  Best Seller Header ========== */
+.best-seller-header{}
+
+/* ===========  Best Seller Body ========== */
+.best-seller-body{
+}
+
+/* =========== Best Seller banner ============ */
+.best-seller-banner{
+    width: 320px;
+    height:500px;
+    background-color: red;
+    background-image: url('../image/best-seller-banner.jpeg');
+    background-size: cover;
+    background-position: top (-200px);
+    background-repeat: no-repeat;
+    border-radius: var(--radius-md);
+    padding: 25px ;
+    color: var(--white-color);
+}
+.best-seller-banner-data.flex-column-25{
+    gap: 50px;
+}
+.best-seller-banner .xxl-title{
+    color: var(--white-color);
+    font-weight: 600;
+}
+.best-seller-banner p{
+    color: var(--white-color);
+    font-weight: 600;
+    font-size: var(--md-font);
+}
+.best-seller-body.flex-start-10{
+    gap: 20px;
+}
+
+
+
+/*=========  best-seller-items  ==========*/
+.best-seller-items{
+    flex-grow: 1;
+}
+
+.best-seller-item{
+    padding: 25px 15px;
+    border: var(--border-1);
+    border-radius: var(--radius-md);
+}
+.best-seller-item .best-seller-image img{
+    height: 250px;
+}
+
+.best-seller-content .new-price h4{
+    font-size: var(--md-font);
+}
+.best-seller-content .old-price p{
+    text-decoration: line-through;
+}
+.best-seller-content .title-catagory p{
+    font-size: var(--xs);
+    font-weight: 600;
+    color: var(--gray-medium);
+}
+
+/* product-offer-time */
+.best-seller-content .product-offer-time .offer-time{
+    height: 65px;
+    width: 70px;
+    border-radius: var(--radius-md);
+    border: var(--border-1);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.product-offer-time .offer-time p{
+    color: var(--heading-color);
+}
+.product-offer-time .offer-time small{
+    font-size: var(--xs);
+    color: var(--gray-medium);
+}
+
+
+
+
+
+/*==========  advice-text  ======== */
+.advice-text-items.col-4{
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.advice-text-item span i{
+    font-size: var(--5xl-font);
+    color: var(--link-color);
+}
+.advice-text-item{
+    padding: 10px;
+}
+.advice-text-item div p{
+    line-height: 24px;
+    font-size: var(--md-font);
+}
+.advice-text-item div p a{
+    font-size: var(--md-font);
+}
+
+
+
+
+
+
+
+/*===============   freshShop-app-area  ============= */
+.freshShop-app .container{
+    padding:50px 0;
+    border-top: var(--border-1);
+    border-bottom: var(--border-1);
+}
+
+.freshShop-app-content.flex-column-25{
+    gap: 35px;
+}
+.freshShop-app-area{
+    max-width: 850px;
+    margin: 0 auto;
+}
+.freshShop-app .phone-input input{
+    width: 300px;
+    padding: 13px 15px;
+}
+.freshShop-app .phone-input .btn-fill-orange{
+    padding: 13px 15px;
+}
+.freshShop-app-image img{
+    width: 350px;
+    height: 600px;
+    border-radius: 205px;
+    object-fit:contain;
+}
+.freshShop-app-area .google-app-image img{
+    width: 150px;
+    object-fit: contain;
+}
