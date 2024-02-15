@@ -23,6 +23,7 @@
     --yellow-color:#FFC107;
     --border-color:#dfe2e1;
     --shadow-color: rgba(131, 148, 201, 0.13);
+    --navy-color:#001E2B;
     
     /* --------  font size variable -------- */
     --low-font:12px;
@@ -81,6 +82,7 @@ a{
 
 p{
     color: var(--gray-color);
+    line-height: 22px;
 }
 ul{
     padding: 0;
@@ -143,6 +145,7 @@ img{
 }
 .section-header-gap{
     padding-bottom: 25px;
+    padding-top: 15px;
 }
 /* ================  Button Class Style  ================= */
 .btn-fill-dark,.btn-fill-orange,.btn-outline{
@@ -276,7 +279,7 @@ img{
     gap: 25px;
 }
 
-.flex-start-15,.flex-start-5,.flex-start-10{
+.flex-start-15,.flex-start-5,.flex-start-10,.flex-start-20{
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
@@ -288,6 +291,9 @@ img{
 }
 .flex-start-10{
     gap:10px;
+}
+.flex-start-20{
+    gap: 20px;
 }
 
 .flex-between{
@@ -430,10 +436,16 @@ img{
 
 
 
-
-
-
-
+/* =============  Britcam start here =========== */
+.britcam a{
+    font-size: var(--sm-font);
+}
+.britcam a:hover{
+    color: var(--link-hover-color);
+}
+.britcam li{
+    color: var(--gray-color);
+}
 /* ============  animatiion ============ */
 @keyframes toBottom{
     0%{

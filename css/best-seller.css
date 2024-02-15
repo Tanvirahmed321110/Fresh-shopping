@@ -136,17 +136,6 @@
 }
 
 
-/* .mobile app image */
-.freshShop-app-image img{
-    width: 350px;
-    height: 600px;
-    border-radius: 205px;
-    object-fit:contain;
-}
-.freshShop-app-area .google-app-image img{
-    width: 150px;
-    object-fit: contain;
-}
 
 .mobile-app{
     border: 15px solid var(--heading-color);
@@ -154,7 +143,6 @@
     width: 330px;
     border-radius: 40px;
     background-color: var(--white-color);
-    /* box-shadow: var(--box-shadow); */
     box-shadow: 2px 6px 15px rgb(199, 132, 33);
     position: relative;
     border-top: 40px solid var(--heading-color);
@@ -254,4 +242,72 @@
     height: 80px;
     /* position: relative; */
   }
+  
+  
+  
+  
+  
+  
+  
+  
+  /* ============== Best popular recipes  ============== */
+  
+  .popular-recipes-header-left .popular-recipes-icon{
+    color: var(--link-color);
+    margin-top: -10px;
+  }
+  .popular-recipes-header-left p{
+    font-weight: 600;
+  }
+  
+  
+  /* recipes-items */
+  .recipes-items.col-3{
+    gap: 35px;
+  }
+  .recipes-items{
+    padding-top: 15px;
+  }
+  .recipes-item{
+    width: 100%;
+  }
+  .recipes-item:hover .recipes-item-image img{
+    transform: scale(1.1);
+  }
+  .recipes-item .recipes-item-image{
+    width: 100%;
+    height: 180px;
+    overflow: hidden;border-radius: var(--radius-md);
+  }
+  .recipes-item .recipes-item-image a{
+    display: block;
+  }
+  .recipes-item .recipes-item-image img{
+    object-fit: cover;
+    width: 100% ;
+    transition: .25s ease-in-out ;
+    border-radius: var(--radius-md);
+    height: 180px;
+  }
+  
+  /* xl-title */
+  .recipes-item .xl-title:hover{
+    color: var(--link-color);
+  }
+  .recipes-item .recipes-item-details p{
+    font-size: var(--md-font);
+  }
+  
+  /* recipes-item-footer  */
+  .recipes-item-footer i{
+    font-size: var(--md-font);
+  }
+  .recipes-item-footer strong{
+    font-size: var(--sm-font);
+  }
+  
+  
+  
+  
+  
   
