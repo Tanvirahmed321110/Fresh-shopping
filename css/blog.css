@@ -1,0 +1,66 @@
+
+
+
+/* blog-big-item */
+.blog{
+    padding-bottom: 70px;
+}
+.big-item-image{
+    flex-basis: 65% !important;
+    border-radius: var(--radius-md);
+    overflow: hidden;
+}
+.big-item-image a{
+    display: block;
+}
+.big-item-image a img{
+    width: 100%;
+    height: 350px;transition: .2s linear;
+}
+.big-item-image a img:hover{
+    transition: .2s linear;
+    transform: scale(1.1);
+}
+.blog-big-item .big-item-content{
+    width: 30%;
+}
+
+/* big-item-footer */
+.big-item-footer {
+    color:var(--gray-color)
+}
+.big-item-footer strong{
+    color: var(--heading-color);
+}
+
+
+
+/*===========  blog  small item ============ */
+.blog-smalll-items.col-3{
+    gap:40px;
+    row-gap: 60px;
+}
+.blog-small-item p{
+    font-size: var(--md-font);
+}
+.small-item-image a {
+    display: block;
+    border-radius: var(--radius-md);
+    overflow: hidden;
+}
+.small-item-image img{
+    width: 100%;  
+    height: 180px;
+    transition: .2s;
+    border-radius: var(--radius-md);
+}
+.small-item-image img:hover{
+    transform: scale(1.1);
+}
+.blog-small-item a.md-title{
+    color: var(--link-color);
+}
+.blog-small-item a.lg-title:hover{
+    color:var(--link-color);
+    transition: .2s;
+}
