@@ -2,7 +2,7 @@
 /* =============== client say area  start here ================= */
 
 .clients-say-items.col-3{
-    align-items: center;
+    align-items: stretch;
     gap: 50px;
 }
 .client-say-item{
@@ -80,7 +80,6 @@
 
 
 /* =============== contact-form-area  start here ================= */
-/* -------  contact-address  -------*/
 .contact-address-content-area{
     padding: 25px 0;
 }

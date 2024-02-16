@@ -38,8 +38,8 @@
     right: 0px;
     box-shadow: var(--box-shadow);
     background-color: var(--white-color);
-    width: 100%;
     padding: 10px 15px;
+    width: 122px;
     border-radius: var(--radius-sm);
     z-index: 2;
     border:1px solid var(--white-medium);
