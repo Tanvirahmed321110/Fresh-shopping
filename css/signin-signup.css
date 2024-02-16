@@ -89,9 +89,28 @@ main a:hover{
 
 
 .register-image img{
-    border-radius: 12px;
+    border-radius: 25px;
     height: 300px;
     width: 100%;
     padding: 5px;
     object-fit: cover;
+}
+
+
+
+/* forgot password page */
+.forgot-area.flex-between{
+    justify-content: center;
+    gap: 100px;
+}
+.forgot-area .forgotImage img{
+    height: 310px;
+}
+/* back-btn */
+.back-btn{
+    background-color: var(--white-medium);
+    color: var(--heading-color);
+}
+.back-btn:hover{
+    background-color: var(--gray-medium);
 }

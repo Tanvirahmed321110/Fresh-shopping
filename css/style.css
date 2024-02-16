@@ -44,9 +44,7 @@
     --radius-sm:4px;
     --radius-md:8px;
     --radius-lg:12px;
-    
     --box-shadow: 0 1px 3px 2px var(--shadow-color);
-    
     --primary-font:  'Roboto', sans-serif;
 }
 
@@ -56,7 +54,6 @@
     margin : 0;
     padding: 0;
     box-sizing: border-box;
-    text-decoration: none;
     border: none;
     outline: none;
 }
@@ -67,7 +64,6 @@ body{
     font-size: var(--sm-font);
     color: var(--heading-color);
     font-family:var(--primary-font);
-    font-size: var(--sm-font);
     user-select: none;
 }
 h1,h2,h3,h4,h5,h6{
@@ -107,6 +103,15 @@ input{
     font-size: var(--sm-font);
     transition:outline .1s ease;
 }
+
+label{
+    cursor: pointer;
+}
+
+.flex-shrink-0{
+    flex-shrink: 0;
+}
+
 input:focus{
     outline:3px solid var(--shadow-color);
     transition:outline .1s ease;

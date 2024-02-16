@@ -1,0 +1,114 @@
+
+
+.order-area{
+    display: flex;
+    gap: 25px;
+}
+.order-area .order-sidebar{
+    min-width: 250px;
+    border-right: 1px solid var(--border-color);
+    height: 555px;
+    padding-top: 50px;
+    padding-right: 50px;
+}
+
+/* order-sidebar item */
+.order-sidebar .order-sidebar-item{
+    padding: 10px;
+    width: 100%;
+    border-radius: var(--radius-md);
+}
+.order-sidebar .order-sidebar-item:hover{
+    background-color: var(--white-medium);
+}
+.order-sidebar .order-sidebar-item a{
+    font-size: var(--md-font);
+    font-weight: 500;
+    color:var(--gray-color)
+}
+.order-sidebar .order-sidebar-item.active{
+    background-color: var(--heading-color);
+    color:var(--white-color);
+}
+.order-sidebar .order-sidebar-item.active a{
+    color:var(--white-color);
+}
+
+/* order-sidebar-item-hr */
+.order-sidebar-item-hr{
+    margin: 15px 0 5px 0;
+    background-color: var(--border-color);
+    height: 1px;
+    width:100%
+}
+
+
+
+
+
+
+/* ==========  order items  ========== */
+.order-items-area{
+    padding: 50px;
+    flex-grow: 1;
+    overflow-x: scroll;
+}
+.orders-items-inner table{
+    border-collapse: collapse;
+    overflow-x: scroll;
+}
+.orders-items-inner table thead th{
+    padding: 12px 25px;
+    background-color: var(--white-medium);
+    text-align: left;
+    color: var(--gray-color);
+    border-bottom:var(--border-1);
+}
+
+.orders-items-inner table td{
+    padding: 14px 25px;
+    text-wrap: nowrap;
+    font-weight: 500;
+    border-bottom:var(--border-1);
+}
+
+/*  order image */
+.orders-items-inner table img{
+    width: 75px;
+    height: 60px;
+}
+.orders-items-inner .order-td{
+    font-size: var(--sm-font);
+}
+.orders-items-inner .order-td,.orders-items-inner .item-name{
+    color: var(--heading-color);
+    font-weight: 500;
+    font-size: var(--sm-font);
+}
+.item-name {
+    margin-bottom: 5px;
+}
+
+/* process and complete */
+.process ,.complete{
+    padding:3px 5px;
+    border-radius: var(--radius-sm);
+    color: var(--white-color);
+    font-size: var(--low-font);
+    display: inline-block;
+}
+.process{
+    background-color: var(--yellow-color);
+}
+.complete{
+    background-color: var(--green-color);
+}
+
+/* eye icon */
+.eye-icon{
+    color: var(--gray-color);
+    font-size: var(--lg-font);
+}
+.orders-items-inner a:hover{
+    color: var(--link-color);
+}
