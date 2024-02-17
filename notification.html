@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/order-setting-other.css">
     <link rel="stylesheet" href="css/footer.css">
-    <title>Blog_Page</title>
+    <title>Notification_Page</title>
 </head>
 <body>
     <header>
@@ -472,7 +472,7 @@
                         <!-- ------ order sidebar ------ -->
                         <div class="order-sidebar">
                             <ul class="flex-column-10">
-                                <li class="order-sidebar-item active">
+                                <li class="order-sidebar-item">
                                     <a href="order.html" class="flex-start-10">
                                         <span><i class="ri-shopping-bag-3-line"></i></span>
                                         <span> Your Order</span>
@@ -484,19 +484,19 @@
                                         <span> Setting</span>
                                     </a>
                                 </li>
-                                <li class="order-sidebar-item">
+                                <li class="order-sidebar-item ">
                                     <a href="address.html" class="flex-start-10">
                                         <span><i class="ri-map-pin-line"></i></span>
                                         <span>Address</span>
                                     </a>
                                 </li>
-                                <li class="order-sidebar-item">
+                                <li class="order-sidebar-item ">
                                     <a href="payment.html" class="flex-start-10">
                                         <span><i class="ri-bank-card-line"></i></span>
                                         <span> Payment Method</span>
                                     </a>
                                 </li>
-                                <li class="order-sidebar-item">
+                                <li class="order-sidebar-item active">
                                     <a href="notification.html" class="flex-start-10">
                                         <span><i class="ri-shopping-bag-3-line"></i></span>
                                         <span>Notification</span>
@@ -512,197 +512,126 @@
                                 </li>
                             </ul>
                         </div>
-                        <!-- -----order items----- -->
-                        <div class="order-items-area">
-                            <div class="orders-items-inner">
-                                <table>
-                                    <thead>
-                                        <th></th>
-                                        <th>Product</th>
-                                        <th>Order</th>
-                                        <th>Date</th>
-                                        <th>Items</th>
-                                        <th>Status</th>
-                                        <th>Amount</th>
-                                        <th>-</th>
-                                    </thead>
-                                    <tbody>
-                                        <!-- order single item start -->
-                                        <tr>
-                                            <td>
-                                                <img src="image/catagory-instand.jpeg" alt="s">
-                                            </td>
-                                            <td>
-                                                <a href="product.html" class="md-title item-name">Instand food Guss</a>
-                                                <p>355g</p>
-                                            </td>
-                                            <td >
-                                                <a class="order-td" href="#">#22899</a>
-                                            </td>
-                                            <td>
-                                                <p>Feb 15, 2023</p>
-                                            </td>
-                                            <td>
-                                                <p>1</p>
-                                            </td>
-                                            <td class="status">
-                                                <div class="process">Processing</div>
-                                            </td>
-                                            <td class="amount">
-                                                <p>$22.99</p>
+                        
+                        
+                        <!-- -----address items----- -->
+                        <div class="order-items-area setting-items">
+                            <div class="orders-items-inner flex-column-20">
+                                <div class="address-area-header w-100">
+                                    <div class="">
+                                        <h2 class="xxl-title">Notification settings</h2>
+                                    </div>
+                                </div>
+                                
+                                <!-- ---- payment right items ---- -->
+                                <div class="notification-items-area flex-start-20 ">
+                                    <div class="flex-column-25">
+                                        <div class="notification-items flex-column-25">
+                                            <!-- notification single item start -->
+                                            <div class="notification-item flex-column-25 w-100">
+                                                <!-- notification item header -->
+                                                <div class="notification-item-header">
+                                                    <h3 class="lg-title">Email Notifications</h3>
+                                                </div>
+                                                <!-- Weekly Notification -->
+                                                <div class="flex-between w-100">
+                                                    <div class="flex-column-10">
+                                                        <div class="sm-title">Weekly Notification</div>
+                                                        <p>Various versions have evolved over the years, sometimes by accident, sometimes on purpose .</p>
+                                                    </div>
+                                                    <div class="form-check form-switch">
+                                                        <label class="switch">
+                                                            <input type="checkbox" checked>
+                                                            <span class="slider round"></span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <!-- Account Summary-->
+                                                <div class="flex-between w-100">
+                                                    <div class="flex-column-10">
+                                                        <div class="sm-title">Account Summary</div>
+                                                        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis eguris eu sollicitudin massa. Nulla ipsum odio, aliquam in odio et, fermentum blandit nulla</p>
+                                                    </div>
+                                                    <div class="form-check form-switch">
+                                                        <label class="switch">
+                                                            <input type="checkbox" checked>
+                                                            <span class="slider round"></span>
+                                                        </label>
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <td>
-                                                <a class="eye-icon" href="#"><i class="ri-eye-line"></i></a>
-                                            </td>
-                                        </tr>
-                                        <!-- order single item start -->
-                                        <!-- order single item start -->
-                                        <tr>
-                                            <td>
-                                                <img src="image/catagory-bekary.jpeg" alt="s">
-                                            </td>
-                                            <td>
-                                                <a href="product.html" class="md-title item-name">Biscute pakage 1000g and 2pcs</a>
-                                                <p>355g</p>
-                                            </td>
-                                            <td >
-                                                <a class="order-td" href="#">#14888</a>
-                                            </td>
-                                            <td>
-                                                <p>Jan 5, 2024</p>
-                                            </td>
-                                            <td>
-                                                <p>1</p>
-                                            </td>
-                                            <td class="status">
-                                                <div class="process">Processing</div>
-                                            </td>
-                                            <td class="amount">
-                                                <p>$15.22</p>
+                                            <!-- notification single item end -->
+                                            
+                                            <!-- notification single item start -->
+                                            <div class="notification-item flex-column-25 w-100">
+                                                <!-- notification item header -->
+                                                <div class="notification-item-header">
+                                                    <h3 class="lg-title">Order updates</h3>
+                                                </div>
+                                                <!-- Text messages -->
+                                                <div class="flex-between w-100">
+                                                    <div class="flex-column-10">
+                                                        <div class="sm-title">Text messages</div>
+                                                    </div>
+                                                    <div class="form-check form-switch">
+                                                        <label class="switch">
+                                                            <input type="checkbox" checked>
+                                                            <span class="slider round"></span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <!-- Call before checkout-->
+                                                <div class="flex-between w-100">
+                                                    <div class="flex-column-10">
+                                                        <div class="sm-title">Call before checkout</div>
+                                                        <p>We'll only call if there are pending changes</p>
+                                                    </div>
+                                                    <div class="form-check form-switch">
+                                                        <label class="switch">
+                                                            <input type="checkbox" checked>
+                                                            <span class="slider round"></span>
+                                                        </label>
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <td>
-                                                <a class="eye-icon" href="#"><i class="ri-eye-line"></i></a>
-                                            </td>
-                                        </tr>
-                                        <!-- order single item start -->
-                                        <!-- order single item start -->
-                                        <tr>
-                                            <td>
-                                                <img src="image/catagory-tea.jpeg" alt="s">
-                                            </td>
-                                            <td>
-                                                <a href="product.html" class="md-title item-name">Haldiram's Nagpur Aloo Bhujia</a>
-                                                <p>355g</p>
-                                            </td>
-                                            <td >
-                                                <a class="order-td" href="#">#14899</a>
-                                            </td>
-                                            <td>
-                                                <p>Dec 5, 2023</p>
-                                            </td>
-                                            <td>
-                                                <p>1</p>
-                                            </td>
-                                            <td class="status">
-                                                <div class="complete">Complete</div>
-                                            </td>
-                                            <td class="amount">
-                                                <p>$15.22</p>
+                                            <!-- notification single item end -->
+                                            
+                                            <!-- notification single item start -->
+                                            <div class="notification-item flex-column-25 w-100">
+                                                <!-- notification item header -->
+                                                <div class="notification-item-header">
+                                                    <h3 class="lg-title">Website Notification</h3>
+                                                </div>
+                                                
+                                                <div>
+                                                    <div class="website-checkboxs flex-column-10">
+                                                        <div class="website-checkbox flex-start-10">
+                                                            <input type="checkbox" name="" id="Follower">
+                                                            <label for="Follower">New Follower</label>
+                                                        </div>
+                                                        <div class="website-checkbox flex-start-10">
+                                                            <input type="checkbox" name="" id="like">
+                                                            <label for="like">Post Like</label>
+                                                        </div>
+                                                        <div class="website-checkbox flex-start-10">
+                                                            <input type="checkbox" name="" id="followed">
+                                                            <label for="followed">Someone you followed posted</label>
+                                                        </div>
+                                                        <div class="website-checkbox flex-start-10">
+                                                            <input type="checkbox" name="" id="collection">
+                                                            <label for="collection">Post added to collection</label>
+                                                        </div>
+                                                        <div class="website-checkbox flex-start-10">
+                                                            <input type="checkbox" name="" id="Delivery">
+                                                            <label for="Delivery">Order Delivery</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <td>
-                                                <a class="eye-icon" href="#"><i class="ri-eye-line"></i></a>
-                                            </td>
-                                        </tr>
-                                        <!-- order single item start -->
-                                        <!-- order single item start -->
-                                        <tr>
-                                            <td>
-                                                <img src="image/catagory-petcare.jpeg" alt="s">
-                                            </td>
-                                            <td>
-                                                <a href="product.html" class="md-title item-name">Haldiram's Nagpur Aloo Bhujia</a>
-                                                <p>355g</p>
-                                            </td>
-                                            <td >
-                                                <a class="order-td" href="#">#14899</a>
-                                            </td>
-                                            <td>
-                                                <p>March 5, 2023</p>
-                                            </td>
-                                            <td>
-                                                <p>1</p>
-                                            </td>
-                                            <td class="status">
-                                                <div class="process">Processing</div>
-                                            </td>
-                                            <td class="amount">
-                                                <p>$15.22</p>
-                                            </div>
-                                            <td>
-                                                <a class="eye-icon" href="#"><i class="ri-eye-line"></i></a>
-                                            </td>
-                                        </tr>
-                                        <!-- order single item start -->
-                                        <!-- order single item start -->
-                                        <tr>
-                                            <td>
-                                                <img src="image/catagory-meet.jpg" alt="s">
-                                            </td>
-                                            <td>
-                                                <a href="product.html" class="md-title item-name">Meet and fish item</a>
-                                                <p>1000g</p>
-                                            </td>
-                                            <td >
-                                                <a class="order-td" href="#">#33898</a>
-                                            </td>
-                                            <td>
-                                                <p>Feb 5, 2024</p>
-                                            </td>
-                                            <td>
-                                                <p>1</p>
-                                            </td>
-                                            <td class="status">
-                                                <div class="process">Processing</div>
-                                            </td>
-                                            <td class="amount">
-                                                <p>$12.42</p>
-                                            </div>
-                                            <td>
-                                                <a class="eye-icon" href="#"><i class="ri-eye-line"></i></a>
-                                            </td>
-                                        </tr>
-                                        <!-- order single item start -->
-                                        <!-- order single item start -->
-                                        <tr>
-                                            <td>
-                                                <img src="image/catagory-ata-rice.jpeg" alt="s">
-                                            </td>
-                                            <td>
-                                                <a href="product.html" class="md-title item-name">Haldiram's Nagpur Aloo Bhujia</a>
-                                                <p>355g</p>
-                                            </td>
-                                            <td >
-                                                <a class="order-td" href="#">#14899</a>
-                                            </td>
-                                            <td>
-                                                <p>Jan 5, 2024</p>
-                                            </td>
-                                            <td>
-                                                <p>2</p>
-                                            </td>
-                                            <td class="status">
-                                                <div class="complete">Done</div>
-                                            </td>
-                                            <td class="amount">
-                                                <p>$45.00</p>
-                                            </div>
-                                            <td>
-                                                <a class="eye-icon" href="#"><i class="ri-eye-line"></i></a>
-                                            </td>
-                                        </tr>
-                                        <!-- order single item start -->
-                                    </tbody>
-                                </table>
+                                            <!-- notification single item end -->
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

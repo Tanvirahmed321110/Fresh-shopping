@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/order-setting-other.css">
     <link rel="stylesheet" href="css/footer.css">
-    <title>Blog_Page</title>
+    <title>Setting_Page</title>
 </head>
 <body>
     <header>
@@ -472,13 +472,13 @@
                         <!-- ------ order sidebar ------ -->
                         <div class="order-sidebar">
                             <ul class="flex-column-10">
-                                <li class="order-sidebar-item active">
+                                <li class="order-sidebar-item">
                                     <a href="order.html" class="flex-start-10">
                                         <span><i class="ri-shopping-bag-3-line"></i></span>
                                         <span> Your Order</span>
                                     </a>
                                 </li>
-                                <li class="order-sidebar-item">
+                                <li class="order-sidebar-item active">
                                     <a href="setting.html" class="flex-start-10">
                                         <span><i class="ri-settings-2-line"></i></span>
                                         <span> Setting</span>
@@ -512,197 +512,89 @@
                                 </li>
                             </ul>
                         </div>
+                        
+                        
                         <!-- -----order items----- -->
-                        <div class="order-items-area">
-                            <div class="orders-items-inner">
-                                <table>
-                                    <thead>
-                                        <th></th>
-                                        <th>Product</th>
-                                        <th>Order</th>
-                                        <th>Date</th>
-                                        <th>Items</th>
-                                        <th>Status</th>
-                                        <th>Amount</th>
-                                        <th>-</th>
-                                    </thead>
-                                    <tbody>
-                                        <!-- order single item start -->
-                                        <tr>
-                                            <td>
-                                                <img src="image/catagory-instand.jpeg" alt="s">
-                                            </td>
-                                            <td>
-                                                <a href="product.html" class="md-title item-name">Instand food Guss</a>
-                                                <p>355g</p>
-                                            </td>
-                                            <td >
-                                                <a class="order-td" href="#">#22899</a>
-                                            </td>
-                                            <td>
-                                                <p>Feb 15, 2023</p>
-                                            </td>
-                                            <td>
-                                                <p>1</p>
-                                            </td>
-                                            <td class="status">
-                                                <div class="process">Processing</div>
-                                            </td>
-                                            <td class="amount">
-                                                <p>$22.99</p>
+                        <div class="order-items-area setting-items">
+                            <div class="orders-items-inner flex-column-20">
+                                <div class="setting-area-header">
+                                    <div class="xxl-header">
+                                        <h2 class="xxl-title">Account Setting</h2>
+                                    </div>
+                                </div>
+                                
+                                <!-- ---- setting right items ---- -->
+                                <div class="setting-right-items">
+                                    <!-- setting right single item -->
+                                    <div class="setting-right-item flex-column-20">
+                                        <div>
+                                            <h4 class="lg-title">Account details</h4>
+                                        </div>
+                                        <div class="flex-column-20">
+                                            <div class="flex-column-10">
+                                                <label for="name">Name</label>
+                                                <input type="text" id="name" placeholder="Tanvir Ahemd">
                                             </div>
-                                            <td>
-                                                <a class="eye-icon" href="#"><i class="ri-eye-line"></i></a>
-                                            </td>
-                                        </tr>
-                                        <!-- order single item start -->
-                                        <!-- order single item start -->
-                                        <tr>
-                                            <td>
-                                                <img src="image/catagory-bekary.jpeg" alt="s">
-                                            </td>
-                                            <td>
-                                                <a href="product.html" class="md-title item-name">Biscute pakage 1000g and 2pcs</a>
-                                                <p>355g</p>
-                                            </td>
-                                            <td >
-                                                <a class="order-td" href="#">#14888</a>
-                                            </td>
-                                            <td>
-                                                <p>Jan 5, 2024</p>
-                                            </td>
-                                            <td>
-                                                <p>1</p>
-                                            </td>
-                                            <td class="status">
-                                                <div class="process">Processing</div>
-                                            </td>
-                                            <td class="amount">
-                                                <p>$15.22</p>
+                                            <div class="flex-column-10">
+                                                <label for="Email">Email</label>
+                                                <input type="text" id="Email" placeholder="example@.com">
                                             </div>
-                                            <td>
-                                                <a class="eye-icon" href="#"><i class="ri-eye-line"></i></a>
-                                            </td>
-                                        </tr>
-                                        <!-- order single item start -->
-                                        <!-- order single item start -->
-                                        <tr>
-                                            <td>
-                                                <img src="image/catagory-tea.jpeg" alt="s">
-                                            </td>
-                                            <td>
-                                                <a href="product.html" class="md-title item-name">Haldiram's Nagpur Aloo Bhujia</a>
-                                                <p>355g</p>
-                                            </td>
-                                            <td >
-                                                <a class="order-td" href="#">#14899</a>
-                                            </td>
-                                            <td>
-                                                <p>Dec 5, 2023</p>
-                                            </td>
-                                            <td>
-                                                <p>1</p>
-                                            </td>
-                                            <td class="status">
-                                                <div class="complete">Complete</div>
-                                            </td>
-                                            <td class="amount">
-                                                <p>$15.22</p>
+                                            <div class="flex-column-10">
+                                                <label for="Phone">Phone</label>
+                                                <input type="text" id="Phone" placeholder="Phone Number">
                                             </div>
-                                            <td>
-                                                <a class="eye-icon" href="#"><i class="ri-eye-line"></i></a>
-                                            </td>
-                                        </tr>
-                                        <!-- order single item start -->
-                                        <!-- order single item start -->
-                                        <tr>
-                                            <td>
-                                                <img src="image/catagory-petcare.jpeg" alt="s">
-                                            </td>
-                                            <td>
-                                                <a href="product.html" class="md-title item-name">Haldiram's Nagpur Aloo Bhujia</a>
-                                                <p>355g</p>
-                                            </td>
-                                            <td >
-                                                <a class="order-td" href="#">#14899</a>
-                                            </td>
-                                            <td>
-                                                <p>March 5, 2023</p>
-                                            </td>
-                                            <td>
-                                                <p>1</p>
-                                            </td>
-                                            <td class="status">
-                                                <div class="process">Processing</div>
-                                            </td>
-                                            <td class="amount">
-                                                <p>$15.22</p>
+                                            <div>
+                                                <a href="#" class="btn-fill-orange">Save Details</a>
                                             </div>
-                                            <td>
-                                                <a class="eye-icon" href="#"><i class="ri-eye-line"></i></a>
-                                            </td>
-                                        </tr>
-                                        <!-- order single item start -->
-                                        <!-- order single item start -->
-                                        <tr>
-                                            <td>
-                                                <img src="image/catagory-meet.jpg" alt="s">
-                                            </td>
-                                            <td>
-                                                <a href="product.html" class="md-title item-name">Meet and fish item</a>
-                                                <p>1000g</p>
-                                            </td>
-                                            <td >
-                                                <a class="order-td" href="#">#33898</a>
-                                            </td>
-                                            <td>
-                                                <p>Feb 5, 2024</p>
-                                            </td>
-                                            <td>
-                                                <p>1</p>
-                                            </td>
-                                            <td class="status">
-                                                <div class="process">Processing</div>
-                                            </td>
-                                            <td class="amount">
-                                                <p>$12.42</p>
+                                        </div>
+                                    </div>
+                                    <!-- setting right single item  end-->
+                                    
+                                    <!-- setting right single item -->
+                                    <div class="setting-right-item setting-item-password flex-column-20">
+                                        <div>
+                                            <h4 class="lg-title">Password</h4>
+                                        </div>
+                                        <div class="flex-column-20">
+                                            <div class="flex-start-20">
+                                                <div class="flex-column-10">
+                                                    <label for="newPass">New Password</label>
+                                                    <input type="password" id="newPass" placeholder="*******">
+                                                </div>
+                                                <div class="flex-column-10">
+                                                    <label for="currentPass">Current Password</label>
+                                                    <input type="password" id="currentPass" placeholder="********">
+                                                </div>
                                             </div>
-                                            <td>
-                                                <a class="eye-icon" href="#"><i class="ri-eye-line"></i></a>
-                                            </td>
-                                        </tr>
-                                        <!-- order single item start -->
-                                        <!-- order single item start -->
-                                        <tr>
-                                            <td>
-                                                <img src="image/catagory-ata-rice.jpeg" alt="s">
-                                            </td>
-                                            <td>
-                                                <a href="product.html" class="md-title item-name">Haldiram's Nagpur Aloo Bhujia</a>
-                                                <p>355g</p>
-                                            </td>
-                                            <td >
-                                                <a class="order-td" href="#">#14899</a>
-                                            </td>
-                                            <td>
-                                                <p>Jan 5, 2024</p>
-                                            </td>
-                                            <td>
-                                                <p>2</p>
-                                            </td>
-                                            <td class="status">
-                                                <div class="complete">Done</div>
-                                            </td>
-                                            <td class="amount">
-                                                <p>$45.00</p>
+                                            <div>
+                                                <p>Can’t remember your current password?</p>
+                                                <div>
+                                                    <a class="reset-password" href="#">Reset your Password</a>
+                                                </div>
                                             </div>
-                                            <td>
-                                                <a class="eye-icon" href="#"><i class="ri-eye-line"></i></a>
-                                            </td>
-                                        </tr>
-                                        <!-- order single item start -->
-                                    </tbody>
-                                </table>
+                                            <div>
+                                                <a href="#" class="btn-fill-orange">Save Password</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- setting right single item  end-->
+                                    <!-- setting right single item -->
+                                    <div class="setting-right-item delete-account flex-column-20">
+                                        <div>
+                                            <h4 class="lg-title">Delete Account</h4>
+                                        </div>
+                                        <div class="flex-column-15">
+                                            <div class="flex-column-10">
+                                                <P>Would you like to delete your account?</P>
+                                                <P>This account contain 12 orders, Deleting your account will remove all the order details associated with it.</P>
+                                            </div>
+                                            <div>
+                                                <a href="#" class="btn-outline">I Want to delete my account</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- setting right single item  end-->
+                                </div>
                             </div>
                         </div>
                     </div>

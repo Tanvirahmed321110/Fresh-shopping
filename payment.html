@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/order-setting-other.css">
     <link rel="stylesheet" href="css/footer.css">
-    <title>Blog_Page</title>
+    <title>Payment_Page</title>
 </head>
 <body>
     <header>
@@ -472,7 +472,7 @@
                         <!-- ------ order sidebar ------ -->
                         <div class="order-sidebar">
                             <ul class="flex-column-10">
-                                <li class="order-sidebar-item active">
+                                <li class="order-sidebar-item">
                                     <a href="order.html" class="flex-start-10">
                                         <span><i class="ri-shopping-bag-3-line"></i></span>
                                         <span> Your Order</span>
@@ -484,13 +484,13 @@
                                         <span> Setting</span>
                                     </a>
                                 </li>
-                                <li class="order-sidebar-item">
+                                <li class="order-sidebar-item ">
                                     <a href="address.html" class="flex-start-10">
                                         <span><i class="ri-map-pin-line"></i></span>
                                         <span>Address</span>
                                     </a>
                                 </li>
-                                <li class="order-sidebar-item">
+                                <li class="order-sidebar-item active">
                                     <a href="payment.html" class="flex-start-10">
                                         <span><i class="ri-bank-card-line"></i></span>
                                         <span> Payment Method</span>
@@ -512,197 +512,107 @@
                                 </li>
                             </ul>
                         </div>
-                        <!-- -----order items----- -->
-                        <div class="order-items-area">
-                            <div class="orders-items-inner">
-                                <table>
-                                    <thead>
-                                        <th></th>
-                                        <th>Product</th>
-                                        <th>Order</th>
-                                        <th>Date</th>
-                                        <th>Items</th>
-                                        <th>Status</th>
-                                        <th>Amount</th>
-                                        <th>-</th>
-                                    </thead>
-                                    <tbody>
-                                        <!-- order single item start -->
-                                        <tr>
-                                            <td>
-                                                <img src="image/catagory-instand.jpeg" alt="s">
-                                            </td>
-                                            <td>
-                                                <a href="product.html" class="md-title item-name">Instand food Guss</a>
-                                                <p>355g</p>
-                                            </td>
-                                            <td >
-                                                <a class="order-td" href="#">#22899</a>
-                                            </td>
-                                            <td>
-                                                <p>Feb 15, 2023</p>
-                                            </td>
-                                            <td>
-                                                <p>1</p>
-                                            </td>
-                                            <td class="status">
-                                                <div class="process">Processing</div>
-                                            </td>
-                                            <td class="amount">
-                                                <p>$22.99</p>
+                        
+                        
+                        <!-- -----address items----- -->
+                        <div class="order-items-area setting-items">
+                            <div class="orders-items-inner flex-column-20">
+                                <div class="address-area-header w-100">
+                                    <div class="flex-between w-100">
+                                        <h2 class="xxl-title">Payment Methods</h2>
+                                        <div><a href="#" class="btn-outline outline-sub-btn">Add Payment</a></div>
+                                    </div>
+                                </div>
+                                
+                                <!-- ---- payment right items ---- -->
+                                <div class="payment-items flex-start-20 w-100">
+                                    <ul class="w-100">
+                                        <!-- single cart item start -->
+                                        <li class="cart-item flex-between">
+                                            <div class="flex-start-10">
+                                                <div class="cart-image">
+                                                    <img src="image/visa.svg" alt="">
+                                                </div>
+                                                <div>
+                                                    <p>**** 1232</p>
+                                                    <div><small>Expires in 10/2024</small></div>
+                                                </div>
                                             </div>
-                                            <td>
-                                                <a class="eye-icon" href="#"><i class="ri-eye-line"></i></a>
-                                            </td>
-                                        </tr>
-                                        <!-- order single item start -->
-                                        <!-- order single item start -->
-                                        <tr>
-                                            <td>
-                                                <img src="image/catagory-bekary.jpeg" alt="s">
-                                            </td>
-                                            <td>
-                                                <a href="product.html" class="md-title item-name">Biscute pakage 1000g and 2pcs</a>
-                                                <p>355g</p>
-                                            </td>
-                                            <td >
-                                                <a class="order-td" href="#">#14888</a>
-                                            </td>
-                                            <td>
-                                                <p>Jan 5, 2024</p>
-                                            </td>
-                                            <td>
-                                                <p>1</p>
-                                            </td>
-                                            <td class="status">
-                                                <div class="process">Processing</div>
-                                            </td>
-                                            <td class="amount">
-                                                <p>$15.22</p>
+                                            <div class="remove-cart">
+                                                <a href="#" class="btn-outline disable-btn">Remove</a>
                                             </div>
-                                            <td>
-                                                <a class="eye-icon" href="#"><i class="ri-eye-line"></i></a>
-                                            </td>
-                                        </tr>
-                                        <!-- order single item start -->
-                                        <!-- order single item start -->
-                                        <tr>
-                                            <td>
-                                                <img src="image/catagory-tea.jpeg" alt="s">
-                                            </td>
-                                            <td>
-                                                <a href="product.html" class="md-title item-name">Haldiram's Nagpur Aloo Bhujia</a>
-                                                <p>355g</p>
-                                            </td>
-                                            <td >
-                                                <a class="order-td" href="#">#14899</a>
-                                            </td>
-                                            <td>
-                                                <p>Dec 5, 2023</p>
-                                            </td>
-                                            <td>
-                                                <p>1</p>
-                                            </td>
-                                            <td class="status">
-                                                <div class="complete">Complete</div>
-                                            </td>
-                                            <td class="amount">
-                                                <p>$15.22</p>
+                                        </li>
+                                        <!-- single cart item end -->
+                                        <!-- single cart item start -->
+                                        <li class="cart-item flex-between">
+                                            <div class="flex-start-10">
+                                                <div class="cart-image">
+                                                    <img src="image/bikash.png" alt="">
+                                                </div>
+                                                <div>
+                                                    <p>Mastercard ending in 1234</p>
+                                                    <div><small>Expires in 03/2026</small></div>
+                                                </div>
                                             </div>
-                                            <td>
-                                                <a class="eye-icon" href="#"><i class="ri-eye-line"></i></a>
-                                            </td>
-                                        </tr>
-                                        <!-- order single item start -->
-                                        <!-- order single item start -->
-                                        <tr>
-                                            <td>
-                                                <img src="image/catagory-petcare.jpeg" alt="s">
-                                            </td>
-                                            <td>
-                                                <a href="product.html" class="md-title item-name">Haldiram's Nagpur Aloo Bhujia</a>
-                                                <p>355g</p>
-                                            </td>
-                                            <td >
-                                                <a class="order-td" href="#">#14899</a>
-                                            </td>
-                                            <td>
-                                                <p>March 5, 2023</p>
-                                            </td>
-                                            <td>
-                                                <p>1</p>
-                                            </td>
-                                            <td class="status">
-                                                <div class="process">Processing</div>
-                                            </td>
-                                            <td class="amount">
-                                                <p>$15.22</p>
+                                            <div class="remove-cart">
+                                                <a href="#" class="btn-outline">Remove</a>
                                             </div>
-                                            <td>
-                                                <a class="eye-icon" href="#"><i class="ri-eye-line"></i></a>
-                                            </td>
-                                        </tr>
-                                        <!-- order single item start -->
-                                        <!-- order single item start -->
-                                        <tr>
-                                            <td>
-                                                <img src="image/catagory-meet.jpg" alt="s">
-                                            </td>
-                                            <td>
-                                                <a href="product.html" class="md-title item-name">Meet and fish item</a>
-                                                <p>1000g</p>
-                                            </td>
-                                            <td >
-                                                <a class="order-td" href="#">#33898</a>
-                                            </td>
-                                            <td>
-                                                <p>Feb 5, 2024</p>
-                                            </td>
-                                            <td>
-                                                <p>1</p>
-                                            </td>
-                                            <td class="status">
-                                                <div class="process">Processing</div>
-                                            </td>
-                                            <td class="amount">
-                                                <p>$12.42</p>
+                                        </li>
+                                        <!-- single cart item end -->
+                                        <!-- single cart item start -->
+                                        <li class="cart-item flex-between">
+                                            <div class="flex-start-10">
+                                                <div class="cart-image">
+                                                    <img src="image/bikash.png" alt="">
+                                                </div>
+                                                <div>
+                                                    <p>Mastercard ending in 1234</p>
+                                                    <div><small>Expires in 03/2026</small></div>
+                                                </div>
                                             </div>
-                                            <td>
-                                                <a class="eye-icon" href="#"><i class="ri-eye-line"></i></a>
-                                            </td>
-                                        </tr>
-                                        <!-- order single item start -->
-                                        <!-- order single item start -->
-                                        <tr>
-                                            <td>
-                                                <img src="image/catagory-ata-rice.jpeg" alt="s">
-                                            </td>
-                                            <td>
-                                                <a href="product.html" class="md-title item-name">Haldiram's Nagpur Aloo Bhujia</a>
-                                                <p>355g</p>
-                                            </td>
-                                            <td >
-                                                <a class="order-td" href="#">#14899</a>
-                                            </td>
-                                            <td>
-                                                <p>Jan 5, 2024</p>
-                                            </td>
-                                            <td>
-                                                <p>2</p>
-                                            </td>
-                                            <td class="status">
-                                                <div class="complete">Done</div>
-                                            </td>
-                                            <td class="amount">
-                                                <p>$45.00</p>
+                                            <div class="remove-cart">
+                                                <a href="#" class="btn-outline">Remove</a>
                                             </div>
-                                            <td>
-                                                <a class="eye-icon" href="#"><i class="ri-eye-line"></i></a>
-                                            </td>
-                                        </tr>
-                                        <!-- order single item start -->
-                                    </tbody>
-                                </table>
+                                        </li>
+                                        <!-- single cart item end -->
+                                        <!-- single cart item start -->
+                                        <li class="cart-item flex-between">
+                                            <div class="flex-start-10">
+                                                <div class="cart-image">
+                                                    <img src="image/mastercart.svg" alt="">
+                                                </div>
+                                                <div>
+                                                    <p>Discover ending in 1234</p>
+                                                    <div>
+                                                        <small>Expires in 07/2020 
+                                                            <span class="expair">This card is expired.</span>
+                                                        </small>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="remove-cart">
+                                                <a href="#" class="btn-outline">Remove</a>
+                                            </div>
+                                        </li>
+                                        <!-- single cart item end -->
+                                        <!-- single cart item start -->
+                                        <li class="cart-item flex-between">
+                                            <div class="flex-start-10">
+                                                <div class="cart-image">
+                                                    <img src="image/bikash.png" alt="">
+                                                </div>
+                                                <div>
+                                                    <p>**** 1232</p>
+                                                    <div><small>Expires in 10/2024</small></div>
+                                                </div>
+                                            </div>
+                                            <div class="remove-cart">
+                                                <a href="#" class="btn-outline">Remove</a>
+                                            </div>
+                                        </li>
+                                        <!-- single cart item end -->
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -859,3 +769,13 @@
     <script src="js/app.js"></script>
 </body>
 </html>
+
+
+<!-- 
+
+<div class="form-check form-switch">
+    <label class="switch">
+        <input type="checkbox" checked>
+        <span class="slider round"></span>
+      </label>
+ </div> -->
