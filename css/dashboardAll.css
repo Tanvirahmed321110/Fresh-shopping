@@ -1,0 +1,122 @@
+/*========== main dashboard style here ============ */
+.dashboard-container{
+    width: 98%;
+    padding: 0 0px;
+    margin: 0 auto;
+}
+
+/* sidebar */
+.dashboard .sidebar{
+    max-width: 250px;
+    /* width: 100%; */
+    min-width: 250px;
+    border-right: 2px dotted var(--border-color);
+    height: 100dvh;
+    background-color: var(--white-color);
+    position: relative;
+}
+
+.sidebar-area{
+    height: 100dvh;
+}
+/* sidebar-header */
+.sidebar-header{
+    padding: 15px 0;
+    background-color: rgb(233, 231, 231);
+    width: 100%;
+}
+.sidebar-header a i{
+    color: var(--link-color);
+}
+
+
+/* sidebar-content */
+.sidebar-content{
+
+}
+
+.sidebar-content-area{
+    padding-right: 15px;
+}
+.sidebar-content-area.flex-column-20{
+    gap: 40px;
+}
+
+
+.sidebar-item-home{
+    padding: 12px 15px;
+    width: 100%;
+    background-color:#F1F4F3;
+    border-radius: var(--radius-md);
+}
+.sidebar-item-home a i{
+    font-size: var(--lg-font);
+}
+.sidebar-item-home a{
+    font-size: var(--sm-font);
+    font-weight: 500;
+}
+
+
+
+
+/* ============= store managements items ============== */
+.store-items .store-item{
+    background-color: transparent;
+    transition: .2s;
+}
+.store-items .store-item:hover{
+    background-color: var(--white-medium);
+}
+.store-items .store-item a{
+    color: var(--gray-color);
+}
+
+
+
+/* order item dropdown */
+.order-item{
+    position: relative;
+}
+
+.order-dropdown{
+    /* position: absolute; */
+    width:100%;
+    top: 45px;
+    left: 0;
+    margin-top: 5px;
+}
+
+.order-dropdown ul{
+    padding: 0 20px;
+    width: 100%;
+}
+
+.order-dropdown ul li{
+    list-style: disc;
+    padding: 10px;
+    width: 100%;
+}
+li{
+    list-style: none;
+}
+.order-dropdown ul li:hover{
+    background-color: var(--white-color);
+    border-radius: var(--radius-md);    
+}
+
+
+
+
+
+
+
+
+
+
+/* dashboard-data */
+.dashboard-data{
+    flex-grow: 1;
+    height: 200px;
+    background-color: orange;
+}

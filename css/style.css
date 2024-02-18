@@ -146,6 +146,10 @@ img{
     text-align: center;
     margin: 0 auto;
 }
+.text-left{
+    text-align: left;
+    margin-right: auto;
+}
 .text-right{
     text-align: right;
     margin-left: auto;
