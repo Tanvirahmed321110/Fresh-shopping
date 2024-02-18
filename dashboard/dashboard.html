@@ -8,227 +8,332 @@
     <link rel="stylesheet" href="../css/dashboardAll.css">
 </head>
 <body>
-    <main>
-        <section>
-            <div class="dashboard-container">
-                <div class="dashboard d-flex-20">
-                    <!-- sidebar -->
-                    <div class="sidebar">
-                        <div class="sidebar-area flex-column-20">
-                            <!-- sidebar header -->
-                            <div class="sidebar-header">
-                                <a href="index.html" class="flex-start-5">
-                                    <div class="icon ">
-                                        <span class="xxl-title"><i class="fa-solid fa-cart-flatbed-suitcase"></i></span>
+    <header>
+        <div class="header-wrapper flex-between">
+            <div>
+                <input type="text" placeholder="Search">
+            </div>
+            <div class="header-profile-notification d-flex-25">
+                <div class="">
+                    <div class="notification">
+                        <i class="ri-notification-3-line"></i>
+                        <div class="base">3</div>
+                    </div>
+                </div>
+                <div class="profile">
+                    <img src="../image/profile.avif" alt="">
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <!-- ============ sidebar =========== -->
+    <div class="sidebar">
+        <div class="sidebar-wrapper">
+            <!-- sidebar header -->
+            <div class="sidebar-header">
+                <div>
+                    <a href="index.html" class="flex-start-5">
+                        <div class="icon">
+                            <span class="xxl-title"><i class="fa-solid fa-cart-flatbed-suitcase"></i></span>
+                        </div>
+                        <div>
+                            <h2 class="xxl-title">FreshShop</h2>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!-- sidebar content -->
+            <div class="sidebar-content">
+                <div class="sidebar-content-wrapper">
+                    <div class="sidebar-items flex-column-25">
+                        <!-- sidebar item -->
+                        <div class="sidebar-item w-100">
+                            <div class="dashboard-home sidebar-inner-item">
+                                <a class="flex-start-15" href="../dashboard/dashboard.html">
+                                    <div>
+                                        <span><i class="ri-home-line"></i></span>
                                     </div>
                                     <div>
-                                        <h2 class="xxl-title">FreshShop</h2>
+                                        <div class="sm-title">Dashboard</div>
                                     </div>
                                 </a>
                             </div>
-                            
-                            
-                            <!--  -----------sidebar content----------  -->
-                            <div class="sidebar-content w-100">
-                                <div class="sidebar-content-area flex-column-20">
-                                    <!-- sidebar item -->
-                                    <div class="sidebar-content-home sidebar-item w-100">
-                                        <div class="sidebar-item-home w-100">
-                                            <a class="flex-start-20" href="./dashboard.html"> 
-                                                <div>
-                                                    <span><i class="ri-home-line"></i></span>
-                                                </div>
-                                                <div>Dashboard</div>
-                                            </a>
+                        </div>
+                        <!-- sidebar item end-->
+                        <!-- sidebar item start-->
+                        
+                    
+                        
+                        <!-- store items start -->
+                        <div class="sidebar-item flex-column-15 w-100 ">
+                            <div class="sidebar-item-header">
+                                <h4 class="sm-title">Store Managements</h4>
+                            </div>
+                            <div class="store-items sidebar-inner-items flex-column-5 w-100">
+                                <!-- sidebar item inner start -->
+                                <div class="dashboard-home sidebar-inner-item w-100">
+                                    <a class="flex-start-15" href="../dashboard/dashboard.html">
+                                        <div>
+                                            <span><i class="ri-shopping-cart-line"></i></span>
                                         </div>
-                                    </div>
-                                    
-                                    <!-- ---------sidebar-item managements start---------- -->
-                                    <div class="sidebar-item w-100">
-                                        <div class="sidebar-store-managements flex-column-10">
-                                            <div class="sidebar-item-header">
-                                                <h4 class="sm-title">Store Managements</h4>
-                                            </div>
-                                            <!-- sidebar store managements items -->
-                                            <ul class="store-items w-100 flex-column-5">
-                                                <!-- store single item start -->
-                                                <li class="store-item sidebar-item-home w-100">
-                                                    <a class="flex-start-15" href="./dashboard.html"> 
-                                                        <div>
-                                                            <span><i class="ri-shopping-cart-line"></i></span>
-                                                        </div>
-                                                        <div>Products</div>
-                                                    </a>
-                                                </li>
-                                                <!-- store single item end -->
-                                                <!-- store single item start -->
-                                                <li class="store-item sidebar-item-home w-100">
-                                                    <a class="flex-start-15" href="./dashboard.html"> 
-                                                        <div>
-                                                            <span><i class="ri-list-check"></i></span>
-                                                        </div>
-                                                        <div>Catagoris</div>
-                                                    </a>
-                                                </li>
-                                                <!-- store single item end -->
-                                                <!-- store single item start -->
-                                                <li class="order-item store-item sidebar-item-home w-100">
-                                                    <a class="w-100" href="./dashboard.html"> 
-                                                        <div class="flex-between w-100">
-                                                            <div class="flex-start-15">
-                                                                <div>
-                                                                    <span><i class="ri-shopping-bag-line"></i></span>
-                                                                </div>
-                                                                <div>Orders</div>
-                                                            </div>
-                                                            <div>
-                                                                <span><i class="ri-arrow-down-s-line"></i></span>
-                                                            </div>
-                                                        </div>
-                                                    </a>
-                                                    
-                                                    <!-- order item dropdown -->
-                                                    <div class="order-dropdown">
-                                                        <ul class="flex-column-5">
-                                                            <li><a href="">List</a></li>
-                                                            <li><a href="#">Single</a></li>
-                                                        </ul>
-                                                    </div>
-                                                </li>
-                                                <!-- store single item end -->
-                                                <!-- store single item start -->
-                                                <li class="store-item sidebar-item-home w-100">
-                                                    <a class="flex-start-15" href="./dashboard.html"> 
-                                                        <div>
-                                                            <span><i class="ri-store-line"></i></span>
-                                                        </div>
-                                                        <div>Seller / Vendors</div>
-                                                    </a>
-                                                </li>
-                                                <!-- store single item end -->
-                                                <!-- store single item start -->
-                                                <li class="store-item sidebar-item-home w-100">
-                                                    <a class="flex-start-15" href="./dashboard.html"> 
-                                                        <div>
-                                                            <span><i class="ri-group-line"></i></span>
-                                                        </div>
-                                                        <div>Catagoris</div>
-                                                    </a>
-                                                </li>
-                                                <!-- store single item end -->
-                                                <!-- store single item start -->
-                                                <li class="store-item sidebar-item-home w-100">
-                                                    <a class="flex-start-15" href="./dashboard.html"> 
-                                                        <div>
-                                                            <span><i class="ri-star-line"></i></span>
-                                                        </div>
-                                                        <div>Reviews</div>
-                                                    </a>
-                                                </li>
-                                                <!-- store single item end -->
-                                                <li class="store-item sidebar-item-home w-100">
-                                                    <a class="flex-between" href="./dashboard.html"> 
-                                                        <div class="flex-start-15">
-                                                            <div>
-                                                                <span><i class="ri-corner-left-down-line"></i></span>
-                                                            </div>
-                                                            <div>Menu Level</div>
-                                                        </div>
-                                                        <div>
-                                                            <span><i class="ri-arrow-down-s-line"></i></span>
-                                                        </div>
-                                                    </a>
-                                                </li>
-                                                <!-- store single item end -->
-                                            </ul>
+                                        <div>
+                                            <div class="sm-title">Products</div>
                                         </div>
-                                    </div>
-                                    <!-- sidebar-item managements end -->
-                                    
-                                    
-                                    <!-- support setting -->
-                                    <div class="sidebar-item flex-column-20 w-100">
-                                        <div class="site-setting">
-                                            <div class="sidebar-item-header">
-                                                <h4 class="sm-title">Support</h4>
-                                            </div>
-                                        </div>
-                                        <!-- support setting items -->
-                                        <div class="support store-items flex-column-5 w-100">
-                                            <!-- store single item start -->
-                                            <li class="store-item sidebar-item-home w-100">
-                                                <a class="flex-start-15" href="./dashboard.html"> 
-                                                    <div>
-                                                        <span><i class="ri-customer-service-line"></i></span>
-                                                    </div>
-                                                    <div>Support Ticket</div>
-                                                </a>
-                                            </li>
-                                            <!-- store single item end -->
-                                            
-                                            <!-- store single item start -->
-                                            <li class="store-item sidebar-item-home w-100">
-                                                <a class="flex-start-15" href="./dashboard.html"> 
-                                                    <div>
-                                                        <span><i class="ri-question-line"></i></span>
-                                                    </div>
-                                                    <div>Help Center</div>
-                                                </a>
-                                            </li>
-                                            <!-- store single item end -->
-                                        </div>
-                                    </div>
-                                    
-                                    
-                                    <!-- out app store -->
-                                    <div class="sidebar-item w-100">
-                                        <div class="our-app-store flex-column-20">
-                                            <div class="sidebar-item-header">
-                                                <h4 class="sm-title">Our App</h4>
-                                            </div>
-                                            <div class="our-app-store-items w-100 ">
-                                                <div class="our-app-store-item ">
-                                                    <ul class="store-items flex-column-5">
-                                                        <!-- store single item start -->
-                                                        <li class="store-item sidebar-item-home w-100">
-                                                            <a class="flex-start-15" href="./dashboard.html"> 
-                                                                <div>
-                                                                    <span><i class="ri-apple-line"></i></span>
-                                                                </div>
-                                                                <div>Apple Store</div>
-                                                            </a>
-                                                        </li>
-                                                        <!-- store single item end -->
-                                                        <!-- store single item start -->
-                                                        <li class="store-item sidebar-item-home w-100">
-                                                            <a class="flex-start-15" href="./dashboard.html"> 
-                                                                <div>
-                                                                    <span><i class="ri-google-play-fill"></i></span>
-                                                                </div>
-                                                                <div>Google Store</div>
-                                                            </a>
-                                                        </li>
-                                                        <!-- store single item end -->
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- out app store -->
+                                    </a>
                                 </div>
+                                <!-- sidebar item inner start -->
+                                <!-- sidebar item inner start -->
+                                <div class="dashboard-home sidebar-inner-item w-100">
+                                    <a class="flex-start-15" href="../dashboard/dashboard.html">
+                                        <div>
+                                            <span><i class="ri-list-check"></i></span>
+                                        </div>
+                                        <div>
+                                            <div class="sm-title">Catagoris</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!-- sidebar item inner start -->
+                                <!-- sidebar item inner start -->
+                                <div class="dashboard-home sidebar-inner-item w-100">
+                                    <a class="flex-start-15" href="../dashboard/dashboard.html">
+                                        <div>
+                                            <span><i class="ri-shopping-bag-2-line"></i></span>
+                                        </div>
+                                        <div>
+                                            <div class="sm-title">Orders</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!-- sidebar item inner start -->
+                                <!-- sidebar item inner start -->
+                                <div class="dashboard-home sidebar-inner-item w-100">
+                                    <a class="flex-start-15" href="../dashboard/dashboard.html">
+                                        <div>
+                                            <span><i class="ri-store-2-line"></i></span>
+                                        </div>
+                                        <div>
+                                            <div class="sm-title">Store</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!-- sidebar item inner start -->
+                                <!-- sidebar item inner start -->
+                                <div class="dashboard-home sidebar-inner-item w-100">
+                                    <a class="flex-start-15" href="../dashboard/dashboard.html">
+                                        <div>
+                                            <span><i class="ri-group-line"></i></span>
+                                        </div>
+                                        <div>
+                                            <div class="sm-title">Customers</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!-- sidebar item inner start -->
+                                <!-- sidebar item inner start -->
+                                <div class="dashboard-home sidebar-inner-item w-100">
+                                    <a class="flex-start-15" href="../dashboard/dashboard.html">
+                                        <div>
+                                            <span><i class="ri-star-line"></i></span>
+                                        </div>
+                                        <div>
+                                            <div class="sm-title">Reviews</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!-- sidebar item inner start -->
+                                <!-- sidebar item inner start -->
+                                <div class="dashboard-home sidebar-inner-item w-100">
+                                    <a class="flex-start-15" href="../dashboard/dashboard.html">
+                                        <div>
+                                            <span><i class="ri-corner-left-down-line"></i></span>
+                                        </div>
+                                        <div>
+                                            <div class="sm-title">Menu Level </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!-- sidebar item inner start -->
                             </div>
                         </div>
-                    </div>
-                    
-                    <!-- -------------dashboard data----------- -->
-                    <div class="dashboard-data">
-                        <div class="dashboard-data-are">
-                            .
+                        <!-- store items end -->
+                        
+                        <!-- support items -->
+                        <div class="sidebar-item flex-column-15 w-100">
+                            <div class="sidebar-item-header">
+                                <h4 class="sm-title">Store Managements</h4>
+                            </div>
+                            <div class="suport-items sidebar-inner-items flex-column-5 w-100">
+                                <!-- sidebar item inner start -->
+                                <div class="dashboard-home sidebar-inner-item w-100">
+                                    <a class="flex-start-15" href="../dashboard/dashboard.html">
+                                        <div>
+                                            <span><i class="ri-question-line"></i></span>
+                                        </div>
+                                        <div>
+                                            <div class="sm-title">Help Center </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!-- sidebar item inner start -->
+                                <!-- sidebar item inner start -->
+                                <div class="dashboard-home sidebar-inner-item w-100">
+                                    <a class="flex-start-15" href="../dashboard/dashboard.html">
+                                        <div>
+                                            <span><i class="ri-customer-service-line"></i></span>
+                                        </div>
+                                        <div>
+                                            <div class="sm-title">Support Ticket</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!-- sidebar item inner start -->
+                                <!-- sidebar item inner start -->
+                                <div class="dashboard-home sidebar-inner-item w-100">
+                                    <a class="flex-start-15" href="../dashboard/dashboard.html">
+                                        <div>
+                                            <span><i class="ri-settings-2-line"></i></span>
+                                        </div>
+                                        <div>
+                                            <div class="sm-title">Store Setting </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!-- sidebar item inner start -->
+                            </div>
                         </div>
+                        <!-- support items end-->
+                        
+                        <!-- our app -->
+                        <div class="sidebar-item flex-column-15 w-100">
+                            <div class="sidebar-item-header">
+                                <h4 class="sm-title">Our App</h4>
+                            </div>
+                            <div class="sidebar-inner-items w-100">
+                                <!-- sidebar item inner start -->
+                                <div class="dashboard-home sidebar-inner-item w-100">
+                                    <a class="flex-start-15" href="../dashboard/dashboard.html">
+                                        <div>
+                                            <span><i class="ri-apple-line"></i></span>
+                                        </div>
+                                        <div>
+                                            <div class="sm-title">Apple Store </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!-- sidebar item inner start -->
+                                <!-- sidebar item inner start -->
+                                <div class="dashboard-home sidebar-inner-item w-100">
+                                    <a class="flex-start-15" href="../dashboard/dashboard.html">
+                                        <div>
+                                            <span><i class="ri-google-play-fill"></i></span>
+                                        </div>
+                                        <div>
+                                            <div class="sm-title">Goole Store </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!-- sidebar item inner start -->
+                            </div>
+                        </div>
+                        <!-- our app end-->
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </div>
+    
+    <!-- ============ dashboard content =========== -->
+    <main>
+        <div class="dashboard">
+            <div class="dashboard-wrapper">
+                <div class="dashboard-area flex-column-25">
+                    <!-- banner -->
+                    <section class="w-100">
+                        <div class="banner ">
+                            <div class="banner-wrapper ">
+                                <div class="banner-content flex-column-15 ">
+                                    <h2 class="xxxl-title">Welcome back! FreshCart</h2>
+                                    <p>FreshShop is simple & clean design for developer and designer</p>
+                                    <a class="btn-fill-orange" href="#">Create Product</a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- banner end -->
+                    
+                    <!-- Earnings Section Start -->
+                    <section class="w-100">
+                        <div class="earnings-wraper">
+                            <div class="earnings-area flex-column-25">
+                                <!-- earnings top start -->
+                                <div class="earnings-top w-100">
+                                    <div class="earnings-top-items col-3">
+                                         <!-- earnings top item start -->
+                                        <div class="earnings-top-item flex-column-25">
+                                            <div class="flex-between w-100">
+                                                <h3 class="lg-title">Earnings</h3>
+                                                <div class="icon-wraper d-flex-5">
+                                                    <span>$</span>
+                                                </div>
+                                            </div>
+                                            <div class="flex-column-5">
+                                                <div class="xxl-title">$93,18.78</div>
+                                                <div class="sm-title">Monthly revenue</div>
+                                            </div>
+                                        </div>  <!-- earnings top item start -->    
+                                        
+                                         <!-- earnings top item start -->
+                                        <div class="earnings-top-item flex-column-25">
+                                            <div class="flex-between w-100">
+                                                <h3 class="lg-title">Orders</h3>
+                                                <div class="icon-wraper d-flex-5">
+                                                    <span><i class="ri-shopping-cart-line"></i></span>
+                                                </div>
+                                            </div>
+                                            <div class="flex-column-5">
+                                                <div class="xxl-title">42,33</div>
+                                                <div class="sm-title">35+ New Sales</div>
+                                            </div>
+                                        </div>  <!-- earnings top item start -->    
+                                        
+                                         <!-- earnings top item start -->
+                                        <div class="earnings-top-item flex-column-25">
+                                            <div class="flex-between w-100">
+                                                <h3 class="lg-title">Customer</h3>
+                                                <div class="icon-wraper d-flex-5">
+                                                    <span><i class="ri-group-line"></i></span>
+                                                </div>
+                                            </div>
+                                            <div class="flex-column-5">
+                                                <div class="xxl-title">$9,43</div>
+                                                <div class="sm-title">3+ new in 2 days</div>
+                                            </div>
+                                        </div>  <!-- earnings top item start -->    
+                                    </div>
+                                </div> <!-- earnings top end -->
+                                
+                                <!-- earnings medile start -->
+                                <div class="earings-medile w-100">
+                                    <div class="earings-medile-items d-flex-25">
+                                        <!-- chart -->
+                                        <div class="chart">
+                                            
+                                        </div>
+                                        <!-- progress bar -->
+                                        <div class="progress">
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- earnings medile end -->
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
     </main>
 </body>
 </html>
