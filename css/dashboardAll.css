@@ -61,6 +61,8 @@
     box-shadow: var(--box-shadow);
     border-radius: var(--radius-lg);
     overflow: hidden;
+    display: none;
+    animation: toBottom ease-in-out .2s;
 }
 .notification-dropdown-header{
     padding: 25px;
@@ -71,6 +73,9 @@
 
 
 /* notification-body-item */
+.notification-dropdown.active{
+    display: block;
+}
 .notification-body-items{
     height: 250px;
     overflow-y: auto;
@@ -113,7 +118,11 @@
     border-radius: var(--radius-md);
     width: 200px;
     background-color: var(--white-color);
-    /* overflow: hidden; */
+    display: none;
+    animation: toBottom .2s linear;
+}
+.profile-dropdown.active{
+    display: block;
 }
 
 .profile-dropdown-header{
@@ -227,12 +236,57 @@
 }
 
 
+/* order-droopdown */
+.order-droopdown{
+    visibility: hidden;
+    transition: .2s linear;
+}
+.order-droopdown.active{
+    visibility: visible;
+}
+.order-droopdown.flex-column-10{
+    justify-content: flex-start;
+    text-align: left;
+}
+.order-droopdown {
+    padding-left: 15px;
+}
+.order-droopdown .circle{
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color:var(--link-color);
+    margin-left: 5px;
+}
+.order-droopdown-item{
+    padding: 7px;
+    width:95%;
+    border-radius: var(--radius-sm);
+}
+.order-droopdown-item:hover{
+    background-color: var(--white-medium);
+}
+.order-droopdown-item a.flex-start-10{
+    align-items: center;
+}
 
+.menu-level-dropdown{
+    display: none;
+    animation: toBottom .1s linear;
+}
+.menu-level-dropdown.active{
+    display: flex;
+}
 
-
-
-
-
+/*  arrow indicator*/
+.arrow_indicator span{
+    transform: rotate(0deg);
+    display: inline-flex;
+    transition: .2s ease-in;
+}
+.arrow_indicator span.active{
+    transform: rotate(180deg);
+}
 
 /* dashboard-wrapper */
 .dashboard-wrapper{
@@ -374,6 +428,8 @@
 .recent-order-area table tr:hover{
     background-color: var(--white-medium);
 }
+
+
 
 .recent-order-area .pending,.recent-order-area .processing,.recent-order-area .shipped{
     padding: 2px 5px;

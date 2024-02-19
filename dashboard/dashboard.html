@@ -21,7 +21,7 @@
                         <div class="base">3</div>
                     </div>
                     <!-- notification dropdown -->
-                    <div class="notification-dropdown">
+                    <div class="notification-dropdown" id="notification-dropdown">
                         <div class="notification-dropdown-header flex-between">
                             <div class="flex-column-5">
                                 <h4 class="lg-title">Notifications</h4>
@@ -32,7 +32,7 @@
                             </div>
                         </div>
                         <!-- notification dropdown body -->
-                        <div class="notification-dropdown-body">
+                        <div class="notification-dropdown-body" >
                             <div class="notification-body-items flex-column-5" >
                                 <!-- notification body item start -->
                                 <div class="notification-body-item d-flex-15 w-100">
@@ -92,7 +92,7 @@
                         <img  src="../image/profile.avif" alt="">
                     </div>
                     <!-- profile dropdown -->
-                    <div class="profile-dropdown">
+                    <div class="profile-dropdown" id="profile-dropdown">
                         <!-- profile dropdown header -->
                         <div class="profile-dropdown-header flex-column-5">
                             <div class="lg-title">FreshShop Admin</div>
@@ -120,10 +120,6 @@
             </div>
         </div>
     </header>
-    
-    
-    
-    
     
     
     
@@ -198,15 +194,37 @@
                                 </div>
                                 <!-- sidebar item inner start -->
                                 <!-- sidebar item inner start -->
-                                <div class="dashboard-home sidebar-inner-item w-100">
-                                    <a class="flex-start-15" href="../dashboard/dashboard.html">
-                                        <div>
-                                            <span><i class="ri-shopping-bag-2-line"></i></span>
+                                <div class="flex-column-5 w-100">
+                                    <div class="dashboard-home sidebar-inner-item  w-100">
+                                        <a id="order-btn" class="flex-between">
+                                            <div class="flex-start-15">
+                                                <div>
+                                                    <span><i class="ri-shopping-bag-2-line"></i></span>
+                                                </div>
+                                                <div>
+                                                    <div class="sm-title">Orders</div>
+                                                </div>
+                                            </div>
+                                            <div class="arrow_indicator">
+                                                <span><i id="order-icon" class="ri-arrow-down-s-line"></i></span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <!-- order dropdown -->
+                                    <div class="order-droopdown flex-column-10 w-100" id="order-dropdown">
+                                        <div class="order-droopdown-item ">
+                                            <a href="#" class="flex-start-10 text-left ">
+                                                <div class="circle"></div>
+                                                <div>List</div>
+                                            </a>
                                         </div>
-                                        <div>
-                                            <div class="sm-title">Orders</div>
+                                        <div class="order-droopdown-item">
+                                            <a href="#" class="flex-start-10">
+                                                <div class="circle"></div>
+                                                <div>Single</div>
+                                            </a>
                                         </div>
-                                    </a>
+                                    </div>
                                 </div>
                                 <!-- sidebar item inner start -->
                                 <!-- sidebar item inner start -->
@@ -244,17 +262,39 @@
                                         </div>
                                     </a>
                                 </div>
+                                
                                 <!-- sidebar item inner start -->
-                                <!-- sidebar item inner start -->
-                                <div class="dashboard-home sidebar-inner-item w-100">
-                                    <a class="flex-start-15" href="../dashboard/dashboard.html">
-                                        <div>
-                                            <span><i class="ri-corner-left-down-line"></i></span>
+                                <div class="flex-column-5 w-100">
+                                    <div class="dashboard-home sidebar-inner-item  w-100">
+                                        <a id="menu-level-btn" class="flex-between" href="../dashboard/dashboard.html">
+                                            <div class="flex-start-15">
+                                                <div>
+                                                    <span><i class="ri-corner-left-down-line"></i></span>
+                                                </div>
+                                                <div>
+                                                    <div class="sm-title">Menu Level</div>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <span><i class="ri-arrow-down-s-line"></i></span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <!-- Menu Level dropdown -->
+                                    <div class="menu-level-dropdown flex-column-10 w-100" id="menu-level-dropdown">
+                                        <div class="order-droopdown-item ">
+                                            <a href="#" class="flex-start-10 text-left ">
+                                                <div class="circle"></div>
+                                                <div>List</div>
+                                            </a>
                                         </div>
-                                        <div>
-                                            <div class="sm-title">Menu Level </div>
+                                        <div class="order-droopdown-item">
+                                            <a href="#" class="flex-start-10">
+                                                <div class="circle"></div>
+                                                <div>Single</div>
+                                            </a>
                                         </div>
-                                    </a>
+                                    </div>
                                 </div>
                                 <!-- sidebar item inner start -->
                             </div>
@@ -345,6 +385,11 @@
             </div>
         </div>
     </div>
+    
+    
+    
+    
+    
     
     <!-- ============ dashboard content =========== -->
     <main>
@@ -581,5 +626,32 @@
             </div>
         </div>
     </main>
+    
+    
+    
+    <script>
+        const profileBtn  = document.getElementById('dashboard-profile');
+        const notificationBtn = document.getElementById('notification-btn');
+        const menuLevelDropdown = document.getElementById('menu-level-dropdown');
+        
+        const profileDropdown = document.getElementById('profile-dropdown');
+        const notificationDropdown = document.getElementById('notification-dropdown');
+        const menuLevelBtn = document.getElementById('menu-level-btn');
+        const orderBtn = document.getElementById('order-btn')
+        
+        profileBtn.addEventListener('click',()=>{
+            profileDropdown.classList.toggle('active')
+        })
+        notificationBtn.addEventListener('click',()=>{
+            notificationDropdown.classList.toggle('active')
+        })
+        
+        orderBtn.addEventListener('click', () => {
+            const orderDropdown = document.getElementById('order-dropdown');
+            const arrowIndicator = document.querySelector('.arrow_indicator span');
+            orderDropdown.classList.toggle('active');
+            arrowIndicator.classList.toggle('active');
+    });
+    </script>
 </body>
 </html>
