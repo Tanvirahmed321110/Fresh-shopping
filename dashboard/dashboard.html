@@ -14,18 +14,120 @@
                 <input type="text" placeholder="Search">
             </div>
             <div class="header-profile-notification d-flex-25">
-                <div class="">
-                    <div class="notification">
+                <!-- notification area -->
+                <div class="notification-area">
+                    <div class="notification" id="notification-btn">
                         <i class="ri-notification-3-line"></i>
                         <div class="base">3</div>
                     </div>
+                    <!-- notification dropdown -->
+                    <div class="notification-dropdown">
+                        <div class="notification-dropdown-header flex-between">
+                            <div class="flex-column-5">
+                                <h4 class="lg-title">Notifications</h4>
+                                <div class="">You have 3 unread messages</div>
+                            </div>
+                            <div>
+                                <span class="lg-title"><i class="ri-check-double-fill"></i></span>
+                            </div>
+                        </div>
+                        <!-- notification dropdown body -->
+                        <div class="notification-dropdown-body">
+                            <div class="notification-body-items flex-column-5" >
+                                <!-- notification body item start -->
+                                <div class="notification-body-item d-flex-15 w-100">
+                                    <div class="notification-profile-image">
+                                        <img src="../image/profile.avif" alt="">
+                                    </div>
+                                    <div class="flex-column-5">
+                                        <p>Your order is placed <span>wating for shipping</span></p>
+                                        <div class="d-flex-10">
+                                            <span><i class="ri-timer-line"></i></span>
+                                            <small>11 minute ago</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- notification body item end -->
+                                <!-- notification body item start -->
+                                <div class="notification-body-item d-flex-15 w-100">
+                                    <div class="notification-profile-image">
+                                        <img src="../image/profile3.jpeg" alt="">
+                                    </div>
+                                    <div class="flex-column-5">
+                                        <p>Your order is placed <span>wating for shipping</span></p>
+                                        <div class="d-flex-10">
+                                            <span><i class="ri-timer-line"></i></span>
+                                            <small>11 minute ago</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- notification body item end -->
+                                <!-- notification body item start -->
+                                <div class="notification-body-item d-flex-15 w-100">
+                                    <div class="notification-profile-image">
+                                        <img src="../image/profile2.jpeg" alt="">
+                                    </div>
+                                    <div class="flex-column-5">
+                                        <p>Your order is placed <span>wating for shipping</span></p>
+                                        <div class="d-flex-10">
+                                            <span><i class="ri-timer-line"></i></span>
+                                            <small>11 minute ago</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- notification body item end -->
+                            </div>
+                        </div>
+                        <!-- notification dropdown body end -->
+                        <div class="notification-dropdown-bottom">
+                            <div class="text-center">
+                                <a href="#">View All</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="profile">
-                    <img src="../image/profile.avif" alt="">
+                <!-- notification area  end-->
+                <div class="profile" id="dashboard-profile">
+                    <div>
+                        <img  src="../image/profile.avif" alt="">
+                    </div>
+                    <!-- profile dropdown -->
+                    <div class="profile-dropdown">
+                        <!-- profile dropdown header -->
+                        <div class="profile-dropdown-header flex-column-5">
+                            <div class="lg-title">FreshShop Admin</div>
+                            <small>tanvir@gmail.com</small>
+                        </div>
+                        <!-- profile dropdown body -->
+                        <div class="profile-dropdown-body">
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Profile</a></li>
+                                <li><a href="#">Setting</a></li>
+                            </ul>
+                        </div>
+                        <!-- profile dropdown footer -->
+                        <div class="profile-dropdown-footer">
+                            <div>
+                                <a href="#" class="flex-start-10">
+                                    <div>Log Out</div>
+                                    <span><i class="ri-logout-box-r-line"></i></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </header>
+    
+    
+    
+    
+    
+    
+    
+    
     
     <!-- ============ sidebar =========== -->
     <div class="sidebar">
@@ -328,6 +430,150 @@
                                     </div>
                                 </div>
                                 <!-- earnings medile end -->
+                                
+                                
+                                <!-- sale overview -->
+                                <div class="sale-overview w-100">
+                                    <div class="sale-overview-area d-flex-25">
+                                        <div class="sale-overview-items-area flex-column-25 w-50">
+                                            <div class="sale-overview-header">
+                                                <h3 class="md-title">Sales Overview</h3>
+                                            </div>
+                                            <div class="sale-overview-items flex-column-25 w-100">
+                                                <!-- sale overview single item -->
+                                                <div class="sale-overview-item flex-column-5 w-100">
+                                                    <div class="flex-between w-100">
+                                                        <div class="sm-title">Total Profit</div>
+                                                        <div>$1,19 (18.6%)</div>
+                                                    </div>
+                                                    <div class="line">
+                                                        <div class="line-bg "></div>
+                                                    </div>
+                                                </div>
+                                                <!-- sale overview single item -->
+                                                
+                                                <!-- sale overview single item -->
+                                                <div class="sale-overview-item flex-column-5 w-100">
+                                                    <div class="flex-between w-100">
+                                                        <div class="sm-title">Total Earn</div>
+                                                        <div>$22,57 (75.2%)</div>
+                                                    </div>
+                                                    <div class="line">
+                                                        <div class="line-bg"></div>
+                                                    </div>
+                                                </div>
+                                                <!-- sale overview single item -->
+                                                
+                                                <!-- sale overview single item -->
+                                                <div class="sale-overview-item flex-column-5 w-100">
+                                                    <div class="flex-between w-100">
+                                                        <div class="sm-title">Total Expenses</div>
+                                                        <div>$3,422 (1.5%)</div>
+                                                    </div>
+                                                    <div class="line">
+                                                        <div class="line-bg"></div>
+                                                    </div>
+                                                </div>
+                                                <!-- sale overview single item -->
+                                            </div>
+                                        </div>
+                                        <!-- sale overview part end -->
+                                        
+                                        <div class="new-notification w-50">
+                                            <div class="new-notification-items flex-column-25">
+                                                <!-- notification single item start-->
+                                                <div class="new-notification-item d-flex-25 w-100">
+                                                    <div>
+                                                        <span class="xxl-title"><i class="ri-notification-2-line"></i></span>
+                                                    </div>
+                                                    <div class="flex-column-5"> 
+                                                        <div class="lg-title">Start your day with New Notification.</div>
+                                                        <p>You have <a href="#">3 new notification</a></p>
+                                                    </div>
+                                                </div>
+                                                <!-- notification single item end -->
+                                                <!-- notification single item start -->
+                                                <div class="new-notification-item d-flex-25 w-100">
+                                                    <div>
+                                                        <span class="xxl-title"><i class="ri-lightbulb-line"></i></span>
+                                                    </div>
+                                                    <div class="flex-column-5"> 
+                                                        <div class="lg-title">Monitor your Sales and Profitability</div>
+                                                        <p><a href="#">View Performance</a></p>
+                                                    </div>
+                                                </div>
+                                                <!-- notification single item end -->
+                                            </div>
+                                        </div>
+                                        <!-- new-notification end -->
+                                    </div>
+                                </div>
+                                <!-- sale overview end -->
+                                
+                                
+                                <!-- recent order table -->
+                                <div class="recent-order w-100">
+                                    <div class="recent-order-area">
+                                        <div class="recent-order-header">
+                                            <div class="xl-title">Recent Order</div>
+                                        </div>
+                                        <!-- order table -->
+                                        <table>
+                                            <thead>
+                                                <th>Order Number</th>
+                                                <th>Product Name</th>
+                                                <th>Order Date</th>
+                                                <th>Price</th>
+                                                <th>Status</th>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>#F2500PP2</td>
+                                                    <td>Gray Haldiram's Sev Bhujia</td>
+                                                    <td>28 Jan 2024</td>
+                                                    <td>$15.00</td>
+                                                    <td><div class="shipped">Shipped</div></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>#F2500PP1</td>
+                                                    <td>NutriChoice Digestive</td>
+                                                    <td>28 Jan 2024</td>
+                                                    <td>$18.00</td>
+                                                    <td><div class="shipped">Shipped</div></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>#F2500PP</td>
+                                                    <td>Gray Haldiram's Sev Bhujia</td>
+                                                    <td>28 Jan 2024</td>
+                                                    <td>$22.00</td>
+                                                    <td><div class="pending">Pending</div></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>#F2500PP3</td>
+                                                    <td>Gray Haldiram's Sev Bhujia</td>
+                                                    <td>28 Jan 2024</td>
+                                                    <td>$15.00</td>
+                                                    <td><div class="shipped">Shipped</div></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>#F2500PP4</td>
+                                                    <td>Women T-shirt G</td>
+                                                    <td>21 Jan 2024</td>
+                                                    <td>$16.00</td>
+                                                    <td><div class="shipped">Shipped</div></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>#F2500PP5</td>
+                                                    <td>Gray Mens's Sev Bhujia</td>
+                                                    <td>22 Jan 2024</td>
+                                                    <td>$19.00</td>
+                                                    <td><div class="processing">Processing</div></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <!-- recent order table end -->
                             </div>
                         </div>
                     </section>
