@@ -521,7 +521,8 @@
 
 /* all-products-table */
 .all-products-table{
-    margin-top: 25px;
+    margin: 15px 0;
+    border-bottom: var(--border-1);
 }
 .all-products-table table{
     width: 100%;
@@ -577,4 +578,10 @@
 }
 .dot-dropdown-item:hover{
     background-color: var(--white-medium);
+}
+
+/* pagination-wrapper */
+.pagination-wrapper{
+    padding: 25px;
+    padding-bottom: 25px;
 }
