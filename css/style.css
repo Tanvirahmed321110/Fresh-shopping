@@ -97,7 +97,7 @@ button:focus,.btn-fill-dark:focus,.btn-fill-orange:focus{
     transition:outline .1s ease;
 }
 input,textarea{
-    padding: 11px 15px;
+    padding: 13px 15px;
     border-radius: var(--radius-md);
     border: 1px solid var(--border-color);
     /* width: 100%; */

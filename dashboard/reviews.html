@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vendor_List</title>
+    <title>Customer_Reviews_Page</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/dashboardAll.css">
 </head>
@@ -228,7 +228,7 @@
                                 </div>
                                 <!-- sidebar item inner start -->
                                 <!-- sidebar item inner start -->
-                                <div class="active dashboard-home sidebar-inner-item w-100">
+                                <div class=" dashboard-home sidebar-inner-item w-100">
                                     <a class="flex-start-15" href="../dashboard/dashboard.html">
                                         <div>
                                             <span><i class="ri-store-2-line"></i></span>
@@ -240,8 +240,8 @@
                                 </div>
                                 <!-- sidebar item inner start -->
                                 <!-- sidebar item inner start -->
-                                <div class="dashboard-home sidebar-inner-item w-100">
-                                    <a class="flex-start-15" href="../dashboard/dashboard.html">
+                                <div class=" dashboard-home sidebar-inner-item w-100">
+                                    <a class="flex-start-15" href="../dashboard/curstomers.html">
                                         <div>
                                             <span><i class="ri-group-line"></i></span>
                                         </div>
@@ -252,7 +252,7 @@
                                 </div>
                                 <!-- sidebar item inner start -->
                                 <!-- sidebar item inner start -->
-                                <div class="dashboard-home sidebar-inner-item w-100">
+                                <div class="active dashboard-home sidebar-inner-item w-100">
                                     <a class="flex-start-15" href="../dashboard/dashboard.html">
                                         <div>
                                             <span><i class="ri-star-line"></i></span>
@@ -401,20 +401,13 @@
                             <div class="products-page-header-area flex-between">
                                 <!-- header left -->
                                 <div class="products-page-header-left flex-column-10">
-                                    <div class="xxl-title">Vendors</div>
+                                    <div class="xxl-title">Reviews</div>
                                     <div class="flex-between w-100">
                                         <ul class="flex-start-10">
                                             <li><a href="./dashboard.html">Dashboard</a></li>
                                             <li> / </li>
-                                            <li>Vendors</li>
+                                            <li>Reviews</li>
                                         </ul>
-                                    </div>
-                                </div>
-                                
-                                <div class="header-right">
-                                    <div>
-                                        <a href="../dashboard/vendors.html" class="btn-fill-orange"><i class="fa-solid fa-border-all"></i></a>
-                                        <a  href="../dashboard/vendor-list.html" class="btn-fill-orange active"><i class="fa-solid fa-list-ul"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -426,30 +419,52 @@
                             <div class="all-products-area">
                                 <div class="all-products-header flex-between">
                                     <div class="all-products-header-input w-100">
-                                        <input class="w-50" type="text" placeholder="Search">
+                                        <input class="w-50" type="text" placeholder="Search Reviews">
+                                    </div>
+                                    <div>
+                                        <select name="" id="">
+                                            <option value="">Select Star</option>
+                                            <option value="">One</option>
+                                            <option value="">Two</option>
+                                            <option value="">Three</option>
+                                            <option value="">Four</option>
+                                            <option value="">Five</option>
+                                        </select>
                                     </div>
                                </div>
                                <!-- all products header end -->
                                
                                
                                <!-- all catagoris table start -->
-                               <div class="all-products-table">
+                               <div class="customers-table-wrapper all-products-table">
                                     <table>
                                         <thead>
-                                            <th>Seller Id</th>
-                                            <th> Store Name</th>
-                                            <th>Email</th>
-                                            <th>Gross Sale</th>
-                                            <th>Earning</th>
+                                            <th><input type="checkbox"></th>
+                                            <th>Product</th>
+                                            <th> Name</th>
+                                            <th>Reviews</th>
+                                            <th>Rating</th>
+                                            <th>Date</th>
                                             <th></th>
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td>#010</td>
-                                                <td><a class="store-name" href="#">E-Grocery Super Market</a></td>
-                                                <td>egrocery@dayrep.com</td>
-                                                <td>$200.00</td>
-                                                <td>$30.00</td>
+                                                <td><input type="checkbox"></td>
+                                                <td>
+                                                    <a  href="#" class="store-name sm-title">Haldiram's Sev Bhujia</a>    
+                                                </td>
+                                                <td>Barry McKenzie</td>
+                                                <td>Nice & fresh oranges with value for money</td>
+                                                <td>
+                                                    <div class="rating">
+                                                        <a href="#"><i class="ri-star-fill"></i></a>
+                                                        <a href="#"><i class="ri-star-fill"></i></a>
+                                                        <a href="#"><i class="ri-star-fill"></i></a>
+                                                        <a href="#"><i class="ri-star-fill"></i></a>
+                                                        <a href="#"><i class="ri-star-line"></i></a>
+                                                    </div>
+                                                </td>
+                                                <td>17 May, 2023 at 3:18pm</td>
                                                 <td>
                                                     <div class="dot-dropdown-wrapper">
                                                         <span class="dot-btn"><i class="fa-solid fa-ellipsis-vertical"></i></span>
@@ -469,11 +484,22 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td>#010</td>
-                                                <td><a class="store-name" href="#">E-Grocery Super Market</a></td>
-                                                <td>egrocery@dayrep.com</td>
-                                                <td>$200.00</td>
-                                                <td>$30.00</td>
+                                                <td><input type="checkbox"></td>
+                                                <td>
+                                                    <a  href="#" class="store-name sm-title">Onion Flavour Potato</a>    
+                                                </td>
+                                                <td>Khabir Khan</td>
+                                                <td>Bed quality , return my money</td>
+                                                <td>
+                                                    <div class="rating">
+                                                        <a href="#"><i class="ri-star-fill"></i></a>
+                                                        <a href="#"><i class="ri-star-line"></i></a>
+                                                        <a href="#"><i class="ri-star-line"></i></a>
+                                                        <a href="#"><i class="ri-star-line"></i></a>
+                                                        <a href="#"><i class="ri-star-line"></i></a>
+                                                    </div>
+                                                </td>
+                                                <td>17 May, 2023 at 3:18pm</td>
                                                 <td>
                                                     <div class="dot-dropdown-wrapper">
                                                         <span class="dot-btn"><i class="fa-solid fa-ellipsis-vertical"></i></span>
@@ -493,11 +519,22 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td>#010</td>
-                                                <td><a class="store-name" href="#">E-Grocery Super Market</a></td>
-                                                <td>egrocery@dayrep.com</td>
-                                                <td>$200.00</td>
-                                                <td>$30.00</td>
+                                                <td><input type="checkbox"></td>
+                                                <td>
+                                                    <a  href="#" class="store-name sm-title">Haldiram's Sev Bhujia</a>    
+                                                </td>
+                                                <td>Barry McKenzie</td>
+                                                <td>Wounder full item</td>
+                                                <td>
+                                                    <div class="rating">
+                                                        <a href="#"><i class="ri-star-fill"></i></a>
+                                                        <a href="#"><i class="ri-star-fill"></i></a>
+                                                        <a href="#"><i class="ri-star-fill"></i></a>
+                                                        <a href="#"><i class="ri-star-fill"></i></a>
+                                                        <a href="#"><i class="ri-star-fill"></i></a>
+                                                    </div>
+                                                </td>
+                                                <td>17 May, 2023 at 3:18pm</td>
                                                 <td>
                                                     <div class="dot-dropdown-wrapper">
                                                         <span class="dot-btn"><i class="fa-solid fa-ellipsis-vertical"></i></span>
@@ -517,11 +554,22 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td>#010</td>
-                                                <td><a class="store-name" href="#">E-Grocery Super Market</a></td>
-                                                <td>egrocery@dayrep.com</td>
-                                                <td>$200.00</td>
-                                                <td>$30.00</td>
+                                                <td><input type="checkbox"></td>
+                                                <td>
+                                                    <a  href="#" class="store-name sm-title">Haldiram's Sev Bhujia</a>    
+                                                </td>
+                                                <td>Onion Flavour Potato</td>
+                                                <td>Nice Products and qulality very good</td>
+                                                <td>
+                                                    <div class="rating">
+                                                        <a href="#"><i class="ri-star-fill"></i></a>
+                                                        <a href="#"><i class="ri-star-fill"></i></a>
+                                                        <a href="#"><i class="ri-star-fill"></i></a>
+                                                        <a href="#"><i class="ri-star-fill"></i></a>
+                                                        <a href="#"><i class="ri-star-fill"></i></a>
+                                                    </div>
+                                                </td>
+                                                <td>17 May, 2023 at 3:18pm</td>
                                                 <td>
                                                     <div class="dot-dropdown-wrapper">
                                                         <span class="dot-btn"><i class="fa-solid fa-ellipsis-vertical"></i></span>
@@ -541,11 +589,22 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td>#010</td>
-                                                <td><a class="store-name" href="#">E-Grocery Super Market</a></td>
-                                                <td>egrocery@dayrep.com</td>
-                                                <td>$200.00</td>
-                                                <td>$30.00</td>
+                                                <td><input type="checkbox"></td>
+                                                <td>
+                                                    <a  href="#" class="store-name sm-title">Haldiram's Sev Bhujia</a>    
+                                                </td>
+                                                <td>Barry McKenzie</td>
+                                                <td>Nice & fresh oranges with value for money</td>
+                                                <td>
+                                                    <div class="rating">
+                                                        <a href="#"><i class="ri-star-fill"></i></a>
+                                                        <a href="#"><i class="ri-star-fill"></i></a>
+                                                        <a href="#"><i class="ri-star-fill"></i></a>
+                                                        <a href="#"><i class="ri-star-fill"></i></a>
+                                                        <a href="#"><i class="ri-star-line"></i></a>
+                                                    </div>
+                                                </td>
+                                                <td>17 May, 2023 at 3:18pm</td>
                                                 <td>
                                                     <div class="dot-dropdown-wrapper">
                                                         <span class="dot-btn"><i class="fa-solid fa-ellipsis-vertical"></i></span>
@@ -565,11 +624,22 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td>#010</td>
-                                                <td><a class="store-name" href="#">E-Grocery Super Market</a></td>
-                                                <td>egrocery@dayrep.com</td>
-                                                <td>$200.00</td>
-                                                <td>$30.00</td>
+                                                <td><input type="checkbox"></td>
+                                                <td>
+                                                    <a  href="#" class="store-name sm-title">Cadbury 5 Star Chocolate</a>    
+                                                </td>
+                                                <td>Barry McKenzie</td>
+                                                <td>Late Shipped My Item</td>
+                                                <td>
+                                                    <div class="rating">
+                                                        <a href="#"><i class="ri-star-fill"></i></a>
+                                                        <a href="#"><i class="ri-star-line"></i></a>
+                                                        <a href="#"><i class="ri-star-line"></i></a>
+                                                        <a href="#"><i class="ri-star-line"></i></a>
+                                                        <a href="#"><i class="ri-star-line"></i></a>
+                                                    </div>
+                                                </td>
+                                                <td>18 May, 2023 at 3:18pm</td>
                                                 <td>
                                                     <div class="dot-dropdown-wrapper">
                                                         <span class="dot-btn"><i class="fa-solid fa-ellipsis-vertical"></i></span>
@@ -589,11 +659,22 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td>#010</td>
-                                                <td><a class="store-name" href="#">E-Grocery Super Market</a></td>
-                                                <td>egrocery@dayrep.com</td>
-                                                <td>$200.00</td>
-                                                <td>$30.00</td>
+                                                <td><input type="checkbox"></td>
+                                                <td>
+                                                    <a  href="#" class="store-name sm-title">NutriChoice Digestive</a>    
+                                                </td>
+                                                <td>Barry McKenzie</td>
+                                                <td>Very good items,thanks</td>
+                                                <td>
+                                                    <div class="rating">
+                                                        <a href="#"><i class="ri-star-fill"></i></a>
+                                                        <a href="#"><i class="ri-star-fill"></i></a>
+                                                        <a href="#"><i class="ri-star-fill"></i></a>
+                                                        <a href="#"><i class="ri-star-fill"></i></a>
+                                                        <a href="#"><i class="ri-star-fill"></i></a>
+                                                    </div>
+                                                </td>
+                                                <td>18 May, 2023 at 3:18pm</td>
                                                 <td>
                                                     <div class="dot-dropdown-wrapper">
                                                         <span class="dot-btn"><i class="fa-solid fa-ellipsis-vertical"></i></span>

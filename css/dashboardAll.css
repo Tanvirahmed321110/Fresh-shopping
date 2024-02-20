@@ -509,7 +509,7 @@
 .all-products-header{
     padding: 25px;
 }
-.all-products-header-dropdown select{
+.all-products-header-dropdown select,.all-products select{
     border: var(--border-1);
     padding:10px 15px;
     color: var(--gray-color);
@@ -538,7 +538,7 @@
     color: var(--green-color);
 }
 .all-products-table table td{
-    padding: 20px 25px;
+    padding: 18px 25px;
     color: var(--gray-color);
     font-weight: 500;
 }
@@ -547,7 +547,7 @@
 }
 
 .all-products-table table td img{
-    width: 45px;
+    width: 40px;
     height: 40px;
     object-fit: unset;
 }
@@ -650,9 +650,7 @@ table td .publish-unpublish{
 .order-single-data-item{
     width: 33.33%;
 }
-.order-single-data .md-title{
-    /* color: var(--gray-color); */
-}
+
 .order-single-data-item p,a{
     font-weight: 500;
     color: var(--gray-medium);
@@ -738,11 +736,47 @@ table td .publish-unpublish{
     align-items: center;
 }
 
-
+.header-right a.btn-fill-orange{
+    background-color: var(--white-medium);
+}
+.header-right .btn-fill-orange i{
+    color: var(--green-color) ;
+}
+.header-right .btn-fill-orange.active{
+    background-color: var(--link-color);
+}
+.header-right .btn-fill-orange.active i{
+    color: var(--white-color);
+}
 
 
 
 /* ================ vendor list page ================= */
 td a.store-name:hover{
     color: var(--link-color)
+}
+
+
+
+/*================= customer page =================*/
+.customer-profile.flex-start-10{
+    align-items: center;
+}
+.customers-table-wrapper{
+    overflow-x: auto;
+}
+.customers-table-wrapper table{
+    text-wrap: nowrap;
+}
+.customers-table-wrapper td img{
+    border-radius: 50%;
+    object-fit: cover !important;
+    border: var(--border-1);
+}
+
+
+
+table td .rating i{
+    color: var(--yellow-color);
+    font-size: var(--md-font);
 }
