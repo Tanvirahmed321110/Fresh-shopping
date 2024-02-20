@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catagoris_page</title>
+    <title>Single_Order</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/dashboardAll.css">
 </head>
@@ -401,237 +401,205 @@
                             <div class="products-page-header-area flex-between">
                                 <!-- header left -->
                                 <div class="products-page-header-left flex-column-10">
-                                    <div class="xxl-title">Products</div>
-                                    <div>
+                                    <div class="xxl-title">Order Single</div>
+                                    <div class="flex-between w-100">
                                         <ul class="flex-start-10">
                                             <li><a href="./dashboard.html">Dashboard</a></li>
                                             <li> / </li>
-                                            <li>Products</li>
+                                            <li>Order Single</li>
                                         </ul>
                                     </div>
                                 </div>
-                                <!-- header right -->
-                                <div>
-                                    <div>
-                                        <a href="#" class="btn-fill-orange">Add Product</a>
-                                    </div>
+                                
+                                <div class="header-right">
+                                    <a href="../dashboard/order-list.html" class="btn-fill-orange">Back To All Order</a>
                                 </div>
                             </div>
                         </div>
                         
                         
                         <!-- ----all product area start---- -->
-                        <div class="all-products">
-                            <div class="all-products-area">
-                                <div class="all-products-header flex-between">
-                                    <div class="all-products-header-input">
-                                        <input type="text" placeholder="Search Catagoris">
+                        <div class=" order-single">
+                            <div class="all-products-area order-single-area">
+                                <div class="order-single-header flex-between w-100 ">
+                                    <div class="order-single-header-left d-flex-5">
+                                        <div class="xxl-title">
+                                            Order ID: <span>#FC001</span>
+                                        </div>
+                                        <div class="order-base">Pending</div>
                                     </div>
-                                    <div class="all-products-header-dropdown">
+                                    <!-- order single header right -->
+                                    <div class="order-single-header-right d-flex-10">
                                         <div>
                                             <select name="" id="">
                                                 <option value="">Status</option>
-                                                <option value="">Publish</option>
-                                                <option value="">Unblishive</option>
+                                                <option value="">Success</option>
+                                                <option value="">Pending</option>
+                                                <option value="">Cancel</option>
                                             </select>
                                         </div>
+                                        <div>
+                                            <a href="#" class="btn-fill-orange">Save</a>
+                                        </div>
+                                        <div>
+                                            <a href="#" class="btn-fill-orange green">Download Invoice</a>
+                                        </div>
                                     </div>
-                               </div>
-                               <!-- all products header end -->
-                               
-                               
-                               <!-- all catagoris table start -->
-                               <div class="all-products-table">
-                                    <table>
-                                        <thead>
-                                            <th><input type="checkbox" name="" id=""></th>
-                                            <th>Icon</th>
-                                            <th> Name</th>
-                                            <th>Total Products</th>
-                                            <th>Status</th>
-                                            <th></th>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td><input type="checkbox" name="" id=""></td>
-                                                <td><img src="../image/c1.png" alt=""></td>
-                                                <td>Baby Care</td>
-                                                <td>4</td>
-                                                <td><div class="publish-unpublish">Published</div></td>
-                                                <td>
-                                                    <div class="dot-dropdown-wrapper">
-                                                        <span class="dot-btn"><i class="fa-solid fa-ellipsis-vertical"></i></span>
-                                                        <div class="dot-dropdown">
-                                                            <div class="dot-dropdown-items flex-column-10">
-                                                                <div class="dot-dropdown-item flex-start-15">
-                                                                    <span><i class="fa-regular fa-trash-can"></i></span>
-                                                                    <div>Delete</div>
-                                                                </div>
-                                                                <div class="dot-dropdown-item flex-start-15">
-                                                                    <span><i class="fa-solid fa-pen-to-square"></i></span>
-                                                                    <div>Edit</div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td><input type="checkbox" name="" id=""></td>
-                                                <td><img src="../image/c3.jpeg" alt=""></td>
-                                                <td>Cold Drinks & Juices</td>
-                                                <td>22</td>
-                                                <td><div class="publish-unpublish">Published</div></td>
-                                                <td>
-                                                    <div class="dot-dropdown-wrapper">
-                                                        <span class="dot-btn"><i class="fa-solid fa-ellipsis-vertical"></i></span>
-                                                        <div class="dot-dropdown">
-                                                            <div class="dot-dropdown-items flex-column-10">
-                                                                <div class="dot-dropdown-item flex-start-15">
-                                                                    <span><i class="fa-regular fa-trash-can"></i></span>
-                                                                    <div>Delete</div>
-                                                                </div>
-                                                                <div class="dot-dropdown-item flex-start-15">
-                                                                    <span><i class="fa-solid fa-pen-to-square"></i></span>
-                                                                    <div>Edit</div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td><input type="checkbox" name="" id=""></td>
-                                                <td><img src="../image/c6.png" alt=""></td>
-                                                <td>Cold Drinks & Juices</td>
-                                                <td>22</td>
-                                                <td><div class="publish-unpublish">Published</div></td>
-                                                <td>
-                                                    <div class="dot-dropdown-wrapper">
-                                                        <span class="dot-btn"><i class="fa-solid fa-ellipsis-vertical"></i></span>
-                                                        <div class="dot-dropdown">
-                                                            <div class="dot-dropdown-items flex-column-10">
-                                                                <div class="dot-dropdown-item flex-start-15">
-                                                                    <span><i class="fa-regular fa-trash-can"></i></span>
-                                                                    <div>Delete</div>
-                                                                </div>
-                                                                <div class="dot-dropdown-item flex-start-15">
-                                                                    <span><i class="fa-solid fa-pen-to-square"></i></span>
-                                                                    <div>Edit</div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td><input type="checkbox" name="" id=""></td>
-                                                <td><img src="../image/c5.png" alt=""></td>
-                                                <td>Fruits & Vegetables</td>
-                                                <td>22</td>
-                                                <td><div class="publish-unpublish">Published</div></td>
-                                                <td>
-                                                    <div class="dot-dropdown-wrapper">
-                                                        <span class="dot-btn"><i class="fa-solid fa-ellipsis-vertical"></i></span>
-                                                        <div class="dot-dropdown">
-                                                            <div class="dot-dropdown-items flex-column-10">
-                                                                <div class="dot-dropdown-item flex-start-15">
-                                                                    <span><i class="fa-regular fa-trash-can"></i></span>
-                                                                    <div>Delete</div>
-                                                                </div>
-                                                                <div class="dot-dropdown-item flex-start-15">
-                                                                    <span><i class="fa-solid fa-pen-to-square"></i></span>
-                                                                    <div>Edit</div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td><input type="checkbox" name="" id=""></td>
-                                                <td><img src="../image/c1.png" alt=""></td>
-                                                <td>Cold Drinks & Juices</td>
-                                                <td>13</td>
-                                                <td><div class="publish-unpublish">Published</div></td>
-                                                <td>
-                                                    <div class="dot-dropdown-wrapper">
-                                                        <span class="dot-btn"><i class="fa-solid fa-ellipsis-vertical"></i></span>
-                                                        <div class="dot-dropdown">
-                                                            <div class="dot-dropdown-items flex-column-10">
-                                                                <div class="dot-dropdown-item flex-start-15">
-                                                                    <span><i class="fa-regular fa-trash-can"></i></span>
-                                                                    <div>Delete</div>
-                                                                </div>
-                                                                <div class="dot-dropdown-item flex-start-15">
-                                                                    <span><i class="fa-solid fa-pen-to-square"></i></span>
-                                                                    <div>Edit</div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td><input type="checkbox" name="" id=""></td>
-                                                <td><img src="../image/c4.png" alt=""></td>
-                                                <td>Cold Drinks & Juices</td>
-                                                <td>13</td>
-                                                <td><div class="publish-unpublish">Published</div></td>
-                                                <td>
-                                                    <div class="dot-dropdown-wrapper">
-                                                        <span class="dot-btn"><i class="fa-solid fa-ellipsis-vertical"></i></span>
-                                                        <div class="dot-dropdown">
-                                                            <div class="dot-dropdown-items flex-column-10">
-                                                                <div class="dot-dropdown-item flex-start-15">
-                                                                    <span><i class="fa-regular fa-trash-can"></i></span>
-                                                                    <div>Delete</div>
-                                                                </div>
-                                                                <div class="dot-dropdown-item flex-start-15">
-                                                                    <span><i class="fa-solid fa-pen-to-square"></i></span>
-                                                                    <div>Edit</div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                               </div>
-                                <!-- all catagoris table start -->
-                               
-                               
-                            
-                               <!-- all catagoris table end -->
-                               
-                               
-                                <!-- ============== Pagination start here ============== -->
-                                <div class="pagination-wrapper flex-between">
-                                    <div>
-                                        <p>Showing 1 to of 4 entries</p>
-                                    </div>
-                                    <div class="pagination flex-start-15">
-                                        <div class="pagination-item">
-                                            <a href="#"> < </a>
+                                </div> 
+                                
+                                
+                                <div class="order-single-data">
+                                    <div class="order-single-data-items flex-between">
+                                        <!-- customer details start here -->
+                                        <div class="order-single-data-item flex-column-10">
+                                            <div class="md-title" >Customer Details</div>
+                                            <div class="flex-column-5">
+                                                <p>John Alex</p>
+                                                <p>anderalex@example.com</p>
+                                                <p>+998 99 22123456</p>
+                                                <div>
+                                                    <a href="#">View Profile</a>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="pagination-item">
-                                            <a href="#">1</a>
+                                        <!--Shipping Address start here -->
+                                        <div class="order-single-data-item flex-column-10">
+                                            <div class="md-title" >Shipping Address</div>
+                                            <div class="flex-column-5">
+                                                <p>Gerg Harvell</p>
+                                                <p>568, Suite Ave.</p>
+                                                <p>Austrlia, 235153</p>
+                                                <p>Contact No. +91 99999 12345</p>
+                                            </div>
                                         </div>
-                                        <div class="pagination-item">
-                                            <a class="active" href="#">2</a>
-                                        </div>
-                                        <div class="pagination-item">
-                                            <a href="#">...</a>
-                                        </div>
-                                        <div class="pagination-item">
-                                            <a href="#">4</a>
-                                        </div>
-                                        <div class="pagination-item">
-                                            <a href="#"> > </a>
+                                        <!-- Order Details start here -->
+                                        <div class="order-single-data-item flex-column-10">
+                                            <div class="md-title" >Order Details</div>
+                                            <div class="flex-column-5">
+                                                <p>Order ID: FC001</p>
+                                                <p>Order Date: October 22, 2023</p>
+                                                <p>Order Total: $734.28</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
+                               
+                               <!-- all catagoris table start -->
+                               <div class="order-single-table all-products-table">
+                                    <table>
+                                        <thead>
+                                            <th>Product</th>
+                                            <th>Price</th>
+                                            <th>Quintity</th>
+                                            <th>Total</th>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <a class="product-name flex-start-10" href="#">
+                                                        <img src="../image/product2.jpeg" alt="">
+                                                        <div>Onion Flavour Potato</div>
+                                                    </a>
+                                                </td>
+                                                <td>18.00</td>
+                                                <td>2</td>
+                                                <td>$18.00</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <a class="product-name flex-start-10" href="#">
+                                                        <img src="../image/product2.jpeg" alt="">
+                                                        <div>Onion Flavour Potato</div>
+                                                    </a>
+                                                </td>
+                                                <td>15.00</td>
+                                                <td>1</td>
+                                                <td>$15.00</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <a class="product-name flex-start-10" href="#">
+                                                        <img src="../image/product4.jpeg" alt="">
+                                                        <div>Onion Flavour Potato</div>
+                                                    </a>
+                                                </td>
+                                                <td>18.00</td>
+                                                <td>1</td>
+                                                <td>$18.00</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <a class="product-name flex-start-10" href="#">
+                                                        <img src="../image/product3.jpeg" alt="">
+                                                        <div>Onion Flavour Potato</div>
+                                                    </a>
+                                                </td>
+                                                <td>18.00</td>
+                                                <td>1</td>
+                                                <td>$18.00</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <a class="product-name flex-start-10" href="#">
+                                                        <img src="../image/product1.jpeg" alt="">
+                                                        <div>Onion Flavour Potato</div>
+                                                    </a>
+                                                </td>
+                                                <td>19.00</td>
+                                                <td>2</td>
+                                                <td>$38.00</td>
+                                            </tr>
+                                            <tr class="border-bottom-0">
+                                                <td></td>
+                                                <td></td>
+                                                <td colspan="1" class="border-bottom-1">
+                                                   Sub Total :
+                                                </td>
+                                                <td class="border-bottom-1">
+                                                   $80.00
+                                                </td>
+                                             </tr>
+                                            <tr class="border-bottom-0">
+                                                <td></td>
+                                                <td></td>
+                                                <td colspan="1" class="border-bottom-1">
+                                                   Shipping Cost :
+                                                </td>
+                                                <td class="border-bottom-1">
+                                                   $5.00
+                                                </td>
+                                             </tr>
+                                            <tr class="border-bottom-0">
+                                                <td></td>
+                                                <td></td>
+                                                <td colspan="1" class="border-bottom-1 lg-title">
+                                                   Total :
+                                                </td>
+                                                <td class="border-bottom-1 lg-title">
+                                                   $80.00
+                                                </td>
+                                             </tr>
+                                        </tbody>
+                                    </table>
+                                    
+                                    
+                                    
+                                    <div class="order-single-page-bottom flex-between">
+                                        <div class="payment-info flex-column-10">
+                                            <div class="sm-title">Payment Info</div>
+                                            <p >Cash on Delivery</p>
+                                        </div>
+                                        <div class="order-single-bottom-right flex-column-10">
+                                            <div class="lg-title">Notes</div>
+                                            <div class="w-100">
+                                                <textarea placeholder="Write note for order" ></textarea>
+                                            </div>
+                                            <div>
+                                                <a href="" class="btn-fill-orange">Save Notes</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                               </div>
                            </div>
                         </div>
                         <!-- all product area end-->
@@ -663,10 +631,8 @@
         
         // order dropdown
         orderBtn.addEventListener('click', () => {
-            const orderDropdown = document.getElementById('order-dropdown');
-            const arrowIndicator = document.querySelector('.arrow_indicator span');
-            orderDropdown.classList.toggle('active');
-            arrowIndicator.classList.toggle('active');
+            document.getElementById('order-dropdown').classList.toggle('active');
+            document.querySelector('.arrow_indicator span').classList.toggle('active');
         });
         
         // menu level dropdown

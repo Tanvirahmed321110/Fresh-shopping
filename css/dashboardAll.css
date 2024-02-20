@@ -546,7 +546,7 @@
     background-color: var(--white-medium);
 }
 
-.all-products-area table td img{
+.all-products-table table td img{
     width: 45px;
     height: 40px;
     object-fit: unset;
@@ -592,12 +592,157 @@
 
 
 
-
-/* catagoris page  */
+/*========================  catagoris page  ======================= */
 table td .publish-unpublish{
     padding: 2px 5px;
     font-size: var(--low-font);
     background-color: var(--border-color);
     display: inline-block;
     border-radius: var(--radius-sm);
+}
+
+
+
+
+
+
+/*========================  order list page  ======================= */
+.all-order-table.all-products-table {
+    width: 100%;
+    overflow-x: auto;
+    text-wrap: nowrap;
+}
+
+
+/*========================  order single page  ======================= */
+/*order-single-header  */
+.order-single-header{
+    padding: 25px;
+}
+.order-single-header select{
+    padding:10px 10px;
+    border-radius: var(--radius-md);
+    border: var(--border-1);
+    font-size: var(--sm-font);
+}
+
+.order-single-header-left  .order-base{
+    font-size: var(--low-font);
+    background-color:var(--white-medium);
+    padding: 3px 5px;
+    border-radius: var(--radius-sm);
+    font-weight: 500;
+    color:var(--link-color)
+}
+.btn-fill-orange.green{
+    background-color: var(--green-color);
+}
+
+
+
+/* order-single-data */
+.order-single-data{
+    padding: 25px;
+}
+.order-single-data-items.flex-between{
+    align-items: flex-start;
+}
+.order-single-data-item{
+    width: 33.33%;
+}
+.order-single-data .md-title{
+    /* color: var(--gray-color); */
+}
+.order-single-data-item p,a{
+    font-weight: 500;
+    color: var(--gray-medium);
+    font-size: var(--sm-font);
+}
+.order-single-data-item a{
+    font-size: var(--sm-font);
+    color: var(--link-color);
+}
+
+
+.order-single-table table tr{
+    border-bottom: var(--border-1);
+}
+.product-name.flex-start-10{
+    align-items: center;
+    color: var(--heading-color);
+}
+.border-bottom-0{
+    border-bottom:0px solid red !important;
+}
+.border-bottom-1{
+    border-bottom: var(--border-1) !important;
+}
+
+
+
+/* order-single-page-bottom */
+.order-single-page-bottom.flex-between{
+    align-items: flex-start;
+}
+.order-single-page-bottom{
+    padding: 50px 25px;
+}
+.order-single-bottom-right{
+    min-width: 400px;
+}
+.order-single-bottom-right textarea{
+    width: 100% !important;
+    height: 120px;
+}
+.payment-info p{
+    color: var(--gray-color);
+    font-weight: 500;
+}
+
+
+
+
+
+
+
+
+
+/* ===================  vendeors page start =================== */
+.vendors-area{
+    padding: 50px 0px;
+}
+.vendors-items.col-3{
+    gap: 30px;
+}
+.vendors-item{
+    box-shadow: var(--box-shadow);
+    padding: 25px;
+    border-radius: var(--radius-lg);
+    
+}
+.vendors-item p{
+    font-weight: 500;
+    letter-spacing: .2px;
+}
+.vendors-item-body a:hover{
+    color: var(--link-color);
+}
+.vendors-item img{
+    border: var(--border-1);
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    padding: 2px;
+}
+.vendors-item-body.flex-column-10{
+    align-items: center;
+}
+
+
+
+
+
+/* ================ vendor list page ================= */
+td a.store-name:hover{
+    color: var(--link-color)
 }

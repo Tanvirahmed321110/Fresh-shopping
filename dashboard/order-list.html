@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catagoris_page</title>
+    <title>Order_List</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/dashboardAll.css">
 </head>
@@ -401,19 +401,13 @@
                             <div class="products-page-header-area flex-between">
                                 <!-- header left -->
                                 <div class="products-page-header-left flex-column-10">
-                                    <div class="xxl-title">Products</div>
+                                    <div class="xxl-title">Order List</div>
                                     <div>
                                         <ul class="flex-start-10">
                                             <li><a href="./dashboard.html">Dashboard</a></li>
                                             <li> / </li>
-                                            <li>Products</li>
+                                            <li>Order List</li>
                                         </ul>
-                                    </div>
-                                </div>
-                                <!-- header right -->
-                                <div>
-                                    <div>
-                                        <a href="#" class="btn-fill-orange">Add Product</a>
                                     </div>
                                 </div>
                             </div>
@@ -425,14 +419,15 @@
                             <div class="all-products-area">
                                 <div class="all-products-header flex-between">
                                     <div class="all-products-header-input">
-                                        <input type="text" placeholder="Search Catagoris">
+                                        <input type="text" placeholder="Search">
                                     </div>
                                     <div class="all-products-header-dropdown">
                                         <div>
                                             <select name="" id="">
                                                 <option value="">Status</option>
-                                                <option value="">Publish</option>
-                                                <option value="">Unblishive</option>
+                                                <option value="">Sucess</option>
+                                                <option value="">Pending</option>
+                                                <option value="">Cencel</option>
                                             </select>
                                         </div>
                                     </div>
@@ -441,71 +436,29 @@
                                
                                
                                <!-- all catagoris table start -->
-                               <div class="all-products-table">
+                               <div class="all-order-table all-products-table">
                                     <table>
                                         <thead>
                                             <th><input type="checkbox" name="" id=""></th>
-                                            <th>Icon</th>
-                                            <th> Name</th>
-                                            <th>Total Products</th>
+                                            <th>Image</th>
+                                            <th> Order Name</th>
+                                            <th>Customer</th>
+                                            <th>Date & TIme</th>
+                                            <th>Payment</th>
                                             <th>Status</th>
+                                            <th>Amount</th>
                                             <th></th>
                                         </thead>
                                         <tbody>
                                             <tr>
                                                 <td><input type="checkbox" name="" id=""></td>
-                                                <td><img src="../image/c1.png" alt=""></td>
-                                                <td>Baby Care</td>
-                                                <td>4</td>
-                                                <td><div class="publish-unpublish">Published</div></td>
-                                                <td>
-                                                    <div class="dot-dropdown-wrapper">
-                                                        <span class="dot-btn"><i class="fa-solid fa-ellipsis-vertical"></i></span>
-                                                        <div class="dot-dropdown">
-                                                            <div class="dot-dropdown-items flex-column-10">
-                                                                <div class="dot-dropdown-item flex-start-15">
-                                                                    <span><i class="fa-regular fa-trash-can"></i></span>
-                                                                    <div>Delete</div>
-                                                                </div>
-                                                                <div class="dot-dropdown-item flex-start-15">
-                                                                    <span><i class="fa-solid fa-pen-to-square"></i></span>
-                                                                    <div>Edit</div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td><input type="checkbox" name="" id=""></td>
-                                                <td><img src="../image/c3.jpeg" alt=""></td>
-                                                <td>Cold Drinks & Juices</td>
-                                                <td>22</td>
-                                                <td><div class="publish-unpublish">Published</div></td>
-                                                <td>
-                                                    <div class="dot-dropdown-wrapper">
-                                                        <span class="dot-btn"><i class="fa-solid fa-ellipsis-vertical"></i></span>
-                                                        <div class="dot-dropdown">
-                                                            <div class="dot-dropdown-items flex-column-10">
-                                                                <div class="dot-dropdown-item flex-start-15">
-                                                                    <span><i class="fa-regular fa-trash-can"></i></span>
-                                                                    <div>Delete</div>
-                                                                </div>
-                                                                <div class="dot-dropdown-item flex-start-15">
-                                                                    <span><i class="fa-solid fa-pen-to-square"></i></span>
-                                                                    <div>Edit</div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td><input type="checkbox" name="" id=""></td>
-                                                <td><img src="../image/c6.png" alt=""></td>
-                                                <td>Cold Drinks & Juices</td>
-                                                <td>22</td>
-                                                <td><div class="publish-unpublish">Published</div></td>
+                                                <td><img src="../image/product2.jpeg" alt=""></td>
+                                                <td>FC#1007</td>
+                                                <td>Jennifer Sullivan Lorem</td>
+                                                <td>01 May 2023 (10:12 am)</td>
+                                                <td>Paypal</td>
+                                                <td><div class="order-sucess">Success</div></td>
+                                                <td>$15.5</td>
                                                 <td>
                                                     <div class="dot-dropdown-wrapper">
                                                         <span class="dot-btn"><i class="fa-solid fa-ellipsis-vertical"></i></span>
@@ -527,9 +480,12 @@
                                             <tr>
                                                 <td><input type="checkbox" name="" id=""></td>
                                                 <td><img src="../image/c5.png" alt=""></td>
-                                                <td>Fruits & Vegetables</td>
-                                                <td>22</td>
-                                                <td><div class="publish-unpublish">Published</div></td>
+                                                <td>FC#1007</td>
+                                                <td>Jennifer Sullivan</td>
+                                                <td>04 May 2023 (10:12 am)</td>
+                                                <td>Paypal</td>
+                                                <td><div class="order-sucess">Success</div></td>
+                                                <td>$15.5</td>
                                                 <td>
                                                     <div class="dot-dropdown-wrapper">
                                                         <span class="dot-btn"><i class="fa-solid fa-ellipsis-vertical"></i></span>
@@ -550,10 +506,13 @@
                                             </tr>
                                             <tr>
                                                 <td><input type="checkbox" name="" id=""></td>
-                                                <td><img src="../image/c1.png" alt=""></td>
-                                                <td>Cold Drinks & Juices</td>
-                                                <td>13</td>
-                                                <td><div class="publish-unpublish">Published</div></td>
+                                                <td><img src="../image/product2.jpeg" alt=""></td>
+                                                <td>FC#1004</td>
+                                                <td>Jennifer Sullivan.</td>
+                                                <td>04 May 2023 (10:12 am)</td>
+                                                <td>Paypal</td>
+                                                <td><div class="order-pending">Pending</div></td>
+                                                <td>$15.5</td>
                                                 <td>
                                                     <div class="dot-dropdown-wrapper">
                                                         <span class="dot-btn"><i class="fa-solid fa-ellipsis-vertical"></i></span>
@@ -574,10 +533,94 @@
                                             </tr>
                                             <tr>
                                                 <td><input type="checkbox" name="" id=""></td>
-                                                <td><img src="../image/c4.png" alt=""></td>
-                                                <td>Cold Drinks & Juices</td>
-                                                <td>13</td>
-                                                <td><div class="publish-unpublish">Published</div></td>
+                                                <td><img src="../image/product3.jpeg" alt=""></td>
+                                                <td>FC#1003</td>
+                                                <td>Jennifer  </td>
+                                                <td>03 May 2023 (10:12 am)</td>
+                                                <td>Bikash</td>
+                                                <td><div class="order-sucess">Success</div></td>
+                                                <td>$17.00</td>
+                                                <td>
+                                                    <div class="dot-dropdown-wrapper">
+                                                        <span class="dot-btn"><i class="fa-solid fa-ellipsis-vertical"></i></span>
+                                                        <div class="dot-dropdown">
+                                                            <div class="dot-dropdown-items flex-column-10">
+                                                                <div class="dot-dropdown-item flex-start-15">
+                                                                    <span><i class="fa-regular fa-trash-can"></i></span>
+                                                                    <div>Delete</div>
+                                                                </div>
+                                                                <div class="dot-dropdown-item flex-start-15">
+                                                                    <span><i class="fa-solid fa-pen-to-square"></i></span>
+                                                                    <div>Edit</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><input type="checkbox" name="" id=""></td>
+                                                <td><img src="../image/product2.jpeg" alt=""></td>
+                                                <td>FC#1002</td>
+                                                <td>Tanvir Ahemd</td>
+                                                <td>02 May 2023 (10:12 am)</td>
+                                                <td>Paypal</td>
+                                                <td><div class="order-pending">Pending</div></td>
+                                                <td>$15.5</td>
+                                                <td>
+                                                    <div class="dot-dropdown-wrapper">
+                                                        <span class="dot-btn"><i class="fa-solid fa-ellipsis-vertical"></i></span>
+                                                        <div class="dot-dropdown">
+                                                            <div class="dot-dropdown-items flex-column-10">
+                                                                <div class="dot-dropdown-item flex-start-15">
+                                                                    <span><i class="fa-regular fa-trash-can"></i></span>
+                                                                    <div>Delete</div>
+                                                                </div>
+                                                                <div class="dot-dropdown-item flex-start-15">
+                                                                    <span><i class="fa-solid fa-pen-to-square"></i></span>
+                                                                    <div>Edit</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><input type="checkbox" name="" id=""></td>
+                                                <td><img src="../image/product3.jpeg" alt=""></td>
+                                                <td>FC#1007</td>
+                                                <td>Jennifer Sullivan .</td>
+                                                <td>02 May 2023 (10:12 am)</td>
+                                                <td>Visa</td>
+                                                <td><div class="order-sucess">Success</div></td>
+                                                <td>$22.00</td>
+                                                <td>
+                                                    <div class="dot-dropdown-wrapper">
+                                                        <span class="dot-btn"><i class="fa-solid fa-ellipsis-vertical"></i></span>
+                                                        <div class="dot-dropdown">
+                                                            <div class="dot-dropdown-items flex-column-10">
+                                                                <div class="dot-dropdown-item flex-start-15">
+                                                                    <span><i class="fa-regular fa-trash-can"></i></span>
+                                                                    <div>Delete</div>
+                                                                </div>
+                                                                <div class="dot-dropdown-item flex-start-15">
+                                                                    <span><i class="fa-solid fa-pen-to-square"></i></span>
+                                                                    <div>Edit</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><input type="checkbox" name="" id=""></td>
+                                                <td><img src="../image/product2.jpeg" alt=""></td>
+                                                <td>FC#1001</td>
+                                                <td> Sullivan Lorem.</td>
+                                                <td>01 May 2023 (10:12 am)</td>
+                                                <td>Paypal</td>
+                                                <td><div class="order-sucess">Success</div></td>
+                                                <td>$15.99</td>
                                                 <td>
                                                     <div class="dot-dropdown-wrapper">
                                                         <span class="dot-btn"><i class="fa-solid fa-ellipsis-vertical"></i></span>
@@ -609,11 +652,11 @@
                                 <!-- ============== Pagination start here ============== -->
                                 <div class="pagination-wrapper flex-between">
                                     <div>
-                                        <p>Showing 1 to of 4 entries</p>
+                                        <p class="fw-500">Showing 1 to of 8 entries</p>
                                     </div>
                                     <div class="pagination flex-start-15">
                                         <div class="pagination-item">
-                                            <a href="#"> < </a>
+                                            <a href="#">Previous</a>
                                         </div>
                                         <div class="pagination-item">
                                             <a href="#">1</a>
@@ -622,13 +665,10 @@
                                             <a class="active" href="#">2</a>
                                         </div>
                                         <div class="pagination-item">
-                                            <a href="#">...</a>
+                                            <a href="#">3</a>
                                         </div>
                                         <div class="pagination-item">
-                                            <a href="#">4</a>
-                                        </div>
-                                        <div class="pagination-item">
-                                            <a href="#"> > </a>
+                                            <a href="#">Next</a>
                                         </div>
                                     </div>
                                 </div>
@@ -663,10 +703,8 @@
         
         // order dropdown
         orderBtn.addEventListener('click', () => {
-            const orderDropdown = document.getElementById('order-dropdown');
-            const arrowIndicator = document.querySelector('.arrow_indicator span');
-            orderDropdown.classList.toggle('active');
-            arrowIndicator.classList.toggle('active');
+            document.getElementById('order-dropdown').classList.toggle('active');
+            document.querySelector('.arrow_indicator span').classList.toggle('active');
         });
         
         // menu level dropdown

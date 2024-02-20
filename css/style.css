@@ -96,7 +96,7 @@ button:focus,.btn-fill-dark:focus,.btn-fill-orange:focus{
     outline:3px solid var(--shadow-color);  
     transition:outline .1s ease;
 }
-input{
+input,textarea{
     padding: 11px 15px;
     border-radius: var(--radius-md);
     border: 1px solid var(--border-color);
@@ -113,11 +113,11 @@ label{
     flex-shrink: 0;
 }
 
-input:focus{
+input:focus,textarea:focus{
     outline:3px solid var(--shadow-color);
     transition:outline .1s ease;
 }
-input::placeholder{
+input::placeholder ,textarea::placeholder{
     font-family: var(--primary-font);
     letter-spacing: .2px;
 }
@@ -252,7 +252,12 @@ img{
 .m-6{
     margin: 6px;
 }
-
+.fw-500{
+    font-weight: 500;
+}
+.fw-600{
+    font-weight: 600;
+}
 
 
 /* ================  Flex Class Start Here  ================= */
@@ -469,12 +474,11 @@ img{
 
 /* pagination */
 .pagination .pagination-item a{
-    width: 40px;
-    height: 40px;
+    padding: 12px 15px;
     background-color: white;
     border: var(--border-1);
     border-radius: var(--radius-md);
-    font-size: var(--md-font);
+    font-size: var(--sm-font);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -489,6 +493,27 @@ img{
     background-color: var(--link-color);
     color: var(--white-color);
 }
+
+
+.order-pending,.order-sucess{
+    border-radius: var(--radius-sm);
+    padding: 2px 5px;
+    font-size: var(--low-font);
+}
+.order-sucess{
+    background-color: var(--gray-color);
+    color: var(--yellow-color);
+}
+.order-pending{
+    background-color: var(--link-color);
+    color: var(--heading-color);
+}
+
+
+
+
+
+
 
 
 /* ============  animatiion ============ */

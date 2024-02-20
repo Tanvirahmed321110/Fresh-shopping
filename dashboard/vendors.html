@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catagoris_page</title>
+    <title>Seller_Vendors</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/dashboardAll.css">
 </head>
@@ -401,240 +401,259 @@
                             <div class="products-page-header-area flex-between">
                                 <!-- header left -->
                                 <div class="products-page-header-left flex-column-10">
-                                    <div class="xxl-title">Products</div>
-                                    <div>
+                                    <div class="xxl-title">Vendors</div>
+                                    <div class="flex-between w-100">
                                         <ul class="flex-start-10">
                                             <li><a href="./dashboard.html">Dashboard</a></li>
                                             <li> / </li>
-                                            <li>Products</li>
+                                            <li>Vendors</li>
                                         </ul>
                                     </div>
                                 </div>
-                                <!-- header right -->
-                                <div>
+                                
+                                <div class="header-right">
                                     <div>
-                                        <a href="#" class="btn-fill-orange">Add Product</a>
+                                        <a href="#" class="btn-fill-orange"><i class="fa-solid fa-border-all"></i></a>
+                                        <a href="../dashboard/vendors-list.html" class="btn-fill-orange"><i class="fa-solid fa-list-ul"></i></a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         
                         
-                        <!-- ----all product area start---- -->
-                        <div class="all-products">
-                            <div class="all-products-area">
-                                <div class="all-products-header flex-between">
-                                    <div class="all-products-header-input">
-                                        <input type="text" placeholder="Search Catagoris">
-                                    </div>
-                                    <div class="all-products-header-dropdown">
-                                        <div>
-                                            <select name="" id="">
-                                                <option value="">Status</option>
-                                                <option value="">Publish</option>
-                                                <option value="">Unblishive</option>
-                                            </select>
+                        <!-- all vendors start -->
+                        <div class="vendors">
+                            <div class="vendors-area">
+                                <div class="vendors-items col-3">
+                                    <!-- vendor single item start -->
+                                    <div class="vendors-item flex-column-25">
+                                        <!-- image -->
+                                        <div class="text-center">
+                                            <img src="../image/product1.jpeg" alt="">
+                                        </div>
+                                        <div class="vendors-item-body flex-column-10 w-100" >
+                                            <div>
+                                                <a href="#" class="lg-title">E-Grocery Super Market</a>
+                                            </div>
+                                            <p>Seller ID: #009</p>
+                                            <p>heathercarpenter@dayrep.com</p>
+                                        </div>
+                                        <div class="vendors-item-bottom w-100 flex-between">
+                                            <div>
+                                                <p>Gross Sale</p>
+                                                <div class="lg-title">$100.00</div>
+                                            </div>
+                                            <div>
+                                                <p>Earning</p>
+                                                <div class="lg-title">$50.00</div>
+                                            </div>
                                         </div>
                                     </div>
-                               </div>
-                               <!-- all products header end -->
-                               
-                               
-                               <!-- all catagoris table start -->
-                               <div class="all-products-table">
-                                    <table>
-                                        <thead>
-                                            <th><input type="checkbox" name="" id=""></th>
-                                            <th>Icon</th>
-                                            <th> Name</th>
-                                            <th>Total Products</th>
-                                            <th>Status</th>
-                                            <th></th>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td><input type="checkbox" name="" id=""></td>
-                                                <td><img src="../image/c1.png" alt=""></td>
-                                                <td>Baby Care</td>
-                                                <td>4</td>
-                                                <td><div class="publish-unpublish">Published</div></td>
-                                                <td>
-                                                    <div class="dot-dropdown-wrapper">
-                                                        <span class="dot-btn"><i class="fa-solid fa-ellipsis-vertical"></i></span>
-                                                        <div class="dot-dropdown">
-                                                            <div class="dot-dropdown-items flex-column-10">
-                                                                <div class="dot-dropdown-item flex-start-15">
-                                                                    <span><i class="fa-regular fa-trash-can"></i></span>
-                                                                    <div>Delete</div>
-                                                                </div>
-                                                                <div class="dot-dropdown-item flex-start-15">
-                                                                    <span><i class="fa-solid fa-pen-to-square"></i></span>
-                                                                    <div>Edit</div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td><input type="checkbox" name="" id=""></td>
-                                                <td><img src="../image/c3.jpeg" alt=""></td>
-                                                <td>Cold Drinks & Juices</td>
-                                                <td>22</td>
-                                                <td><div class="publish-unpublish">Published</div></td>
-                                                <td>
-                                                    <div class="dot-dropdown-wrapper">
-                                                        <span class="dot-btn"><i class="fa-solid fa-ellipsis-vertical"></i></span>
-                                                        <div class="dot-dropdown">
-                                                            <div class="dot-dropdown-items flex-column-10">
-                                                                <div class="dot-dropdown-item flex-start-15">
-                                                                    <span><i class="fa-regular fa-trash-can"></i></span>
-                                                                    <div>Delete</div>
-                                                                </div>
-                                                                <div class="dot-dropdown-item flex-start-15">
-                                                                    <span><i class="fa-solid fa-pen-to-square"></i></span>
-                                                                    <div>Edit</div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td><input type="checkbox" name="" id=""></td>
-                                                <td><img src="../image/c6.png" alt=""></td>
-                                                <td>Cold Drinks & Juices</td>
-                                                <td>22</td>
-                                                <td><div class="publish-unpublish">Published</div></td>
-                                                <td>
-                                                    <div class="dot-dropdown-wrapper">
-                                                        <span class="dot-btn"><i class="fa-solid fa-ellipsis-vertical"></i></span>
-                                                        <div class="dot-dropdown">
-                                                            <div class="dot-dropdown-items flex-column-10">
-                                                                <div class="dot-dropdown-item flex-start-15">
-                                                                    <span><i class="fa-regular fa-trash-can"></i></span>
-                                                                    <div>Delete</div>
-                                                                </div>
-                                                                <div class="dot-dropdown-item flex-start-15">
-                                                                    <span><i class="fa-solid fa-pen-to-square"></i></span>
-                                                                    <div>Edit</div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td><input type="checkbox" name="" id=""></td>
-                                                <td><img src="../image/c5.png" alt=""></td>
-                                                <td>Fruits & Vegetables</td>
-                                                <td>22</td>
-                                                <td><div class="publish-unpublish">Published</div></td>
-                                                <td>
-                                                    <div class="dot-dropdown-wrapper">
-                                                        <span class="dot-btn"><i class="fa-solid fa-ellipsis-vertical"></i></span>
-                                                        <div class="dot-dropdown">
-                                                            <div class="dot-dropdown-items flex-column-10">
-                                                                <div class="dot-dropdown-item flex-start-15">
-                                                                    <span><i class="fa-regular fa-trash-can"></i></span>
-                                                                    <div>Delete</div>
-                                                                </div>
-                                                                <div class="dot-dropdown-item flex-start-15">
-                                                                    <span><i class="fa-solid fa-pen-to-square"></i></span>
-                                                                    <div>Edit</div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td><input type="checkbox" name="" id=""></td>
-                                                <td><img src="../image/c1.png" alt=""></td>
-                                                <td>Cold Drinks & Juices</td>
-                                                <td>13</td>
-                                                <td><div class="publish-unpublish">Published</div></td>
-                                                <td>
-                                                    <div class="dot-dropdown-wrapper">
-                                                        <span class="dot-btn"><i class="fa-solid fa-ellipsis-vertical"></i></span>
-                                                        <div class="dot-dropdown">
-                                                            <div class="dot-dropdown-items flex-column-10">
-                                                                <div class="dot-dropdown-item flex-start-15">
-                                                                    <span><i class="fa-regular fa-trash-can"></i></span>
-                                                                    <div>Delete</div>
-                                                                </div>
-                                                                <div class="dot-dropdown-item flex-start-15">
-                                                                    <span><i class="fa-solid fa-pen-to-square"></i></span>
-                                                                    <div>Edit</div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td><input type="checkbox" name="" id=""></td>
-                                                <td><img src="../image/c4.png" alt=""></td>
-                                                <td>Cold Drinks & Juices</td>
-                                                <td>13</td>
-                                                <td><div class="publish-unpublish">Published</div></td>
-                                                <td>
-                                                    <div class="dot-dropdown-wrapper">
-                                                        <span class="dot-btn"><i class="fa-solid fa-ellipsis-vertical"></i></span>
-                                                        <div class="dot-dropdown">
-                                                            <div class="dot-dropdown-items flex-column-10">
-                                                                <div class="dot-dropdown-item flex-start-15">
-                                                                    <span><i class="fa-regular fa-trash-can"></i></span>
-                                                                    <div>Delete</div>
-                                                                </div>
-                                                                <div class="dot-dropdown-item flex-start-15">
-                                                                    <span><i class="fa-solid fa-pen-to-square"></i></span>
-                                                                    <div>Edit</div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                               </div>
-                                <!-- all catagoris table start -->
-                               
-                               
-                            
-                               <!-- all catagoris table end -->
-                               
-                               
-                                <!-- ============== Pagination start here ============== -->
-                                <div class="pagination-wrapper flex-between">
-                                    <div>
-                                        <p>Showing 1 to of 4 entries</p>
-                                    </div>
-                                    <div class="pagination flex-start-15">
-                                        <div class="pagination-item">
-                                            <a href="#"> < </a>
+                                    <!-- vendor single item end -->
+                                    <!-- vendor single item start -->
+                                    <div class="vendors-item flex-column-25">
+                                        <!-- image -->
+                                        <div class="text-center">
+                                            <img src="../image/product3.jpeg" alt="">
                                         </div>
-                                        <div class="pagination-item">
-                                            <a href="#">1</a>
+                                        <div class="vendors-item-body flex-column-10 w-100" >
+                                            <div>
+                                                <a href="#" class="lg-title">DealShare Mart</a>
+                                            </div>
+                                            <p>Seller ID: #009</p>
+                                            <p>heathercarpenter@dayrep.com</p>
                                         </div>
-                                        <div class="pagination-item">
-                                            <a class="active" href="#">2</a>
-                                        </div>
-                                        <div class="pagination-item">
-                                            <a href="#">...</a>
-                                        </div>
-                                        <div class="pagination-item">
-                                            <a href="#">4</a>
-                                        </div>
-                                        <div class="pagination-item">
-                                            <a href="#"> > </a>
+                                        <div class="vendors-item-bottom w-100 flex-between">
+                                            <div>
+                                                <p>Gross Sale</p>
+                                                <div class="lg-title">$100.00</div>
+                                            </div>
+                                            <div>
+                                                <p>Earning</p>
+                                                <div class="lg-title">$50.00</div>
+                                            </div>
                                         </div>
                                     </div>
+                                    <!-- vendor single item end -->
+                                    <!-- vendor single item start -->
+                                    <div class="vendors-item flex-column-25">
+                                        <!-- image -->
+                                        <div class="text-center">
+                                            <img src="../image/product2.jpeg" alt="">
+                                        </div>
+                                        <div class="vendors-item-body flex-column-10 w-100" >
+                                            <div>
+                                                <a href="#" class="lg-title">StoreFront Super Market</a>
+                                            </div>
+                                            <p>Seller ID: #009</p>
+                                            <p>heathercarpenter@dayrep.com</p>
+                                        </div>
+                                        <div class="vendors-item-bottom w-100 flex-between">
+                                            <div>
+                                                <p>Gross Sale</p>
+                                                <div class="lg-title">$100.00</div>
+                                            </div>
+                                            <div>
+                                                <p>Earning</p>
+                                                <div class="lg-title">$50.00</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- vendor single item end -->
+                                    <!-- vendor single item start -->
+                                    <div class="vendors-item flex-column-25">
+                                        <!-- image -->
+                                        <div class="text-center">
+                                            <img src="../image/c4.png" alt="">
+                                        </div>
+                                        <div class="vendors-item-body flex-column-10 w-100" >
+                                            <div>
+                                                <a href="#" class="lg-title">E-Grocery Super Market</a>
+                                            </div>
+                                            <p>Seller ID: #007</p>
+                                            <p>heathercarpenter@dayrep.com</p>
+                                        </div>
+                                        <div class="vendors-item-bottom w-100 flex-between">
+                                            <div>
+                                                <p>Gross Sale</p>
+                                                <div class="lg-title">$100.00</div>
+                                            </div>
+                                            <div>
+                                                <p>Earning</p>
+                                                <div class="lg-title">$50.00</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- vendor single item end -->
+                                    <!-- vendor single item start -->
+                                    <div class="vendors-item flex-column-25">
+                                        <!-- image -->
+                                        <div class="text-center">
+                                            <img src="../image/c1.png" alt="">
+                                        </div>
+                                        <div class="vendors-item-body flex-column-10 w-100" >
+                                            <div>
+                                                <a href="#" class="lg-title">E-Grocery Super Market</a>
+                                            </div>
+                                            <p>Seller ID: #006</p>
+                                            <p>heathercarpenter@dayrep.com</p>
+                                        </div>
+                                        <div class="vendors-item-bottom w-100 flex-between">
+                                            <div>
+                                                <p>Gross Sale</p>
+                                                <div class="lg-title">$170.00</div>
+                                            </div>
+                                            <div>
+                                                <p>Earning</p>
+                                                <div class="lg-title">$20.00</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- vendor single item end -->
+                                    <!-- vendor single item start -->
+                                    <div class="vendors-item flex-column-25">
+                                        <!-- image -->
+                                        <div class="text-center">
+                                            <img src="../image/c5.png" alt="">
+                                        </div>
+                                        <div class="vendors-item-body flex-column-10 w-100" >
+                                            <div>
+                                                <a href="#" class="lg-title">Online Grocery Mart</a>
+                                            </div>
+                                            <p>Seller ID: #005</p>
+                                            <p>heathercarpenter@dayrep.com</p>
+                                        </div>
+                                        <div class="vendors-item-bottom w-100 flex-between">
+                                            <div>
+                                                <p>Gross Sale</p>
+                                                <div class="lg-title">$100.00</div>
+                                            </div>
+                                            <div>
+                                                <p>Earning</p>
+                                                <div class="lg-title">$50.00</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- vendor single item end -->
+                                    <!-- vendor single item start -->
+                                    <div class="vendors-item flex-column-25">
+                                        <!-- image -->
+                                        <div class="text-center">
+                                            <img src="../image/product4.jpeg" alt="">
+                                        </div>
+                                        <div class="vendors-item-body flex-column-10 w-100" >
+                                            <div>
+                                                <a href="#" class="lg-title">Online Grocery Mart</a>
+                                            </div>
+                                            <p>Seller ID: #004</p>
+                                            <p>heathercarpenter@dayrep.com</p>
+                                        </div>
+                                        <div class="vendors-item-bottom w-100 flex-between">
+                                            <div>
+                                                <p>Gross Sale</p>
+                                                <div class="lg-title">$100.00</div>
+                                            </div>
+                                            <div>
+                                                <p>Earning</p>
+                                                <div class="lg-title">$50.00</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- vendor single item end -->
+                                    <!-- vendor single item start -->
+                                    <div class="vendors-item flex-column-25">
+                                        <!-- image -->
+                                        <div class="text-center">
+                                            <img src="../image/product3.jpeg" alt="">
+                                        </div>
+                                        <div class="vendors-item-body flex-column-10 w-100" >
+                                            <div>
+                                                <a href="#" class="lg-title">E-Grocery Super Market</a>
+                                            </div>
+                                            <p>Seller ID: #002</p>
+                                            <p>heathercarpenter@dayrep.com</p>
+                                        </div>
+                                        <div class="vendors-item-bottom w-100 flex-between">
+                                            <div>
+                                                <p>Gross Sale</p>
+                                                <div class="lg-title">$200.00</div>
+                                            </div>
+                                            <div>
+                                                <p>Earning</p>
+                                                <div class="lg-title">$20.00</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- vendor single item end -->
+                                    <!-- vendor single item start -->
+                                    <div class="vendors-item flex-column-25">
+                                        <!-- image -->
+                                        <div class="text-center">
+                                            <img src="../image/product2.jpeg" alt="">
+                                        </div>
+                                        <div class="vendors-item-body flex-column-10 w-100" >
+                                            <div>
+                                                <a href="#" class="lg-title">Swiggy Instamart</a>
+                                            </div>
+                                            <p>Seller ID: #001</p>
+                                            <p>heathercarpenter@dayrep.com</p>
+                                        </div>
+                                        <div class="vendors-item-bottom w-100 flex-between">
+                                            <div>
+                                                <p>Gross Sale</p>
+                                                <div class="lg-title">$120.00</div>
+                                            </div>
+                                            <div>
+                                                <p>Earning</p>
+                                                <div class="lg-title">$10.00</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- vendor single item end -->
                                 </div>
-                           </div>
+                            </div>
                         </div>
-                        <!-- all product area end-->
+                        <!-- all vendors end -->
                     </section>
                 </div> <!-- dashboard area -->
             </div> <!-- dashboard wrapper -->
@@ -663,10 +682,8 @@
         
         // order dropdown
         orderBtn.addEventListener('click', () => {
-            const orderDropdown = document.getElementById('order-dropdown');
-            const arrowIndicator = document.querySelector('.arrow_indicator span');
-            orderDropdown.classList.toggle('active');
-            arrowIndicator.classList.toggle('active');
+            document.getElementById('order-dropdown').classList.toggle('active');
+            document.querySelector('.arrow_indicator span').classList.toggle('active');
         });
         
         // menu level dropdown
