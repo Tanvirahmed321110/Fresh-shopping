@@ -301,6 +301,7 @@
 }
 
 /* dashboard-wrapper */
+
 .dashboard-wrapper{
     height: calc(100dvh - 70px);
     margin-top: 100px;
@@ -308,7 +309,9 @@
     margin-left: 280px;
     padding: 0 25px;
 }
-
+.all-products{
+    padding-bottom: 55px;
+}
 /* banner-wrapper */
 .banner-wrapper{
     background-image: url('../image/small-banner1.jpg');
@@ -584,4 +587,17 @@
 .pagination-wrapper{
     padding: 25px;
     padding-bottom: 25px;
+}
+
+
+
+
+
+/* catagoris page  */
+table td .publish-unpublish{
+    padding: 2px 5px;
+    font-size: var(--low-font);
+    background-color: var(--border-color);
+    display: inline-block;
+    border-radius: var(--radius-sm);
 }
