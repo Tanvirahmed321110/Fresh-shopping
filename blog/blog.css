@@ -166,7 +166,7 @@ ul.disk{
 
 
 
-/* about-cart- */
+/* about-cart*/
 .about-cart-item{
     padding: 40px 30px;
     border-radius: var(--radius-lg);
@@ -178,4 +178,56 @@ ul.disk{
 }
 .about-cart-item img{
     width: 90px;
+}
+
+
+.board{
+    background-color: #198754;
+    color: var(--white-color);
+    padding: 100px 0;
+    margin: 50px 0;
+}
+.board-area.flex-column-25{
+    gap: 50px;
+}
+.board .xxl-title,.board .md-title,.board p{
+    color: var(--white-color);
+}
+.board .xxxl-title{
+    font-size: 55px;
+}
+.board-item .md-title{
+    font-weight: 500;
+}
+
+
+/* our leader ship */
+.our-leadership-items.col-3{
+    gap: 30px;
+}
+.our-leadership-item{
+    background-color: var(--white-medium);
+    padding: 20px;
+    border-radius: var(--radius-lg);
+}
+.our-leadership-item img{
+    width: 100%;
+    margin-top: 30px;
+}
+
+
+
+/* ============  error page  =============== */
+.error-page{
+    display: flex;
+    justify-content:center;
+    align-items: flex-start;
+    flex-direction: column;
+    height: 100dvh;
+    gap: 50px;
+}
+.error-image img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
 }
