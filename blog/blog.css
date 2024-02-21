@@ -64,3 +64,69 @@
     color:var(--link-color);
     transition: .2s;
 }
+
+
+
+
+
+
+/* ===============  blog single page  ================= */
+.blog-single{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+
+.blog-single-body{
+    padding: 30px 0;
+}
+
+.blog-single-body-items.flex-column-25{
+    gap: 50px;
+}
+/* poem-name blog-single-item */
+.poem-name.blog-single-item{
+    font-style:italic;
+    padding: 50px;
+    border-top: var(--border-1);
+    border-bottom: var(--border-1);
+}
+
+.blog-single-item ul{
+    margin-left: 25px;
+    list-style-type: disc;
+}
+.blog-single-item ul li{
+    margin: 10px;
+}
+ul.disk{
+    list-style:circle;
+}
+
+
+
+
+/* blog-single-footer-profile */
+.blog-single-footer{
+    border-top: var(--border-1);
+    padding: 15px;
+}
+
+.blog-single-footer-profile img{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+.blog-single-footer-profile .sm-title{
+    color: var(--link-color);
+    font-weight: 500;
+}
+.share ul li{
+    color: var(--gray-color);
+    font-weight: 500;
+}
+.share ul li i {
+    font-size: var(--lg-font);
+    color: var(--gray-color);
+}
