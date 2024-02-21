@@ -130,3 +130,52 @@ ul.disk{
     font-size: var(--lg-font);
     color: var(--gray-color);
 }
+
+
+
+
+
+
+/* ============== about page ============= */
+.about-container{
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+    
+}
+
+/* about top */
+.about-cart-items.col-3{
+    gap: 35px;
+}
+.about-top.flex-between{
+    gap: 40px;
+}
+.about-top{
+    padding: 50px 0;
+}
+.about-top-image img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: var(--radius-lg);
+}
+.about-top-content .md-title{
+    line-height: 30px;
+    color: var(--gray-color);
+}
+
+
+
+/* about-cart- */
+.about-cart-item{
+    padding: 40px 30px;
+    border-radius: var(--radius-lg);
+    background-color: var(--white-medium);
+}
+.about-cart-item p{
+    font-weight: 500;
+    line-height: 23px;
+}
+.about-cart-item img{
+    width: 90px;
+}
