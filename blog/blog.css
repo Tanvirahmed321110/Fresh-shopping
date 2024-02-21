@@ -231,3 +231,12 @@ ul.disk{
     height: 300px;
     object-fit: cover;
 }
+.contact-form label{
+    font-weight: 500;
+}
+.contact-form input{
+    width: 100%;
+}
+.contact-form .flex-between{
+    gap: 30px;
+}

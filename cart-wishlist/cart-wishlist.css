@@ -1,0 +1,48 @@
+
+
+.table{
+    padding: 40px 0;
+}
+.table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.table table th{
+    padding: 25px;
+    background-color: var(--white-medium);
+    font-weight: 600;
+    color:var(--gray-color);
+    text-align: left;
+}
+.table table tr{
+    border-bottom:var(--border-1);
+}
+.table table td{
+    padding: 15px 25px;
+    font-weight: 500;
+    font-size: var(--sm-font);
+    color: var(--green-color);
+    text-align: left;
+}
+.table table td img{
+    width: 45px;
+}
+.table table .product-name{
+    font-weight: 500;
+    font-size: var(--sm-font);
+    color: var(--heading-color);
+}
+.table table .product-name:hover{
+    color: var(--link-color);
+}
+.table table .stock{
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: var(--radius-sm);
+    background-color: var(--link-color);
+    font-size: var(--low-font);
+    color: var(--white-medium);
+}
+.table .delete-btn{
+    cursor: pointer;
+}
