@@ -1,0 +1,242 @@
+
+
+
+/* blog-big-item */
+.blog{
+    padding-bottom: 70px;
+}
+.big-item-image{
+    flex-basis: 65% !important;
+    border-radius: var(--radius-md);
+    overflow: hidden;
+}
+.big-item-image a{
+    display: block;
+}
+.big-item-image a img{
+    width: 100%;
+    height: 350px;transition: .2s linear;
+}
+.big-item-image a img:hover{
+    transition: .2s linear;
+    transform: scale(1.1);
+}
+.blog-big-item .big-item-content{
+    width: 30%;
+}
+
+/* big-item-footer */
+.big-item-footer {
+    color:var(--gray-color)
+}
+.big-item-footer strong{
+    color: var(--heading-color);
+}
+
+
+
+/*===========  blog  small item ============ */
+.blog-smalll-items.col-3{
+    gap:40px;
+    row-gap: 60px;
+}
+.blog-small-item p{
+    font-size: var(--md-font);
+}
+.small-item-image a {
+    display: block;
+    border-radius: var(--radius-md);
+    overflow: hidden;
+}
+.small-item-image img{
+    width: 100%;  
+    height: 180px;
+    transition: .2s;
+    border-radius: var(--radius-md);
+}
+.small-item-image img:hover{
+    transform: scale(1.1);
+}
+.blog-small-item a.md-title{
+    color: var(--link-color);
+}
+.blog-small-item a.lg-title:hover{
+    color:var(--link-color);
+    transition: .2s;
+}
+
+
+
+
+
+
+/* ===============  blog single page  ================= */
+.blog-single{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+
+.blog-single-body{
+    padding: 30px 0;
+}
+
+.blog-single-body-items.flex-column-25{
+    gap: 50px;
+}
+/* poem-name blog-single-item */
+.poem-name.blog-single-item{
+    font-style:italic;
+    padding: 50px;
+    border-top: var(--border-1);
+    border-bottom: var(--border-1);
+}
+
+.blog-single-item ul{
+    margin-left: 25px;
+    list-style-type: disc;
+}
+.blog-single-item ul li{
+    margin: 10px;
+}
+ul.disk{
+    list-style:circle;
+}
+
+
+
+
+/* blog-single-footer-profile */
+.blog-single-footer{
+    border-top: var(--border-1);
+    padding: 15px;
+}
+
+.blog-single-footer-profile img{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+.blog-single-footer-profile .sm-title{
+    color: var(--link-color);
+    font-weight: 500;
+}
+.share ul li{
+    color: var(--gray-color);
+    font-weight: 500;
+}
+.share ul li i {
+    font-size: var(--lg-font);
+    color: var(--gray-color);
+}
+
+
+
+
+
+
+/* ============== about page ============= */
+.about-container{
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+    
+}
+
+/* about top */
+.about-cart-items.col-3{
+    gap: 35px;
+}
+.about-top.flex-between{
+    gap: 40px;
+}
+.about-top{
+    padding: 50px 0;
+}
+.about-top-image img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: var(--radius-lg);
+}
+.about-top-content .md-title{
+    line-height: 30px;
+    color: var(--gray-color);
+}
+
+
+
+/* about-cart*/
+.about-cart-item{
+    padding: 40px 30px;
+    border-radius: var(--radius-lg);
+    background-color: var(--white-medium);
+}
+.about-cart-item p{
+    font-weight: 500;
+    line-height: 23px;
+}
+.about-cart-item img{
+    width: 90px;
+}
+
+
+.board{
+    background-color: #198754;
+    color: var(--white-color);
+    padding: 100px 0;
+    margin: 50px 0;
+}
+.board-area.flex-column-25{
+    gap: 50px;
+}
+.board .xxl-title,.board .md-title,.board p{
+    color: var(--white-color);
+}
+.board .xxxl-title{
+    font-size: 55px;
+}
+.board-item .md-title{
+    font-weight: 500;
+}
+
+
+/* our leader ship */
+.our-leadership-items.col-3{
+    gap: 30px;
+}
+.our-leadership-item{
+    background-color: var(--white-medium);
+    padding: 20px;
+    border-radius: var(--radius-lg);
+}
+.our-leadership-item img{
+    width: 100%;
+    margin-top: 30px;
+}
+
+
+
+/* ============  error page  =============== */
+.error-page{
+    display: flex;
+    justify-content:center;
+    align-items: flex-start;
+    flex-direction: column;
+    height: 100dvh;
+    gap: 50px;
+}
+.error-image img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+.contact-form label{
+    font-weight: 500;
+}
+.contact-form input{
+    width: 100%;
+}
+.contact-form .flex-between{
+    gap: 30px;
+}

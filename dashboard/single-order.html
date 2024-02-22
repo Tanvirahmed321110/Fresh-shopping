@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single_Order</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/dashboardAll.css">
+</head>
+<body>
+    <header>
+        <div class="header-wrapper flex-between">
+            <div>
+                <input type="text" placeholder="Search">
+            </div>
+            <div class="header-profile-notification d-flex-25">
+                <!-- notification area -->
+                <div class="notification-area">
+                    <div class="notification" id="notification-btn">
+                        <i class="ri-notification-3-line"></i>
+                        <div class="base">3</div>
+                    </div>
+                    <!-- notification dropdown -->
+                    <div class="notification-dropdown" id="notification-dropdown">
+                        <div class="notification-dropdown-header flex-between">
+                            <div class="flex-column-5">
+                                <h4 class="lg-title">Notifications</h4>
+                                <div class="">You have 3 unread messages</div>
+                            </div>
+                            <div>
+                                <span class="lg-title"><i class="ri-check-double-fill"></i></span>
+                            </div>
+                        </div>
+                        <!-- notification dropdown body -->
+                        <div class="notification-dropdown-body" >
+                            <div class="notification-body-items flex-column-5" >
+                                <!-- notification body item start -->
+                                <div class="notification-body-item d-flex-15 w-100">
+                                    <div class="notification-profile-image">
+                                        <img src="../image/profile.avif" alt="">
+                                    </div>
+                                    <div class="flex-column-5">
+                                        <p>Your order is placed <span>wating for shipping</span></p>
+                                        <div class="d-flex-10">
+                                            <span><i class="ri-timer-line"></i></span>
+                                            <small>11 minute ago</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- notification body item end -->
+                                <!-- notification body item start -->
+                                <div class="notification-body-item d-flex-15 w-100">
+                                    <div class="notification-profile-image">
+                                        <img src="../image/profile3.jpeg" alt="">
+                                    </div>
+                                    <div class="flex-column-5">
+                                        <p>Your order is placed <span>wating for shipping</span></p>
+                                        <div class="d-flex-10">
+                                            <span><i class="ri-timer-line"></i></span>
+                                            <small>11 minute ago</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- notification body item end -->
+                                <!-- notification body item start -->
+                                <div class="notification-body-item d-flex-15 w-100">
+                                    <div class="notification-profile-image">
+                                        <img src="../image/profile2.jpeg" alt="">
+                                    </div>
+                                    <div class="flex-column-5">
+                                        <p>Your order is placed <span>wating for shipping</span></p>
+                                        <div class="d-flex-10">
+                                            <span><i class="ri-timer-line"></i></span>
+                                            <small>11 minute ago</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- notification body item end -->
+                            </div>
+                        </div>
+                        <!-- notification dropdown body end -->
+                        <div class="notification-dropdown-bottom">
+                            <div class="text-center">
+                                <a href="#">View All</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- notification area  end-->
+                <div class="profile" id="dashboard-profile">
+                    <div>
+                        <img  src="../image/profile.avif" alt="">
+                    </div>
+                    <!-- profile dropdown -->
+                    <div class="profile-dropdown" id="profile-dropdown">
+                        <!-- profile dropdown header -->
+                        <div class="profile-dropdown-header flex-column-5">
+                            <div class="lg-title">FreshShop Admin</div>
+                            <small>tanvir@gmail.com</small>
+                        </div>
+                        <!-- profile dropdown body -->
+                        <div class="profile-dropdown-body">
+                            <ul>
+                                <li><a href="../index.html">Home</a></li>
+                                <li><a href="#">Profile</a></li>
+                                <li><a href="#">Setting</a></li>
+                            </ul>
+                        </div>
+                        <!-- profile dropdown footer -->
+                        <div class="profile-dropdown-footer">
+                            <div>
+                                <a href="#" class="flex-start-10">
+                                    <div>Log Out</div>
+                                    <span><i class="ri-logout-box-r-line"></i></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    
+    
+    
+    
+    <!-- ============ sidebar =========== -->
+    <div class="sidebar">
+        <div class="sidebar-wrapper">
+            <!-- sidebar header -->
+            <div class="sidebar-header">
+                <div>
+                    <a href="index.html" class="flex-start-5">
+                        <div class="icon">
+                            <span class="xxl-title"><i class="fa-solid fa-cart-flatbed-suitcase"></i></span>
+                        </div>
+                        <div>
+                            <h2 class="xxl-title">FreshShop</h2>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!-- sidebar content -->
+            <div class="sidebar-content">
+                <div class="sidebar-content-wrapper">
+                    <div class="sidebar-items flex-column-25">
+                        <!-- sidebar item -->
+                        <div class="sidebar-item w-100">
+                            <div class="un-active dashboard-home sidebar-inner-item">
+                                <a class="flex-start-15" href="../dashboard/dashboard.html">
+                                    <div>
+                                        <span><i class="ri-home-line"></i></span>
+                                    </div>
+                                    <div>
+                                        <div class="sm-title">Dashboard</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- sidebar item end-->
+                        <!-- sidebar item start-->
+                        
+                    
+                        
+                        <!-- store items start -->
+                        <div class="sidebar-item flex-column-15 w-100 ">
+                            <div class="sidebar-item-header">
+                                <h4 class="sm-title">Store Managements</h4>
+                            </div>
+                            <div class="store-items sidebar-inner-items flex-column-5 w-100">
+                                <!-- sidebar item inner start -->
+                                <div class=" dashboard-home sidebar-inner-item w-100">
+                                    <a class="flex-start-15" href="../dashboard/dashboard.html">
+                                        <div>
+                                            <span><i class="ri-shopping-cart-line"></i></span>
+                                        </div>
+                                        <div>
+                                            <div class="sm-title">Products</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!-- sidebar item inner start -->
+                                <!-- sidebar item inner start -->
+                                <div class="dashboard-home sidebar-inner-item w-100">
+                                    <a class="flex-start-15" href="../dashboard/catagoris.html">
+                                        <div>
+                                            <span><i class="ri-list-check"></i></span>
+                                        </div>
+                                        <div>
+                                            <div class="sm-title">Catagoris</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!-- sidebar item inner start -->
+                                <!-- sidebar item inner start -->
+                                <div class="flex-column-5 w-100">
+                                    <div class="active dashboard-home sidebar-inner-item  w-100" id="order-menu-btn">
+                                        <a class="flex-between">
+                                            <div class="flex-start-15">
+                                                <div>
+                                                    <span><i class="ri-shopping-bag-2-line"></i></span>
+                                                </div>
+                                                <div>
+                                                    <div class="sm-title">Orders</div>
+                                                </div>
+                                            </div>
+                                            <div class="arrow_indicator">
+                                                <span><i id="order-icon" class="ri-arrow-down-s-line"></i></span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <!-- order dropdown -->
+                                    <div class="order-droopdown flex-column-10 w-100" id="order-dropdown">
+                                        <div class="order-droopdown-item ">
+                                            <a href="../dashboard/order-list.html" class="flex-start-10 text-left ">
+                                                <div class="circle"></div>
+                                                <div>List</div>
+                                            </a>
+                                        </div>
+                                        <div class="order-droopdown-item">
+                                            <a href="../dashboard/single-order.html" class="flex-start-10">
+                                                <div class="circle"></div>
+                                                <div>Single</div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- sidebar item inner start -->
+                                <!-- sidebar item inner start -->
+                                <div class="dashboard-home sidebar-inner-item w-100">
+                                    <a class="flex-start-15" href="../dashboard/dashboard.html">
+                                        <div>
+                                            <span><i class="ri-store-2-line"></i></span>
+                                        </div>
+                                        <div>
+                                            <div class="sm-title">Store</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!-- sidebar item inner start -->
+                                <!-- sidebar item inner start -->
+                                <div class="dashboard-home sidebar-inner-item w-100">
+                                    <a class="flex-start-15" href="../dashboard/dashboard.html">
+                                        <div>
+                                            <span><i class="ri-group-line"></i></span>
+                                        </div>
+                                        <div>
+                                            <div class="sm-title">Customers</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!-- sidebar item inner start -->
+                                <!-- sidebar item inner start -->
+                                <div class="dashboard-home sidebar-inner-item w-100">
+                                    <a class="flex-start-15" href="../dashboard/dashboard.html">
+                                        <div>
+                                            <span><i class="ri-star-line"></i></span>
+                                        </div>
+                                        <div>
+                                            <div class="sm-title">Reviews</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                
+                                <!-- sidebar item inner start -->
+                                <div class="flex-column-5 w-100" id="menu-level-wrapper">
+                                    <div class="dashboard-home sidebar-inner-item  w-100" id="menu-level-btn">
+                                        <a  class="flex-between">
+                                            <div class="flex-start-15">
+                                                <div>
+                                                    <span><i class="ri-corner-left-down-line"></i></span>
+                                                </div>
+                                                <div>
+                                                    <div class="sm-title">Menu Level</div>
+                                                </div>
+                                            </div>
+                                            <div class="arrow_indicator">
+                                                <span><i class="ri-arrow-down-s-line"></i></span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <!-- Menu Level dropdown -->
+                                    <div class="menu-level-dropdown flex-column-10 w-100" id="menu-level-dropdown">
+                                        <div class="order-droopdown-item ">
+                                            <a href="#" class="flex-start-10 text-left">
+                                                <div class="circle"></div>
+                                                <div>Two Level</div>
+                                            </a>
+                                        </div>
+                                        <div class="order-droopdown-item">
+                                            <a href="#" class="flex-start-10">
+                                                <div class="circle"></div>
+                                                <div>Three Level</div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- sidebar item inner start -->
+                            </div>
+                        </div>
+                        <!-- store items end -->
+                        
+                        <!-- support items -->
+                        <div class="sidebar-item flex-column-15 w-100">
+                            <div class="sidebar-item-header">
+                                <h4 class="sm-title">Store Managements</h4>
+                            </div>
+                            <div class="suport-items sidebar-inner-items flex-column-5 w-100">
+                                <!-- sidebar item inner start -->
+                                <div class="dashboard-home sidebar-inner-item w-100">
+                                    <a class="flex-start-15" href="../dashboard/dashboard.html">
+                                        <div>
+                                            <span><i class="ri-question-line"></i></span>
+                                        </div>
+                                        <div>
+                                            <div class="sm-title">Help Center </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!-- sidebar item inner start -->
+                                <!-- sidebar item inner start -->
+                                <div class="dashboard-home sidebar-inner-item w-100">
+                                    <a class="flex-start-15" href="../dashboard/dashboard.html">
+                                        <div>
+                                            <span><i class="ri-customer-service-line"></i></span>
+                                        </div>
+                                        <div>
+                                            <div class="sm-title">Support Ticket</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!-- sidebar item inner start -->
+                                <!-- sidebar item inner start -->
+                                <div class="dashboard-home sidebar-inner-item w-100">
+                                    <a class="flex-start-15" href="../dashboard/dashboard.html">
+                                        <div>
+                                            <span><i class="ri-settings-2-line"></i></span>
+                                        </div>
+                                        <div>
+                                            <div class="sm-title">Store Setting </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!-- sidebar item inner start -->
+                            </div>
+                        </div>
+                        <!-- support items end-->
+                        
+                        <!-- our app -->
+                        <div class="sidebar-item flex-column-15 w-100">
+                            <div class="sidebar-item-header">
+                                <h4 class="sm-title">Our App</h4>
+                            </div>
+                            <div class="sidebar-inner-items w-100">
+                                <!-- sidebar item inner start -->
+                                <div class="dashboard-home sidebar-inner-item w-100">
+                                    <a class="flex-start-15" href="../dashboard/dashboard.html">
+                                        <div>
+                                            <span><i class="ri-apple-line"></i></span>
+                                        </div>
+                                        <div>
+                                            <div class="sm-title">Apple Store </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!-- sidebar item inner start -->
+                                <!-- sidebar item inner start -->
+                                <div class="dashboard-home sidebar-inner-item w-100">
+                                    <a class="flex-start-15" href="../dashboard/dashboard.html">
+                                        <div>
+                                            <span><i class="ri-google-play-fill"></i></span>
+                                        </div>
+                                        <div>
+                                            <div class="sm-title">Goole Store </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!-- sidebar item inner start -->
+                            </div>
+                        </div>
+                        <!-- our app end-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    
+    
+    
+    <!-- ============ dashboard content =========== -->
+    <main>
+        <div class="dashboard">
+            <div class="dashboard-wrapper">
+                <div class="dashboard-area">
+                    <section>
+                        <div class="products-page-header">
+                            <div class="products-page-header-area flex-between">
+                                <!-- header left -->
+                                <div class="products-page-header-left flex-column-10">
+                                    <div class="xxl-title">Order Single</div>
+                                    <div class="flex-between w-100">
+                                        <ul class="flex-start-10">
+                                            <li><a href="./dashboard.html">Dashboard</a></li>
+                                            <li> / </li>
+                                            <li>Order Single</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                <div class="header-right">
+                                    <a href="../dashboard/order-list.html" class="btn-fill-orange">Back To All Order</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                        <!-- ----all product area start---- -->
+                        <div class=" order-single">
+                            <div class="all-products-area order-single-area">
+                                <div class="order-single-header flex-between w-100 ">
+                                    <div class="order-single-header-left d-flex-5">
+                                        <div class="xxl-title">
+                                            Order ID: <span>#FC001</span>
+                                        </div>
+                                        <div class="order-base">Pending</div>
+                                    </div>
+                                    <!-- order single header right -->
+                                    <div class="order-single-header-right d-flex-10">
+                                        <div>
+                                            <select name="" id="">
+                                                <option value="">Status</option>
+                                                <option value="">Success</option>
+                                                <option value="">Pending</option>
+                                                <option value="">Cancel</option>
+                                            </select>
+                                        </div>
+                                        <div>
+                                            <a href="#" class="btn-fill-orange">Save</a>
+                                        </div>
+                                        <div>
+                                            <a href="#" class="btn-fill-orange green">Download Invoice</a>
+                                        </div>
+                                    </div>
+                                </div> 
+                                
+                                
+                                <div class="order-single-data">
+                                    <div class="order-single-data-items flex-between">
+                                        <!-- customer details start here -->
+                                        <div class="order-single-data-item flex-column-10">
+                                            <div class="md-title" >Customer Details</div>
+                                            <div class="flex-column-5">
+                                                <p>John Alex</p>
+                                                <p>anderalex@example.com</p>
+                                                <p>+998 99 22123456</p>
+                                                <div>
+                                                    <a href="#">View Profile</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--Shipping Address start here -->
+                                        <div class="order-single-data-item flex-column-10">
+                                            <div class="md-title" >Shipping Address</div>
+                                            <div class="flex-column-5">
+                                                <p>Gerg Harvell</p>
+                                                <p>568, Suite Ave.</p>
+                                                <p>Austrlia, 235153</p>
+                                                <p>Contact No. +91 99999 12345</p>
+                                            </div>
+                                        </div>
+                                        <!-- Order Details start here -->
+                                        <div class="order-single-data-item flex-column-10">
+                                            <div class="md-title" >Order Details</div>
+                                            <div class="flex-column-5">
+                                                <p>Order ID: FC001</p>
+                                                <p>Order Date: October 22, 2023</p>
+                                                <p>Order Total: $734.28</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                               
+                               <!-- all catagoris table start -->
+                               <div class="order-single-table all-products-table">
+                                    <table>
+                                        <thead>
+                                            <th>Product</th>
+                                            <th>Price</th>
+                                            <th>Quintity</th>
+                                            <th>Total</th>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <a class="product-name flex-start-10" href="#">
+                                                        <img src="../image/product2.jpeg" alt="">
+                                                        <div>Onion Flavour Potato</div>
+                                                    </a>
+                                                </td>
+                                                <td>18.00</td>
+                                                <td>2</td>
+                                                <td>$18.00</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <a class="product-name flex-start-10" href="#">
+                                                        <img src="../image/product2.jpeg" alt="">
+                                                        <div>Onion Flavour Potato</div>
+                                                    </a>
+                                                </td>
+                                                <td>15.00</td>
+                                                <td>1</td>
+                                                <td>$15.00</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <a class="product-name flex-start-10" href="#">
+                                                        <img src="../image/product4.jpeg" alt="">
+                                                        <div>Onion Flavour Potato</div>
+                                                    </a>
+                                                </td>
+                                                <td>18.00</td>
+                                                <td>1</td>
+                                                <td>$18.00</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <a class="product-name flex-start-10" href="#">
+                                                        <img src="../image/product3.jpeg" alt="">
+                                                        <div>Onion Flavour Potato</div>
+                                                    </a>
+                                                </td>
+                                                <td>18.00</td>
+                                                <td>1</td>
+                                                <td>$18.00</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <a class="product-name flex-start-10" href="#">
+                                                        <img src="../image/product1.jpeg" alt="">
+                                                        <div>Onion Flavour Potato</div>
+                                                    </a>
+                                                </td>
+                                                <td>19.00</td>
+                                                <td>2</td>
+                                                <td>$38.00</td>
+                                            </tr>
+                                            <tr class="border-bottom-0">
+                                                <td></td>
+                                                <td></td>
+                                                <td colspan="1" class="border-bottom-1">
+                                                   Sub Total :
+                                                </td>
+                                                <td class="border-bottom-1">
+                                                   $80.00
+                                                </td>
+                                             </tr>
+                                            <tr class="border-bottom-0">
+                                                <td></td>
+                                                <td></td>
+                                                <td colspan="1" class="border-bottom-1">
+                                                   Shipping Cost :
+                                                </td>
+                                                <td class="border-bottom-1">
+                                                   $5.00
+                                                </td>
+                                             </tr>
+                                            <tr class="border-bottom-0">
+                                                <td></td>
+                                                <td></td>
+                                                <td colspan="1" class="border-bottom-1 lg-title">
+                                                   Total :
+                                                </td>
+                                                <td class="border-bottom-1 lg-title">
+                                                   $80.00
+                                                </td>
+                                             </tr>
+                                        </tbody>
+                                    </table>
+                                    
+                                    
+                                    
+                                    <div class="order-single-page-bottom flex-between">
+                                        <div class="payment-info flex-column-10">
+                                            <div class="sm-title">Payment Info</div>
+                                            <p >Cash on Delivery</p>
+                                        </div>
+                                        <div class="order-single-bottom-right flex-column-10">
+                                            <div class="lg-title">Notes</div>
+                                            <div class="w-100">
+                                                <textarea placeholder="Write note for order" ></textarea>
+                                            </div>
+                                            <div>
+                                                <a href="" class="btn-fill-orange">Save Notes</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                               </div>
+                           </div>
+                        </div>
+                        <!-- all product area end-->
+                    </section>
+                </div> <!-- dashboard area -->
+            </div> <!-- dashboard wrapper -->
+        </div>
+    </main>
+
+    
+    
+    <script>
+        const profileBtn  = document.getElementById('dashboard-profile');
+        const notificationBtn = document.getElementById('notification-btn');
+        
+        const profileDropdown = document.getElementById('profile-dropdown');
+        const notificationDropdown = document.getElementById('notification-dropdown');
+        const menuLevelBtn = document.getElementById('menu-level-btn');
+        const orderBtn = document.getElementById('order-menu-btn');
+        
+        // profile pic dropdown
+        profileBtn.addEventListener('click',()=>{
+            profileDropdown.classList.toggle('active')
+        })
+        // notification dropdown
+        notificationBtn.addEventListener('click',()=>{
+            notificationDropdown.classList.toggle('active')
+        })
+        
+        // order dropdown
+        orderBtn.addEventListener('click', () => {
+            document.getElementById('order-dropdown').classList.toggle('active');
+            document.querySelector('.arrow_indicator span').classList.toggle('active');
+        });
+        
+        // menu level dropdown
+        menuLevelBtn.addEventListener('click',()=>{
+            const menuLevelDropdown = document.getElementById('menu-level-dropdown');
+            const arrowIndicator =  menuLevelBtn.querySelector('.arrow_indicator span');
+            
+            menuLevelDropdown.classList.toggle('active');
+            arrowIndicator.classList.toggle('active')
+        })
+    
+    </script>
+</body>
+</html>
