@@ -515,7 +515,10 @@ img{
 
 
 /* ============ modal ============ */
-.modal,.login-modal{
+body{
+    position: relative;
+}
+.modal{
     display: none;
     position: fixed;
     top: 0;
@@ -527,12 +530,14 @@ img{
     z-index: 2;
 }
 
-.modal-content{
+.modal-content,.modal-content.login-modal-content{
     background-color: #fefefe;
     margin: 5% auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 80%;
+    max-width: 450px;
+    width: 100%;
+    width: 40%;
     padding: 40px;
     border-radius: var(--radius-lg);
 }
@@ -544,7 +549,7 @@ img{
 .modal.login-modal .modal-content{
     width: 450px;
 }
-.modal.login-modal .modal-content input{
+.modal .login-modal-content input{
     width: 100%;
 }
 .modal #modal-close{
@@ -553,6 +558,130 @@ img{
     font-weight: 500;
     border: var(--border-1);
 }
+
+
+
+
+/* cart modal */
+
+.cart-modal-content{
+    max-width: 600px;
+    position:absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    border-radius: 0;
+    padding: 0;
+    height: 100dvh;
+    z-index: 2;
+}
+.cart-modal-content.active{
+    right: -100px;
+    top:0;
+    transition: .3s;
+    display: block;
+}
+
+/* cart modal header */
+.cart-modal-header{
+    height: 180px;
+    padding:25px;
+}
+.header-top{
+    padding-bottom: 25px;
+    border-bottom: var(--border-1);
+}
+.cart-modal-note{
+    padding: 10px;
+    background-color: var(--white-medium);
+    border-radius: var(--radius-md);
+    margin: 20px 0;
+    font-weight: 500;
+    color: var(--green-color);
+    border: var(--border-1);
+}
+.cart-modal-note a{
+    font-size: var(--sm-font);
+    font-weight: 600;
+    color: var(--heading-color);
+    letter-spacing: .2px;
+}
+.cart-modal-note a:hover{
+    color: var(--link-color);
+}
+
+/* cart-modal-body */
+.cart-modal-body-items{
+    border-top: var(--border-1);
+}
+.cart-modal-body{
+    height: calc(100dvh - 280px);
+    width: 100%;
+    overflow-y: auto;
+}
+
+.cart-modal-body-area{
+    padding: 25px;
+}
+.cart-modal-body-item {
+    border-bottom: var(--border-1);
+    padding: 10px 0;
+}
+.cart-modal-body-item:last-child{
+    border-bottom: none;
+}
+
+/* cart modal footer */
+.cart-modal-footer{
+    height: 100px;
+    padding: 25px;
+    border-top: var(--border-1);
+}
+
+
+/* item-name-remove */
+.cart-modal-body .item-name-remove a{
+    font-weight: 600;
+    font-size: var(--sm-font);
+    color: var(--heading-color);
+}
+.cart-modal-body .item-name-remove span{
+    color: var(--gray-medium);
+    font-size: var(--xs-font);
+}
+.cart-modal-body .item-name-remove button{
+    background-color: transparent;
+    color: var(--gray-medium);
+    padding: 0;
+    font-size: var(--low-font);
+    padding: 2px 1px;
+}
+.cart-modal-body .item-name-remove button i{
+    font-size: var(--md-font);
+}
+.cart-modal-body .update-quantity input,.cart-modal-body .update-quantity{
+    background-color: var(--white-medium);
+    padding: 5px;
+}
+.cart-modal-body .update-quantity input,.cart-modal-body .update-quantity  button{
+    width: 40px;
+    padding: 9px 5px;
+    background-color: white;
+    border: var(--border-1);
+}
+
+/* item-price */
+.cart-modal-body .item-price{
+    font-weight: 600;
+    color: var(--heading-color);
+}
+.cart-modal-body .item-price-old{
+    font-size: var(--xs-font);
+    font-weight: 400;
+    color: var(--gray-medium);
+    text-decoration: line-through;
+}
+
 
 
 

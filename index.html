@@ -102,8 +102,8 @@
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="#">
-                                                    <div><i class="ri-shopping-bag-line"></i></div>
+                                                <a id="btn-cart" href="#">
+                                                    <div ><i class="ri-shopping-bag-line"></i></div>
                                                     <span>5</span>
                                                 </a>
                                             </li>
@@ -2139,11 +2139,11 @@
         
         
         <!--============== login modal ============ -->
-        <div id="modal-login" class="login-modal modal">
-            <div class="modal-content flex-column-25">
+        <div id="modal-login" class="modal">
+            <div class="modal-content login-modal-content flex-column-25">
                 <div class="modal-header flex-between w-100">
                     <div class="xl-title">Sign Up</div>
-                    <button id="modal-close" class="xl-title">X</button>
+                    <button id="login-modal-close" class="xl-title">X</button>
                 </div>
                 <div class="flex-column-20">
                     <div class="flex-column-5 w-100">
@@ -2171,12 +2171,260 @@
                 </div>
             </div>
         </div>
+        <!--============== login modal end ============ -->
+        
+        
+        
+        <!--============== Cart modal start ============ -->
+            <div class="modal cart-modal" id="cart-modal">
+                <div class="modal-content cart-modal-content">
+                    <!-- cart modal header -->
+                    <div class="cart-modal-header ">
+                        <!-- header top -->
+                        <div class="header-top flex-between">
+                            <div class="flex-column-5 ">
+                                <div class="xl-title">Shop Cart</div>
+                                <p>Location in Dhaka 1221</p>
+                            </div>
+                            <div>
+                                <button id="cart-modal-close" class="xl-title">X</button>
+                            </div>
+                        </div>
+                        <div>
+                            <!-- cart modal note -->
+                            <div class="cart-modal-note">
+                                <p>You’ve got FREE delivery. Start <a href="#"> checkout now!</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- cart modal body -->
+                    <div class="cart-modal-body">
+                        <div class="cart-modal-body-area">
+                            <div class="cart-modal-body-items">
+                                <!-- single item -->
+                                <div class="cart-modal-body-item flex-between">
+                                    <div class="d-flex-25">
+                                        <!-- image -->
+                                        <div>
+                                            <img width="50px" src="./image/product2.jpeg" alt="">
+                                        </div>
+                                        <!-- item name & remove -->
+                                        <div class="item-name-remove flex-column-5">
+                                            <a href="#">Haldiram's Sev Bhujia</a>
+                                            <div>
+                                                <span>98 / lb</span>
+                                            </div>
+                                            <div>
+                                                <button><i class="ri-delete-bin-line"></i> Remove</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex-25">
+                                        <!-- update quantity -->
+                                        <div class="update-quantity">
+                                            <button><i class="ri-add-line"></i></button>
+                                            <input type="number" min="0" max="5">
+                                            <button><i class="ri-subtract-line"></i></button>
+                                        </div>
+                                        <!-- item price -->
+                                        <div class="item-price">
+                                            <p>$25.00</p>
+                                            <p class="item-price-old">$29.00</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- single item end -->
+                                <!-- single item -->
+                                <div class="cart-modal-body-item flex-between">
+                                    <div class="d-flex-25">
+                                        <!-- image -->
+                                        <div>
+                                            <img width="50px" src="./image/product1.jpeg" alt="">
+                                        </div>
+                                        <!-- item name & remove -->
+                                        <div class="item-name-remove flex-column-5">
+                                            <a href="#">Haldiram's Sev Bhujia</a>
+                                            <div>
+                                                <span>98 / lb</span>
+                                            </div>
+                                            <div>
+                                                <button><i class="ri-delete-bin-line"></i> Remove</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex-25">
+                                        <!-- update quantity -->
+                                        <div class="update-quantity">
+                                            <button><i class="ri-add-line"></i></button>
+                                            <input type="number" min="0" max="5">
+                                            <button><i class="ri-subtract-line"></i></button>
+                                        </div>
+                                        <!-- item price -->
+                                        <div class="item-price">
+                                            <p>$25.00</p>
+                                            <p class="item-price-old">$29.00</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- single item end -->
+                                <!-- single item -->
+                                <div class="cart-modal-body-item flex-between">
+                                    <div class="d-flex-25">
+                                        <!-- image -->
+                                        <div>
+                                            <img width="50px" src="./image/catagory-tea.jpeg" alt="">
+                                        </div>
+                                        <!-- item name & remove -->
+                                        <div class="item-name-remove flex-column-5">
+                                            <a href="#">Haldiram's Sev Bhujia</a>
+                                            <div>
+                                                <span>2pcs</span>
+                                            </div>
+                                            <div>
+                                                <button><i class="ri-delete-bin-line"></i> Remove</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex-25">
+                                        <!-- update quantity -->
+                                        <div class="update-quantity">
+                                            <button><i class="ri-add-line"></i></button>
+                                            <input type="number" min="0" value="1" max="5">
+                                            <button><i class="ri-subtract-line"></i></button>
+                                        </div>
+                                        <!-- item price -->
+                                        <div class="item-price">
+                                            <p>$15.00</p>
+                                            <p class="item-price-old">$19.00</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- single item end -->
+                                <!-- single item -->
+                                <div class="cart-modal-body-item flex-between">
+                                    <div class="d-flex-25">
+                                        <!-- image -->
+                                        <div>
+                                            <img width="50px" src="./image/catagory-meet.jpg" alt="">
+                                        </div>
+                                        <!-- item name & remove -->
+                                        <div class="item-name-remove flex-column-5">
+                                            <a href="#">Meet fish and </a>
+                                            <div>
+                                                <span>500g</span>
+                                            </div>
+                                            <div>
+                                                <button><i class="ri-delete-bin-line"></i> Remove</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex-25">
+                                        <!-- update quantity -->
+                                        <div class="update-quantity">
+                                            <button><i class="ri-add-line"></i></button>
+                                            <input type="number" min="0" value="1" max="5">
+                                            <button><i class="ri-subtract-line"></i></button>
+                                        </div>
+                                        <!-- item price -->
+                                        <div class="item-price">
+                                            <p>$17.00</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- single item end -->
+                                <!-- single item -->
+                                <div class="cart-modal-body-item flex-between">
+                                    <div class="d-flex-25">
+                                        <!-- image -->
+                                        <div>
+                                            <img width="50px" src="./image/catagory-clearing.jpeg" alt="">
+                                        </div>
+                                        <!-- item name & remove -->
+                                        <div class="item-name-remove flex-column-5">
+                                            <a href="#">Rice And ata</a>
+                                            <div>
+                                                <span>98 /1g</span>
+                                            </div>
+                                            <div>
+                                                <button><i class="ri-delete-bin-line"></i> Remove</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex-25">
+                                        <!-- update quantity -->
+                                        <div class="update-quantity">
+                                            <button><i class="ri-add-line"></i></button>
+                                            <input type="number" min="0" value="1" max="5">
+                                            <button><i class="ri-subtract-line"></i></button>
+                                        </div>
+                                        <!-- item price -->
+                                        <div class="item-price">
+                                            <p>$25.00</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- single item end -->
+                                <!-- single item -->
+                                <div class="cart-modal-body-item flex-between">
+                                    <div class="d-flex-25">
+                                        <!-- image -->
+                                        <div>
+                                            <img width="50px" src="./image/catagory-ata-rice.jpeg" alt="">
+                                        </div>
+                                        <!-- item name & remove -->
+                                        <div class="item-name-remove flex-column-5">
+                                            <a href="#">Haldiram's Sev Bhujia</a>
+                                            <div>
+                                                <span>2Kg</span>
+                                            </div>
+                                            <div>
+                                                <button><i class="ri-delete-bin-line"></i> Remove</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex-25">
+                                        <!-- update quantity -->
+                                        <div class="update-quantity">
+                                            <button><i class="ri-add-line"></i></button>
+                                            <input type="number" min="0" value="1" max="5">
+                                            <button><i class="ri-subtract-line"></i></button>
+                                        </div>
+                                        <!-- item price -->
+                                        <div class="item-price">
+                                            <p>$20.00</p>
+                                            <p class="item-price-old">$22.00</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- single item end -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- cart modal footer -->
+                    <div class="cart-modal-footer flex-between">
+                        <div>
+                            <a href="#" class="btn-fill-orange">Continue Shopping</a>
+                        </div>
+                        <div>
+                            <a href="#" class="btn-fill-dark">Update Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--============== Cart modal end ============ -->
+        
+        
+        
+        
+        
     
         
         <script>
             const btnLogin = document.getElementById('btn-login');
             const loginModal = document.getElementById('modal-login');
-            const closeModal = document.getElementById('modal-close')
+            const closeModal = document.getElementById('login-modal-close')
             
             btnLogin.addEventListener('click',function(){
                 loginModal.style.display='block'
