@@ -15,13 +15,16 @@ languageDropdownBtn.addEventListener('click',()=>{
 
 // cart modal
 
-const cartModal = document.getElementById("cart-modal")
+const cartModal = document.getElementById("cart-modal-content");
+const overlay = document.getElementById('overlay')
 
 document.getElementById('btn-cart').addEventListener('click',function(){
-    cartModal.classList.toggle('active');
-    cartModal.style.display='block'
+    cartModal.classList.add('active');
+    overlay.classList.add('active');
 })
 
 document.getElementById('cart-modal-close').addEventListener('click',function(){
-    cartModal.style.display='none'
+    cartModal.classList.remove('active');
+    cartModal.classList.add('ani')
+    overlay.classList.remove('active')
 })

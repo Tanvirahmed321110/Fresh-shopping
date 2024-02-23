@@ -540,7 +540,11 @@ body {
     animation: toBottom 0.3s linear;
     z-index: 2;
 }
-
+.overlay.active {
+    opacity: 1;
+    visibility: visible;
+    z-index: 3;
+}
 .modal-content,
 .modal-content.login-modal-content {
     background-color: #fefefe;
@@ -568,28 +572,40 @@ body {
     border: var(--border-1);
 }
 
-/************************
-*** start cart modal  ***
-*************************/
-.cart-modal-content {
-    max-width: 600px;
-    width: 100%;
-    position: absolute;
+/***************************
+***  start cart modal  ***
+***************************/
+/* overlay */
+.overlay {
+    position: fixed;
+    opacity: 0;
+    visibility: hidden;
     top: 0;
-    right: -100%;
-    margin: 0;
-    border-radius: 0;
-    padding: 0;
+    left: 0;
+    width: 100%;
     height: 100dvh;
     z-index: 2;
+    background-color: #001e2bd5;
 }
-.cart-modal.active .cart-modal-content {
-    right: 0%;
-    top: 0;
-    transition: 0.3s;
-    /* display: block; */
+.overlay.active {
+    opacity: 1;
+    visibility: visible;
+    z-index: 1;
+    transition: all 0.3s;
 }
-
+.cart-modal-content {
+    position: fixed;
+    right: -100%;
+    top: 0px;
+    width: 550px;
+    background-color: var(--white-color);
+    height: 100dvh;
+    transition: all 0.3s;
+}
+.active.cart-modal-content {
+    right: 0;
+    transition: all 0.3s;
+}
 /* cart modal header */
 .cart-modal-header {
     height: 180px;
