@@ -125,7 +125,17 @@ textarea::placeholder {
     font-family: var(--primary-font);
     letter-spacing: 0.2px;
 }
-
+select{
+    font-size: var(--sm-font);
+    font-weight: 500;
+}
+select:focus{
+    outline: 3px solid rgba(206, 202, 202, 0.377);
+    transition: .2s ease-in-out;
+}
+select option{
+    font-size: var(--sm-font);
+}
 img {
     object-fit: cover;
     object-position: center;

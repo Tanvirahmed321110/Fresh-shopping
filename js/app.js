@@ -36,18 +36,24 @@ document.getElementById('share-dropdown-btn').addEventListener('click',function(
 })
 
 
-// cart modal
 
-const cartModal = document.getElementById("cart-modal-content");
-const overlay = document.getElementById('overlay')
 
-document.getElementById('btn-cart').addEventListener('click',function(){
-    cartModal.classList.add('active');
-    overlay.classList.add('active');
-})
 
-document.getElementById('cart-modal-close').addEventListener('click',function(){
-    cartModal.classList.remove('active');
-    cartModal.classList.add('ani')
-    overlay.classList.remove('active')
-})
+
+// product quantity
+const quantityInput = document.getElementById('quantity-input');
+let quantityInputVal = parseInt(quantityInput.value);
+
+document.getElementById('quantity-plus-btn').addEventListener('click', function() {
+    if (quantityInputVal < 5) {
+        quantityInputVal++;
+        quantityInput.value = quantityInputVal;
+    }
+});
+
+document.getElementById('quantity-minus-btn').addEventListener('click', function() {
+    if (quantityInputVal > 1) {
+        quantityInputVal--;
+        quantityInput.value = quantityInputVal;
+    }
+});

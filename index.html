@@ -2224,9 +2224,9 @@
                                     <div class="d-flex-25">
                                         <!-- update quantity -->
                                         <div class="update-quantity">
-                                            <button><i class="ri-add-line"></i></button>
-                                            <input type="number" min="0" max="5">
-                                            <button><i class="ri-subtract-line"></i></button>
+                                            <button id="quantity-minus-btn" class="btn-outline"> - </button>
+                                            <input id="quantity-input" type="number" min="0" max="5" value="1" />
+                                            <button id="quantity-plus-btn" class="btn-outline"> + </button>
                                         </div>
                                         <!-- item price -->
                                         <div class="item-price">
@@ -2441,6 +2441,26 @@
                     loginModal.style.display = "none";
                 }
             });
+            
+            
+            
+            // cart modal
+            const cartModal = document.getElementById("cart-modal-content");
+            const overlay = document.getElementById('overlay')
+            
+            document.getElementById('btn-cart').addEventListener('click',function(){
+                cartModal.classList.add('active');
+                overlay.classList.add('active');
+            })
+            
+            document.getElementById('cart-modal-close').addEventListener('click',function(){
+                cartModal.classList.remove('active');
+                cartModal.classList.add('ani')
+                overlay.classList.remove('active')
+            })
+
+            
+
 
         </script>
 
