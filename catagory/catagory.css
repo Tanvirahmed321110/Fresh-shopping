@@ -1,6 +1,6 @@
 
 .catagoris-area-inner.flex-start-20{
-    gap: 50px;
+    gap: 70px;
 }
 
 /********************************
@@ -126,7 +126,40 @@
 
 
 /* grid-products col-5 */
-.grid-products col-4{
+.grid-products.col-4{
     display: grid;
     grid-template-columns: repeat(4,1fr);
+    column-gap: 10px;
+    row-gap: 25px;
+}
+.catagory-single.col-4{
+    grid-template-columns: repeat(1,1fr);
+}
+
+
+
+/*********************************
+ ***   catagory single page    *** 
+ *********************************/
+.single-catagory-icons a i{
+    font-size: var(--lg-font);
+}
+.single-catagory-icons .hide-icon{
+    border: var(--border-1);
+    padding: 8px;
+    border-radius: var(--radius-sm);
+}
+.single-catagory-icons .hide-icon:hover{
+    background-color: var(--link-color);
+    color:var(--white-medium)
+}
+
+
+
+/*********************************
+ ***   catagory three page    *** 
+ *********************************/
+.catagory-three.col-3{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
 }
