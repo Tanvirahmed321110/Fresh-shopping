@@ -114,7 +114,10 @@ label {
 .flex-shrink-0 {
     flex-shrink: 0;
 }
-
+input::placeholder{
+    font-weight: 500;
+    color: var(--gray-medium);
+}
 input:focus,
 textarea:focus {
     outline: 3px solid var(--shadow-color);
