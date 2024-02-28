@@ -127,3 +127,35 @@
     font-size: var(--xs-font);
     color: var(--grey-color);
 }
+
+
+
+
+/******************
+*** Responsive ****
+******************* */
+@media screen and (max-width:991px){
+    
+    .clients-say-items.col-3{
+        gap: 20px;
+      }
+}
+@media screen and (max-width:769px){
+    .client-say-header.section-header-gap{
+        max-width: 500px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .client-say-item{
+        max-width: 500px;
+    }
+    .freshShop-app-content.flex-column-25{
+        /* align-items: center; */
+        justify-content: center;
+    }
+    .freshShop-app-content{
+        max-width: 500px;
+        margin: 0 auto;
+        width: 100%;
+    }
+}
