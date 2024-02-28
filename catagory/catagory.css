@@ -18,14 +18,40 @@
     font-size: var(--sm-font);
     font-weight: 500;
     color: #001e2b;
+    transition: .3s linear;
     letter-spacing:.3px;
+    background-color: var(--white-color);
 }
 
 /* hover in all catagoris item */
-.all-catagoris .all-catagoris-item:hover{
+.all-catagoris .all-catagoris-item:hover .li{
     color: var(--link-color);
     transition: .2s ease-in;
 }
+
+.all-catagoris-item-dropdown{
+    visibility:hidden;transition: .3s linear;
+    opacity: 0;
+    height: 0;
+    z-index: -1;
+}
+.all-catagoris-item-dropdown.active{
+    opacity: 1;
+    height: 200px;
+    visibility: visible;
+    z-index: 2;
+}
+.all-catagoris-item-dropdown ul li a{
+    color: var(--gray-color);
+}
+.all-catagoris-item-dropdown ul li a:hover{
+    color: var(--link-color);
+    border-bottom: var(--border-1);
+}
+
+
+
+
 
 
 /* catagoris-sotre-items */
