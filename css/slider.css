@@ -46,3 +46,15 @@
   .banner-slider-content h1 span{
     color: var(--link-color);
   }
+  
+  
+  
+  @media screen and (max-width:769px) {
+    .banner-slider-content {
+      position: absolute;
+      top: 50%;
+      left: 20px;
+      width: 350px;
+      transform: translateY(-50%);
+    }
+  }

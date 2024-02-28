@@ -309,5 +309,67 @@
   
   
   
+  /*************************
+  ***  Responsive 991px  ***
+  **************************/
+  @media screen and (max-width: 991px){
+    .best-seller-body.flex-start-10{
+      flex-direction: column;
+    }
+    .best-seller-banner{
+      width: 80%;
+      margin: 0 auto;
+    }
+    .best-seller-items.col-3{
+      
+    }
+  }
   
+  @media screen and (max-width:769px){
+    
+    .best-seller-items.col-3{
+      grid-template-columns: repeat(3,1fr);
+      overflow-x: scroll;
+      width: 100%;
+    }
+    .best-seller-item{
+       min-width: 280px;
+    }
+    .clients-say-items.col-3{
+      grid-template-columns: repeat(1,1fr);
+    }
+    .freshShop-app-area.flex-between{
+      flex-direction: column;
+      gap: 50px;
+    }
+    .advice-text-items.col-4{
+      grid-template-columns: repeat(1,1fr);
+    }
+    .freshShop-app-content.flex-column-25{
+      padding: 0 20px;
+    }
+    .flex-start-10.phone-input{
+      flex-direction: column;
+    }
+  }
+  
+  
+  @media screen and (max-width:480px){
+    .popular-products-items.col-5{
+      gap: 15px;
+    }
+    .product-cart .product-image img {
+      width: 100px;
+      height: 120px;
+    }
+    .recipes-items.col-4{
+      grid-template-columns: repeat(1,1fr);
+      gap: 35px;
+    }
+    .popular-recipes-header.section-header-gap.flex-between{
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 20px;
+    }
+  }
   
