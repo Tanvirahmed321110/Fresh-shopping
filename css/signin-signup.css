@@ -114,3 +114,47 @@ main a:hover{
 .back-btn:hover{
     background-color: var(--gray-medium);
 }
+
+
+
+
+
+/************************
+***  Responsive Part  ***
+*************************/
+@media screen and (max-width:991px){
+    
+    /*======== forgot password =========*/
+    .header-area.flex-between{
+        align-items: center;
+        justify-content: center;
+        gap: 25px;
+    }
+}
+
+@media screen and (max-width:769px){
+    
+    /*========= forgot page ==========*/
+    .forgot-area.flex-between{
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+    main{
+        padding: 40px 0;
+    }
+    .login-content.flex-column-25{
+        gap: 25px;
+    }
+    /*======== login page =========*/
+    .login-area.flex-between{
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+    
+}
+
+@media screen and (max-width:480px){
+    .header-area.flex-between{
+        flex-direction: column;
+    }
+}
