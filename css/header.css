@@ -250,17 +250,18 @@
 .mega-dropdown-items{
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    gap:77px;
+    gap:50px;
     background-color: var(--white-color);
     box-shadow: var(--box-shadow);
     top:50px;
-    left: -480px;
+    left:-400px;
     position: absolute;
-    max-width: 1250px;
-    width: 100%;
+    max-width: 1200px;
     padding: 30px ;
+    white-space: nowrap;
     border-radius: var(--radius-md);
-    
+    justify-content: center;
+    border: var(--border-1);
     /* change css */
     transition: all linear 0.3s;
     opacity: 0;
@@ -503,6 +504,10 @@
     /* ============ catagoris item ============ */
     .catagoris-items.col-4{
         gap: 10px;
+    }
+    /* .mega-dropdown-items */
+    .mega-dropdown-items{
+        grid-template-columns: repeat(1,1fr);
     }
 }
 
