@@ -462,6 +462,62 @@
     </header>
     
     <main>
+        <!-- mobile menu sidebar header-->
+        <div class=" container">
+            <div class="mobile-menu-sidebar-header flex-between w-100">
+                <div class="xl-title">Account Setting</div>
+                <span class="menu-sidebar-second-btn" id="menu-sidebar-second-btn"><i class="ri-menu-fill"></i></span>
+            </div>
+        </div>
+        
+        <!-- mobile menu second sidebar  -->
+        <div class="second-sidebar" id="second-sidebar">
+            <div class="second-sidebar-area">
+                <div class="text-right">
+                    <button id="second-sidebar-close">X</button>
+                </div>
+                <ul class="flex-column-15">
+                    <li class="order-sidebar-item active">
+                        <a href="order.html" class="flex-start-10">
+                            <span><i class="ri-shopping-bag-3-line"></i></span>
+                            <span> Your Order</span>
+                        </a>
+                    </li>
+                    <li class="order-sidebar-item ">
+                        <a href="setting.html" class="flex-start-10">
+                            <span><i class="ri-settings-2-line"></i></span>
+                            <span> Setting</span>
+                        </a>
+                    </li>
+                    <li class="order-sidebar-item ">
+                        <a href="address.html" class="flex-start-10">
+                            <span><i class="ri-map-pin-line"></i></span>
+                            <span>Address</span>
+                        </a>
+                    </li>
+                    <li class="order-sidebar-item ">
+                        <a href="payment.html" class="flex-start-10">
+                            <span><i class="ri-bank-card-line"></i></span>
+                            <span> Payment Method</span>
+                        </a>
+                    </li>
+                    <li class="order-sidebar-item ">
+                        <a href="notification.html" class="flex-start-10">
+                            <span><i class="ri-shopping-bag-3-line"></i></span>
+                            <span>Notification</span>
+                        </a>
+                    </li>
+                    <li class="order-sidebar-item-hr"></li>
+                    <!-- logout page -->
+                    <li class="logout order-sidebar-item">
+                        <a href="index.html" class="flex-start-10">
+                            <span><i class="ri-login-box-line"></i></span>
+                            <span>Logout</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
         <!-- ============== order Section Start here ============= -->
         <section>
             <div class="order">
@@ -1170,6 +1226,21 @@
                 cartModal.classList.remove('active');
                 cartModal.classList.add('ani')
                 overlay.classList.remove('active')
+            })
+            
+            
+                // second sidebar
+                const menuSecondBtn = document.getElementById('menu-sidebar-second-btn');
+            const secondSidebar = document.getElementById('second-sidebar');
+            
+            // sidebar active
+            menuSecondBtn.addEventListener('click',()=>{
+                secondSidebar.classList.add('active');
+            })
+            
+            // remove in sidebar
+            document.getElementById('second-sidebar-close').addEventListener('click',function(){
+                secondSidebar.classList.remove('active')
             })
         </script>
         

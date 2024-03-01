@@ -390,11 +390,19 @@ input:checked + .slider:before {
     }
     
     /* ============= address page =============== */
+    /* .address-items.flex-start-20 {
+        flex-direction: column;
+        background-color: orange;
+        width: 100%;
+    } */
     .orders-items-inner.flex-column-20{
-        max-width: 430px;
+        width: 100%;
     }
     .address-items.flex-start-20{
         flex-direction: column;
+    }
+    .address-item{
+        width: 100%;
     }
   }
   
@@ -405,6 +413,9 @@ input:checked + .slider:before {
     
     /* =========== payment page ============ */
     /* header in sidebar */
+    .second-sidebar-area .text-right{
+        margin-bottom: 5px;
+    }
     .mobile-menu-sidebar-header{
         display: flex;
         padding: 15px 0px;
