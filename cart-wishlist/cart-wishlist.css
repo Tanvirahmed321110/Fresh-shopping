@@ -213,7 +213,7 @@
     margin:25px 0;
 }
 .checkout-area.flex-between{
-    gap: 130px;
+    gap: 80px;
     align-items: flex-start;
 }
 .add-delivery{
@@ -448,4 +448,121 @@
 }
 .payment-method-item p{
     font-size: var(--xs-font);
+}
+
+
+
+
+
+
+@media screen and (max-width :991px){
+    .wishlist-area,.britcam-area{
+        max-width: 540px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .table{
+        overflow-x: auto;
+    }
+    .table table{
+        width: 900px;
+    }
+    
+    /* cart page */
+    /* .cart-page .wishlist-area{
+        max-width: unset;
+    } */
+    .cart-area.d-flex-25{
+        flex-direction: column;
+        width: 100%;
+        padding-right: 0;
+    }
+    .cart-area .cart-products {
+        width: 100%;
+    }
+    .quantity-price.flex-between {
+        gap: 10px;
+        width: 50%;
+    }
+    .image-details.d-flex-20 {
+        justify-content: flex-start;
+        gap: 10px;
+        text-wrap: wrap;
+    }
+    .cart-products-area .quantity-price input {
+        width: 35px;
+        padding: 6px;
+    }
+    .cart-products-area .quantity-price button {
+        padding: 6px 18px;
+        max-width: 35px;
+    }
+    .cart-area .cart-summery {
+        max-width: 100%;
+        width: 100%;
+    }
+    
+    
+    /* =========== checkout page ============ */
+    .delivery-time{
+        /* max-width: 540px; */
+        width: 100%;
+        margin: 0 auto;
+    }
+    .checkout-area.flex-between {
+        gap: 50px;
+        flex-direction: column;
+    }
+    .delivery-address-items.flex-between {
+        gap: 30px;
+        flex-direction: column;
+    }
+    .order-details{
+        max-width: 540px;
+        width: 100%;
+    }
+    
+    .payment-inputs.flex-between{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+    .payment-inputs.flex-between input{
+        width: 100%;
+    }
+    
+    .delivery-day-item {
+        padding: 10px 20px;
+    }
+}
+
+@media screen and (max-width:769px) {
+    .delivery-time-day.flex-between {
+        gap: 10px;
+        width: 100%;
+    }
+    .delivery-day-item {
+        padding: 10px 15px;
+    }
+    .delivery-time-body-item.flex-between{
+        max-width: unset;
+        width: 100%;
+    }
+    .delivery-time-day.flex-between.w-100{
+        overflow-x: auto;
+        background-color: gainsboro;
+    }
+    .cart-number.w-50{
+        width: 100%;
+    }
+    
+}
+
+
+@media screen and (max-width:576px) {
+    
+    .delivery-day-item {
+        padding: 10px 7px;
+    }
+    
 }
