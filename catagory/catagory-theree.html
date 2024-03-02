@@ -470,7 +470,7 @@
             <section class="section-50">
                 <div class="britcam">
                     <div class="container">
-                        <div class="britcam-area">
+                        <div class="britcam-area catagory">
                             <ul class="flex-start-15">
                                 <li class="flex-start-15"><a href="../index.html">Home</a> <span>/</span></li>
                                 <li class="flex-start-15"><a href="../blog/blog.html">Shop</a> <span>/</span></li>
@@ -491,13 +491,16 @@
                         <div class="catagoris-area">
                             <div class="catagoris-area-inner flex-start-20">
                                 <!-- Categories left site -->
-                                <div class="catagoris-left">
+                                <div class="catagoris-left" id="catagory-left-sidebar">
                                     <div class="catagoris-left-items flex-column-25 w-100">
+                                        
                                         <!-- catagoris item / all catagoirs -->
                                         <div class="catagoris-left-item flex-column-15 w-100">
-                                            <div>
+                                            <div class="flex-between w-100">
                                                 <div class="xl-title fw-500">Categories</div>
+                                                <button id="catagoris-menu-close">X</button>
                                             </div>
+                                            
                                             <div class="all-catagoris w-100">
                                                 <ul class="flex-column-5">
                                                     <!-- all Categories single item -->
@@ -818,6 +821,12 @@
                                                     <a href="catagory-single.html"><i class="ri-list-check"></i></a>
                                                     <a href="catagory.html"><i class="ri-layout-grid-line"></i></a>
                                                     <a href="catagory-theree.html"><i class="ri-grid-fill"></i></a>
+                                                    
+                                                    <!-- mobile-catagory-menu -->
+                                                    <a href="#" class="mobile-catagory-menu" id="catagory-menu-btn">
+                                                        <i class="ri-flashlight-line"></i>
+                                                        Filter
+                                                    </a>
                                                 </div>
                                                 <div>
                                                     <select name="" id="">
@@ -1885,6 +1894,19 @@
                 dropdown.classList.toggle('active');
                 });
             });
+            
+            
+            
+            // catagory-menu-btn
+            const catagoryLeftSidebar = document.getElementById('catagory-left-sidebar')
+
+            document.getElementById('catagory-menu-btn').addEventListener('click',()=>{
+                catagoryLeftSidebar.classList.add('active')
+            })
+            document.getElementById('catagoris-menu-close').addEventListener('click',()=>{
+                catagoryLeftSidebar.classList.remove('active')
+            })
+ 
  
         </script>
 
