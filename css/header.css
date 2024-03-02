@@ -406,6 +406,15 @@
  ***  Responsive 991 px  ***
 ****************************/
 @media screen and (max-width:991px){
+    .header-medial-medial{
+        display:none;
+    }
+    
+    /* header-bottom */
+    header .header-bottom{
+        display: none;
+    }
+    
     header .header-top-right{
         display: none;
     }
@@ -415,14 +424,6 @@
     #mobile-menu-btn{
         display: block;
         transition: .3s linear;
-    }
-    .header-medial-medial{
-        display:none;
-    }
-    
-    /* header-bottom */
-    header .header-bottom{
-        display: none;
     }
     
     
@@ -439,6 +440,7 @@
         color: var(--white-color);
         padding: 15px 25px;
         border-radius: var(--radius-md);
+        cursor: pointer;
     }
     .mobile-all-departments-drop{
         padding: 25px ;
@@ -461,30 +463,44 @@
         width: 100px;
         padding: 12px 15px;
     }
-    
-    .mobile-header-sidebar{
-        overflow-y: scroll;
-        height: calc(100dvh - 60px);
+    .mobile-header-sidebar-wrapper{
+        /* position: relative; */
     }
+
     .mobile-header-sidebar{
-        max-width: 500px;
-        display: none;
+        max-width: 480px;
+        visibility: hidden;
+        overflow-y: scroll;
+        height: calc(100dvh );
         width: 100%;
         background-color: white;
         box-shadow: var(--box-shadow);
         position: absolute;
-        top: 60px;
-        left:0;
+        top: 0px;
+        left:-100%;
         z-index: 3;
+        transition: .3s linear;
     } 
+    .mobile-header-sidebar.active{
+        left: 0;
+        visibility: visible;
+        transition: .3s linear;
+    }
+    .mobile-header-sidebar a{
+        font-weight: 600;
+        color: var(--gray-color);
+    }
+    
     .mobile-menu-header{
         position: fixed;
         top: 0;
         left: 0;
         height: 60px;
         padding: 0 20px;
-        background-color: rgb(230, 178, 178);
+        background-color: var(--white-color);
+        max-width: 480px;
         width: 100%;
+        transition: .2s linear;
     }
     
 
@@ -508,6 +524,22 @@
     /* .mega-dropdown-items */
     .mega-dropdown-items{
         grid-template-columns: repeat(1,1fr);
+    }
+    
+    /* mobile-all-departments-drop */
+    .mobile-all-departments-drop{
+        /* visibility: hidden;
+        opacity: 0;
+        height: 0; */
+        transition: .2s linear;
+        display: none;
+    }
+    .mobile-all-departments-drop.active{
+        /* visibility: visible;
+        opacity: 1;
+        height: 222px; */
+        transition: .2s linear;
+        display: flex;
     }
 }
 

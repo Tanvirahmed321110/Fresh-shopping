@@ -468,8 +468,8 @@
                         
                     
                         <!-- ============= Modile header / sidebar header ============== -->
-                        <div>
-                            <div class="mobile-header-sidebar container">
+                        <div class="mobile-header-sidebar-wrapper">
+                            <div class="mobile-header-sidebar container" id="header-mobile">
                                 <!-- mobile-menu-header -->
                                 <div class="mobile-menu-header flex-between">
                                     <!-- logo area -->
@@ -484,7 +484,7 @@
                                         </a>
                                     </div>
                                     <div>
-                                        <button>X</button>
+                                        <button id="header-sidebar-close">X</button>
                                     </div>
                                 </div>
                                 
@@ -503,7 +503,7 @@
                                                     <h4>All Departments</h4>
                                                 </div>
                                             </div>
-                                            <ul class="flex-column-10 mobile-all-departments-drop">
+                                            <ul class="flex-column-15 mobile-all-departments-drop" id="all-departments-drop">
                                                 <li>
                                                     <a href="./catagory/catagory.html">Dairy,Bread & Eggs</a>
                                                 </li>
@@ -2802,6 +2802,25 @@
         
         
         <script>
+            
+            // header responisve
+            const mobileHeaderSidebaar = document.getElementById('header-mobile');
+            const allDeptDropdown = document.getElementById('all-departments-drop');
+            
+            document.getElementById("mobile-menu-btn").addEventListener('click',()=>{
+                mobileHeaderSidebaar.classList.add('active')
+            })
+            document.getElementById('header-sidebar-close').addEventListener('click',()=>{
+                mobileHeaderSidebaar.classList.remove('active')
+            })
+            
+            // toggle in all dept area
+            document.getElementById("mobile-all-dept-btn").addEventListener('click',()=>{
+                allDeptDropdown.classList.toggle('active')
+            })
+            
+            
+            
             const btnLogin = document.getElementById('btn-login');
             const loginModal = document.getElementById('modal-login');
             const closeModal = document.getElementById('login-modal-close')

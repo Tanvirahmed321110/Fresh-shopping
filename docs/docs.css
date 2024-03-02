@@ -109,3 +109,13 @@ header .logo i{
     gap: 50px;
     align-items: stretch;
 }
+
+
+
+@media screen and (max-width: 991px){
+    /* sidebar */
+.sidebar{
+    width: 180px;
+    height: calc(100vh - 82px);
+}
+}
