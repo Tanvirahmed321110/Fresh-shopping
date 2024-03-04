@@ -2453,6 +2453,18 @@
                 cartModal.classList.add('ani')
                 overlay.classList.remove('active')
             })
+            
+            
+            
+            // mobile menu header dropdown
+            const mobileMenuItems = document.querySelectorAll('.mobile-header-sidebar-area .pages-area');
+            mobileMenuItems.forEach((eachMenu)=>{
+                const allMobileDrops = eachMenu.querySelector('ul');
+            
+            eachMenu.addEventListener('click',function(){
+                allMobileDrops.classList.toggle('active');
+                })
+            })
 
         </script>
 
