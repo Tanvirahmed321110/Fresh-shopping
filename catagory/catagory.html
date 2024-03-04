@@ -124,7 +124,7 @@
                                         <ul class="flex-column-15">
                                             <li class="pages-area w-100">
                                                 <div class="flex-between">
-                                                    <a href="">Home</a>
+                                                    <a>Home</a>
                                                     <span><i class="ri-arrow-down-s-line"></i></span>
                                                 </div>
                                                 <!-- dropdown -->
@@ -149,7 +149,7 @@
     
                                             <li class="pages-area">
                                                 <div class="flex-between w-100">
-                                                    <a href="#">Shops</a>
+                                                    <a >Shops</a>
                                                     <span><i class="ri-arrow-down-s-line"></i></span>
                                                 </div>
                                                 <!-- dropdown -->
@@ -185,7 +185,7 @@
                                             <!-- nav list each item start -->
                                             <li class="pages-area">
                                                 <div class="flex-between w-100">
-                                                    <a href="#">Stores</a>
+                                                    <a>Stores</a>
                                                     <span><i class="ri-arrow-down-s-line"></i></span>
                                                 </div>
                                                 <!-- dropdown -->
@@ -205,7 +205,7 @@
                                             <!-- nav list each item start -->
                                             <li class="pages-area">
                                                 <div class="flex-between w-100">
-                                                    <a href="#">Mega Menu</a>
+                                                    <a>Mega Menu</a>
                                                     <span><i class="ri-arrow-down-s-line"></i></span>
                                                 </div>
                                                 
@@ -320,7 +320,7 @@
                                             <!-- nav list each item start -->
                                             <li class="pages-area">
                                                 <div class="flex-between w-100">
-                                                    <a href="#">Pages</a>
+                                                    <a>Pages</a>
                                                     <span><i class="ri-arrow-down-s-line"></i></span>
                                                 </div>
                                                 
@@ -349,10 +349,12 @@
                                             <!-- nav list each item end -->
     
                                             <!-- nav list each item start -->
-                                            <li class="pages-area">
-                                                <a href="#">Account
-                                                    <span><i class="ri-arrow-down-s-line"></i></span>
-                                                </a>
+                                            <li class="pages-area w-100">
+                                                <div class="flex-between w-100">
+                                                    <a> Account
+                                                        <span><i class="ri-arrow-down-s-line"></i></span>
+                                                    </a>
+                                                </div>
                                                 <!-- dropdown -->
                                                 <ul class="flex-column-5">
                                                     <li>
@@ -365,7 +367,7 @@
                                                         <a href="./forgot.html">Forgot Password</a>
                                                     </li>
                                                     <li>
-                                                        <a href="" class="flex-between">My Account
+                                                        <a  class="flex-between pages-area">My Account
                                                             <div class=""><i class="ri-arrow-right-s-line"></i></div>
                                                             <!-- dropdown -->
                                                             <ul class="flex-column-5">
@@ -399,7 +401,7 @@
     
                                             <!-- nav list each item start -->
                                             <li class="pages-area">
-                                                <a href="#">Docs</a>
+                                                <a>Docs</a>
                                                 <!-- dropdown  -->
                                                 <ul class="Docs-dropdown flex-column-5">
                                                     <li>
@@ -2294,6 +2296,18 @@
                 dropdown.classList.toggle('active');
                 });
             });
+            
+            
+            // mobile menu header dropdown
+            const mobileMenuItems = document.querySelectorAll('.mobile-header-sidebar-area .pages-area');
+            mobileMenuItems.forEach((eachMenu)=>{
+                const allMobileDrops = eachMenu.querySelector('ul');
+                
+                eachMenu.addEventListener('click',function(){
+                    allMobileDrops.classList.toggle('active');
+                })
+            })
+            
             
             
             

@@ -160,9 +160,9 @@
 /* sidebar-wrapper */
 .sidebar-wrapper{
     position: fixed;
+    top: 0;
     bottom: 0;
     left:0;
-    top: 0;
     height: 100dvh;
     width: 280px;
     border-right: 2px dotted var(--border-color);
@@ -176,7 +176,6 @@
 
 
 /* sidebar-header */
-
 .sidebar-header{
     height: 60px;
     padding: 10px 5px;
@@ -300,8 +299,9 @@
     transform: rotate(180deg);
 }
 
-/* dashboard-wrapper */
 
+
+/*================  dashboard-wrapper  ==============*/
 .dashboard-wrapper{
     height: calc(100dvh - 70px);
     margin-top: 100px;
@@ -680,16 +680,19 @@ table td .publish-unpublish{
 
 /* order-single-page-bottom */
 .order-single-page-bottom.flex-between{
-    align-items: flex-start;
+    width: 100%;
+    justify-content: space-between;
 }
+.payment-info.flex-column-10{
+    width: 50%;
+}
+
 .order-single-page-bottom{
     padding: 50px 25px;
 }
-.order-single-bottom-right{
-    min-width: 400px;
-}
+
 .order-single-bottom-right textarea{
-    width: 100% !important;
+    width: 100% ;
     height: 120px;
 }
 .payment-info p{
@@ -736,9 +739,7 @@ table td .publish-unpublish{
     align-items: center;
 }
 
-.header-right a.btn-fill-orange{
-    background-color: var(--white-medium);
-}
+
 .header-right .btn-fill-orange i{
     color: var(--green-color) ;
 }
@@ -755,7 +756,9 @@ table td .publish-unpublish{
 td a.store-name:hover{
     color: var(--link-color)
 }
-
+.btn-fill-orange.not-acitve{
+    background-color: var(--white-medium);
+}
 
 
 /*================= customer page =================*/
@@ -779,4 +782,167 @@ td a.store-name:hover{
 table td .rating i{
     color: var(--yellow-color);
     font-size: var(--md-font);
+}
+
+
+
+.dashboard-menu-btn{
+    display: none;
+}
+#dashboard-close-btn{
+    display: none;
+    margin-right: 5px;
+}
+/*****************************
+***  Responsive Dashboard  ***
+******************************/
+@media screen and (max-width: 991px){
+    
+    .sidebar-wrapper{
+        visibility: hidden;
+        position: absolute;
+        top: 0px;
+        bottom: 0;
+        left: -100%;
+        background-color: var(--white-color);
+        box-shadow: var(--box-shadow);
+        min-width: 300px;
+        max-width: 400px;
+        width: 100%;
+        height: 100dvh;
+        transition: .3s linear;
+    }
+    .sidebar-wrapper.active{
+        left: 0;
+        bottom: 0;
+        visibility: visible;
+        transition: .3s linear;
+    }
+    #dashboard-close-btn{
+        display: block;
+    }
+    .dashboard-menu-btn{
+        display: block;
+    }
+    .dashboard-menu-btn i{
+        font-size: var(--lg-font);
+    }
+    .dashboard-wrapper{
+        width:100%;
+        margin-left: 0px;
+        max-width: 700px;
+        margin: 0 auto;
+        margin-top: 100px;
+    }
+    
+    /* header-wrapper */
+    .header-wrapper{
+        left: 0px;
+        width: 100%;
+    }.order-single-page-bottom.flex-between {
+        align-items: flex-start;
+    }
+    
+    
+    /* ========= dashboard page ========== */
+    .earnings-top-items.col-3{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .sale-overview-area.d-flex-25{
+        flex-direction: column;
+        width: 100%;
+    }
+    .sale-overview-items-area.flex-column-25{
+        width: 100%;
+    }
+    .new-notification{
+        width: 100%;
+    }
+    .table-wrapper{
+        overflow-x: auto;
+    }
+    .table-wrapper table{
+        min-width:700px;
+    }
+    .recent-order-area table td {
+        padding: 15px 25px;
+    }
+    
+    /* ============ vendor page ============ */
+    .vendors-items.col-3{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media screen and (max-width:776px){
+    /* order single page */
+    .order-single-header.flex-between{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+    .order-single-page-bottom.flex-between{
+        flex-direction: column;
+        gap:25px;
+    }
+    .order-single-bottom-right{
+        width: 100%;
+    }
+    .order-single-page-bottom textarea{
+        max-width: 300px;
+        width: 100%;
+    }
+    .order-single-bottom-right.flex-column-10{
+        max-width: 300px;
+        width: 333px;
+    }
+    
+    /* ============ vendor page ============ */
+    .vendors-items.col-3{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .vendors-area{
+        max-width: 500px;
+        width: 100%;
+        margin:0 auto;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .dashboard-wrapper,.header-wrapper{
+        padding: 20px;
+    }
+    .header-wrapper input[type = 'text'] ,.dashboard-wrapper input[type='text']{
+        width: 100%;
+        max-width: 170px !important;
+        min-width: 155px;
+    }
+    /* ======== product ======== */
+    .pagination-wrapper.flex-between{
+        gap: 15px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .pagination.flex-start-15{
+        gap: 5px;
+    }
+    
+    
+    /*=========== order single page ==========*/
+    .order-single-header-right.d-flex-10{
+        gap: 5px;
+    }
+    .order-single-data-items.flex-between{
+        flex-direction: column;
+        gap: 25px;
+    }
+    .order-single-data-item.flex-column-10{
+        width: 100%;
+    }
+    .order-single-bottom-right{
+        min-width: 300px;
+    }
+    
+    
+    
 }

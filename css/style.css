@@ -567,7 +567,6 @@ img {
     border: 1px solid #888;
     max-width: 450px;
     width: 100%;
-    width: 40%;
     padding: 40px;
     border-radius: var(--radius-lg);
 }
@@ -611,7 +610,8 @@ img {
     position: fixed;
     right: -100%;
     top: 0px;
-    width: 550px;
+    max-width: 550px;
+    width: 100%;
     background-color: var(--white-color);
     height: 100dvh;
     transition: all 0.3s;

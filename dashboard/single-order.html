@@ -10,9 +10,13 @@
 <body>
     <header>
         <div class="header-wrapper flex-between">
-            <div>
+            <div class="d-flex-10">
+                <button class="dashboard-menu-btn" id="dashboard-menu-btn">
+                    <i class="ri-menu-line"></i>
+                </button>
                 <input type="text" placeholder="Search">
             </div>
+            
             <div class="header-profile-notification d-flex-25">
                 <!-- notification area -->
                 <div class="notification-area">
@@ -127,9 +131,9 @@
     
     <!-- ============ sidebar =========== -->
     <div class="sidebar">
-        <div class="sidebar-wrapper">
+        <div class="sidebar-wrapper" id="dashboard-sidebar">
             <!-- sidebar header -->
-            <div class="sidebar-header">
+            <div class="sidebar-header flex-between">
                 <div>
                     <a href="index.html" class="flex-start-5">
                         <div class="icon">
@@ -140,7 +144,9 @@
                         </div>
                     </a>
                 </div>
+                <button id="dashboard-close-btn">X</button>
             </div>
+            
             <!-- sidebar content -->
             <div class="sidebar-content">
                 <div class="sidebar-content-wrapper">
@@ -484,8 +490,9 @@
                                     </div>
                                 </div>
                                
-                               <!-- all catagoris table start -->
-                               <div class="order-single-table all-products-table">
+                                <!-- all catagoris table start -->
+                              <div>
+                                <div class="order-single-table all-products-table table-wrapper">
                                     <table>
                                         <thead>
                                             <th>Product</th>
@@ -553,53 +560,54 @@
                                                 <td></td>
                                                 <td></td>
                                                 <td colspan="1" class="border-bottom-1">
-                                                   Sub Total :
+                                                Sub Total :
                                                 </td>
                                                 <td class="border-bottom-1">
-                                                   $80.00
+                                                $80.00
                                                 </td>
-                                             </tr>
+                                            </tr>
                                             <tr class="border-bottom-0">
                                                 <td></td>
                                                 <td></td>
                                                 <td colspan="1" class="border-bottom-1">
-                                                   Shipping Cost :
+                                                Shipping Cost :
                                                 </td>
                                                 <td class="border-bottom-1">
-                                                   $5.00
+                                                $5.00
                                                 </td>
-                                             </tr>
+                                            </tr>
                                             <tr class="border-bottom-0">
                                                 <td></td>
                                                 <td></td>
                                                 <td colspan="1" class="border-bottom-1 lg-title">
-                                                   Total :
+                                                Total :
                                                 </td>
                                                 <td class="border-bottom-1 lg-title">
-                                                   $80.00
+                                                $80.00
                                                 </td>
-                                             </tr>
+                                            </tr>
                                         </tbody>
                                     </table>
-                                    
-                                    
-                                    
-                                    <div class="order-single-page-bottom flex-between">
-                                        <div class="payment-info flex-column-10">
-                                            <div class="sm-title">Payment Info</div>
-                                            <p >Cash on Delivery</p>
+                                </div>
+                                
+                                <!-- single page bottom -->
+                                <div class="order-single-page-bottom flex-between">
+                                    <div class="payment-info flex-column-10">
+                                        <div class="sm-title">Payment Info</div>
+                                        <p >Cash on Delivery</p>
+                                    </div>
+                                    <div class="order-single-bottom-right flex-column-10">
+                                        <div class="lg-title">Notes</div>
+                                        <div class="">
+                                            <textarea name="" id="" cols="30" placeholder="Write note for order"  rows="10"></textarea>
                                         </div>
-                                        <div class="order-single-bottom-right flex-column-10">
-                                            <div class="lg-title">Notes</div>
-                                            <div class="w-100">
-                                                <textarea placeholder="Write note for order" ></textarea>
-                                            </div>
-                                            <div>
-                                                <a href="" class="btn-fill-orange">Save Notes</a>
-                                            </div>
+                                        <div>
+                                            <a href="" class="btn-fill-orange">Save Notes</a>
                                         </div>
                                     </div>
-                               </div>
+                                </div>
+                                <!-- single page bottom end-->
+                              </div>
                            </div>
                         </div>
                         <!-- all product area end-->
@@ -644,6 +652,18 @@
             arrowIndicator.classList.toggle('active')
         })
     
+        
+        //    dashboard menu 
+        const dashboardSidebar = document.getElementById('dashboard-sidebar')
+        document.getElementById('dashboard-menu-btn').addEventListener('click',function(){
+        dashboardSidebar.classList.add('active');
+        // document.body.style.overflowY = 'hidden';
+        })
+        
+        document.getElementById('dashboard-close-btn').addEventListener('click', function(){
+        dashboardSidebar.classList.remove('active');
+        // document.body.style.overflowY = 'visible'; // Corrected spelling to 'visible'
+        });
     </script>
 </body>
 </html>

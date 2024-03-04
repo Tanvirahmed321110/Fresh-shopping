@@ -10,7 +10,10 @@
 <body>
     <header>
         <div class="header-wrapper flex-between">
-            <div>
+            <div class="d-flex-10">
+                <button class="dashboard-menu-btn" id="dashboard-menu-btn">
+                    <i class="ri-menu-line"></i>
+                </button>
                 <input type="text" placeholder="Search">
             </div>
             <div class="header-profile-notification d-flex-25">
@@ -127,11 +130,11 @@
     
     <!-- ============ sidebar =========== -->
     <div class="sidebar">
-        <div class="sidebar-wrapper">
+        <div class="sidebar-wrapper" id="dashboard-sidebar">
             <!-- sidebar header -->
-            <div class="sidebar-header">
-                <div>
-                    <a href="index.html" class="flex-start-5">
+            <div class="sidebar-header flex-between">
+                <div class="flex-between">
+                    <a href="../index.html" class="flex-start-5">
                         <div class="icon">
                             <span class="xxl-title"><i class="fa-solid fa-cart-flatbed-suitcase"></i></span>
                         </div>
@@ -140,6 +143,7 @@
                         </div>
                     </a>
                 </div>
+                <button id="dashboard-close-btn">X</button>
             </div>
             <!-- sidebar content -->
             <div class="sidebar-content">
@@ -563,59 +567,61 @@
                                             <div class="xl-title">Recent Order</div>
                                         </div>
                                         <!-- order table -->
-                                        <table>
-                                            <thead>
-                                                <th>Order Number</th>
-                                                <th>Product Name</th>
-                                                <th>Order Date</th>
-                                                <th>Price</th>
-                                                <th>Status</th>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>#F2500PP2</td>
-                                                    <td>Gray Haldiram's Sev Bhujia</td>
-                                                    <td>28 Jan 2024</td>
-                                                    <td>$15.00</td>
-                                                    <td><div class="shipped">Shipped</div></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>#F2500PP1</td>
-                                                    <td>NutriChoice Digestive</td>
-                                                    <td>28 Jan 2024</td>
-                                                    <td>$18.00</td>
-                                                    <td><div class="shipped">Shipped</div></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>#F2500PP</td>
-                                                    <td>Gray Haldiram's Sev Bhujia</td>
-                                                    <td>28 Jan 2024</td>
-                                                    <td>$22.00</td>
-                                                    <td><div class="pending">Pending</div></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>#F2500PP3</td>
-                                                    <td>Gray Haldiram's Sev Bhujia</td>
-                                                    <td>28 Jan 2024</td>
-                                                    <td>$15.00</td>
-                                                    <td><div class="shipped">Shipped</div></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>#F2500PP4</td>
-                                                    <td>Women T-shirt G</td>
-                                                    <td>21 Jan 2024</td>
-                                                    <td>$16.00</td>
-                                                    <td><div class="shipped">Shipped</div></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>#F2500PP5</td>
-                                                    <td>Gray Mens's Sev Bhujia</td>
-                                                    <td>22 Jan 2024</td>
-                                                    <td>$19.00</td>
-                                                    <td><div class="processing">Processing</div></td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
+                                        <div class="table-wrapper">
+                                            <table class="order-table-inner">
+                                                <thead>
+                                                    <th>Order Number</th>
+                                                    <th>Product Name</th>
+                                                    <th>Order Date</th>
+                                                    <th>Price</th>
+                                                    <th>Status</th>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>#F2500PP2</td>
+                                                        <td>Gray Haldiram's Sev Bhujia</td>
+                                                        <td>28 Jan 2024</td>
+                                                        <td>$15.00</td>
+                                                        <td><div class="shipped">Shipped</div></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>#F2500PP1</td>
+                                                        <td>NutriChoice Digestive</td>
+                                                        <td>28 Jan 2024</td>
+                                                        <td>$18.00</td>
+                                                        <td><div class="shipped">Shipped</div></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>#F2500PP</td>
+                                                        <td>Gray Haldiram's Sev Bhujia</td>
+                                                        <td>28 Jan 2024</td>
+                                                        <td>$22.00</td>
+                                                        <td><div class="pending">Pending</div></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>#F2500PP3</td>
+                                                        <td>Gray Haldiram's Sev Bhujia</td>
+                                                        <td>28 Jan 2024</td>
+                                                        <td>$15.00</td>
+                                                        <td><div class="shipped">Shipped</div></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>#F2500PP4</td>
+                                                        <td>Women T-shirt G</td>
+                                                        <td>21 Jan 2024</td>
+                                                        <td>$16.00</td>
+                                                        <td><div class="shipped">Shipped</div></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>#F2500PP5</td>
+                                                        <td>Gray Mens's Sev Bhujia</td>
+                                                        <td>22 Jan 2024</td>
+                                                        <td>$19.00</td>
+                                                        <td><div class="processing">Processing</div></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
                                     </div>
                                 </div>
                                 <!-- recent order table end -->
@@ -667,7 +673,18 @@
     
     
     
-    
+        //    dashboard menu 
+        const dashboardSidebar = document.getElementById('dashboard-sidebar')
+        document.getElementById('dashboard-menu-btn').addEventListener('click',function(){
+        dashboardSidebar.classList.add('active');
+        // document.body.style.overflowY = 'hidden';
+        })
+        
+        document.getElementById('dashboard-close-btn').addEventListener('click', function(){
+        dashboardSidebar.classList.remove('active');
+        // document.body.style.overflowY = 'visible'; // Corrected spelling to 'visible'
+        });
+
     
     </script>
 </body>
