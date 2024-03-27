@@ -400,6 +400,17 @@
 
 
 
+/***************************
+ ***  Responsive 1080 px  ***
+****************************/
+@media screen and (max-width:1080px){
+    .mega-dropdown-items{
+        gap:30px;
+        left:-420px;
+        max-width: 1000px;
+        padding: 30px ;
+    }
+}
 
 
 /***************************
@@ -472,15 +483,6 @@
         display: block !important;
     }
     
-    /* ul li:hover > ul{
-        visibility: hidden;
-        top:40px;
-    }
-    .pages-area:hover .mega-dropdown-items{
-        opacity: 1;
-        visibility: hidden;
-    } */
-    
     
     
     
@@ -494,7 +496,7 @@
         width: 100%;
         background-color: white;
         box-shadow: var(--box-shadow);
-        position: absolute;
+        position: fixed;
         top: 0px;
         left:-100%;
         z-index: 3;
