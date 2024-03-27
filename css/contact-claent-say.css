@@ -71,12 +71,15 @@
     color: var(--gray-color);
     font-size: var(--lg-font);
 }
+.client-say-item-footer ul li a{
+    transition: .4s linear;
+}
 .client-say-item-footer ul li a:hover  {
     color: var(--link-hover-color);
-    transition: .3s;
-    transform: rotate(355deg);
+    transition: .4s linear;
+    transform: rotate(360deg) ;
 }
-.client-say-item-footer ul li a
+
 
 
 /* =============== contact-form-area  start here ================= */

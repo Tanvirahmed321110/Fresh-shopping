@@ -748,6 +748,28 @@ img {
 
 
 
+/***************************
+ ***  Responsive 1140 px  ***
+****************************/
+@media screen and (max-width:1140px){
+    .col-5 {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .col-4{
+        grid-template-columns: repeat(3,1fr);
+    }
+    .container{
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+    .mega-dropdown-items{
+        gap:30px;
+        left:-420px;
+        max-width: 1000px;
+        padding: 30px ;
+    }
+}
+
 
 
 /**************************

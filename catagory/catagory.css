@@ -202,6 +202,14 @@
 
 
 
+@media screen and (max-width: 1140px){
+    .catagoris-area-inner.flex-start-20{
+        gap: 50px;
+    }
+    .grid-products.col-4 {
+        grid-template-columns: repeat(3,1fr);
+    }
+}
 
 
 

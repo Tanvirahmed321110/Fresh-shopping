@@ -28,11 +28,13 @@ footer{
     font-size: var(--xl-font);
     color:var(--gray-color);
 }
-
+.footer-top .social-media ul li a{
+    transition: .3s linear;
+}
 .footer-top .social-media ul li a:hover {
-    transition: .2s linear;
-    transform: rotate(360deg);
-    margin-top: 5px;
+    transition: .3s linear;
+    transform: rotate(360deg) scale(1.2);
+    
 }
 .footer-top .social-media ul li a:hover i{
     color: var(--link-color);

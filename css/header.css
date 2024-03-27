@@ -400,23 +400,19 @@
 
 
 
-/***************************
- ***  Responsive 1080 px  ***
-****************************/
-@media screen and (max-width:1080px){
-    .mega-dropdown-items{
-        gap:30px;
-        left:-420px;
-        max-width: 1000px;
-        padding: 30px ;
-    }
-}
+
 
 
 /***************************
  ***  Responsive 991 px  ***
 ****************************/
 @media screen and (max-width:991px){
+    .header-medial-area{
+        height: 45px;
+    }
+    .container{
+        overflow-x: visible;
+    }
     .header-medial-medial{
         display:none;
     }
